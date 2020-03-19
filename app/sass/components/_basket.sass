@@ -23,15 +23,17 @@
     
 .basket-orders
     &__wrapper
+        margin-bottom: 50px
     &__list
         display: table
         width: 100%
+        border-spacing: 0 10px
     &__header
         display: table-row
     &__header-title
         display: table-cell
         text-align: center
-        padding-bottom: 20px
+        padding-bottom: 10px
         color: #6f6f6f
         &_product
         &_price
@@ -40,6 +42,8 @@
         &_delete
     &__content
         display: table-row
+        margin-bottom: 10px
+        &:not(:last-child)
     &__content-col
         display: table-cell
         vertical-align: middle

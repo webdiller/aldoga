@@ -1,0 +1,28 @@
+.checkout
+    &__wrapper
+        margin-bottom: 50px
+    &__description-text
+        margin-bottom: 30px
+
+.checkout-form
+    &__cities
+        display: flex
+        justify-content: center
+        align-content: center
+    &__header-input
+        display: none
+        &:checked
+            + label
+                background-color: #f4f4f4
+    &__header-label
+        padding: 20px
+        flex-basis: 240px
+        text-align: center
+        font-size: 14px
+        font-weight: 900
+        color: #111
+        background: #fff
+        transition: all .3s ease
+        cursor: pointer
+        &:hover
+            background-color: #fafafa
