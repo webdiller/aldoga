@@ -1,0 +1,135 @@
+.contact-list
+    +reset-ul
+    &__item
+        &_socials
+            display: flex
+    &__link
+        +reset-link
+        position: relative
+        display: flex
+        text-align: left
+        color: #fff
+        font-size: 18px
+        line-height: 1.778
+        &::before
+            content: ""
+            position: relative
+            font-family: fontello
+            color: $orange
+            margin-right: 10px
+        &_phone
+            &::before
+                content: "\e800"
+                transform: rotateZ(90deg) rotate(90deg)
+        &_mail
+            &::before
+                content: "\e803"
+        &_address
+            &::before
+                content: "\e804"
+        &_socials
+            &::before
+                margin-right: 0
+            &:not(:last-child)
+                margin-right: 10px
+        &_vk
+            &::before
+                content: "\e806"
+        &_insta
+            &::before
+                content: "\f16d"
+
+
+.navigation-list
+    +reset-ul
+    display: flex
+    flex-wrap: wrap
+    flex-basis: 300px
+    &__item
+        flex-basis: 50%
+        margin-bottom: 25px
+    &__link
+        +reset-link
+        position: relative
+        display: block
+        color: #fff
+        transition: all .4s ease
+        &:hover,
+        &:focus
+            outline: none
+            transform: translateX(15px)
+            &::before
+                opacity: 1
+        &::before
+            content: "\e801"
+            position: absolute
+            font-family: fontello
+            color: $orange
+            left: -20px
+            opacity: 0
+            transition: all .3s ease
+
+.footer
+    &__wrapper
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding: 55px 90px 45px 90px
+        background: #111
+    &__contact-list
+        flex-basis: 300px
+    &__logo
+        margin: 0 auto
+    &__navigation-list
+        flex-basis: 300px
+        margin-bottom: -25px
+    &__copyright
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 1540px
+        height: 80px
+        padding: 20px 20px
+        margin: 0 auto
+    &__copyright-text
+        font-size: 13px
+        line-height: 1.2
+    &__copyright-img
+
+@media only screen and (max-width: 1300px) 
+    .footer__content
+        padding-left: 40px
+        padding-right: 40px
+    .footer__navigation-list
+        margin-bottom: -15px
+    .navigation-list__item
+        margin-bottom: 15px
+    .contact-list__link
+        font-size: 16px
+
+@media only screen and (max-width: 1200px) 
+    .navigation-list__link
+        font-size: 14px
+    .contact-list__link
+        font-size: 14px
+    .contact-list__item
+        margin-bottom: 10px
+@media only screen and (max-width: 1100px)
+    //  
+@media only screen and (max-width: 992px) 
+    .footer__content
+        padding: 35px 30px
+    .navigation-list__link
+        font-size: 12px
+    .contact-list__link
+        font-size: 12px
+    .footer__navigation-list
+        padding-left: 30px
+    .footer__copyright-text
+        font-size: 12px
+    .footer__copyright
+        height: 50px
+    .footer__copyright-img
+        width: auto
+        height: 23px

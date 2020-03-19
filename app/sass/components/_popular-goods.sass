@@ -1,0 +1,216 @@
+.goods-list
+    +reset-ul
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: -15px -15px -15px -15px
+    &__item
+        position: relative
+        width: 30%
+        margin: 15px 
+        display: flex
+        flex-direction: column
+        background-color: $lightgrey
+        transition: all .3s ease
+        &:hover
+            box-shadow: -6.691px 7.431px 20px 0px rgba(135, 135, 135, 0.2)
+            .goods-list__footer
+                opacity: 1
+                z-index: 100
+        &_catalog
+            &:hover
+                transform: scale(1.025)
+                z-index: 100
+    &__link
+        text-decoration: none
+        color: #000
+        &:focus,
+        &:active
+            .goods-list__footer
+                opacity: 1
+                z-index: 100
+    &__img-wrapper
+        position: relative
+        overflow: hidden
+        &::before
+            content: ""
+            display: block
+            padding-bottom: 75%
+    &__img
+        position: absolute
+        width: 100%
+        top: 0
+        right: 0
+        left: 0
+        object-fit: cover
+    &__content
+        position: relative
+        flex-grow: 1
+        padding: 35px
+        background-color: $lightgrey
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+    &__title
+        font-size: 20px
+        font-weight: 900
+        color: rgb(17, 17, 17)
+        line-height: 1.25
+        text-align: center
+    &__tags
+        color: $grey
+    &__tags-tag
+        color: $grey
+    &__price
+    &__price-number
+        font-weight: 800
+    &__price-measure
+        position: relative
+        padding-left: 10px
+        font-size: 14px
+        &:empty
+            display: none
+        &::before
+            content: "|"
+            position: absolute
+            left: 0
+    &__footer
+        position: absolute
+        top: calc(100% - 5px)
+        left: 0
+        right: 0
+        padding: 0 35px 30px 35px
+        display: flex
+        justify-content: space-between
+        background-color: $lightgrey
+        transition: all .3s ease
+        opacity: 0
+        z-index: -1
+    
+.popular-goods
+    text-align: center
+    &__wrapper
+    &__title
+    &__list
+        margin-bottom: 20px
+    &__btn
+
+
+@media only screen and (max-width: 992px) 
+    .popular-goods
+        text-align: center
+        &__wrapper_slider
+            padding-left: 30px
+            padding-right: 30px
+    .goods-list__item
+        width: 100%
+        &_catalog
+            flex-basis: 46%
+            margin: 0 15px 30px 15px
+    .goods-list__content
+        padding: 25px 15px
+    .goods-list__title
+        font-size: 16px
+    .goods-list__tags-tag
+        font-size: 14px
+    .goods-list_slider
+        margin: 0 0 40px 0
+        .goods-list__item
+            width: 100%
+            margin: 0
+        .goods-list__img-wrapper::before
+            padding-bottom: 50%
+        .owl-item
+            display: flex
+        .owl-stage
+            display: flex
+        > div.owl-nav
+            height: 0
+            margin: 0
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -20px
+            right: -20px
+            display: flex
+            justify-content: space-between
+            font-size: 30px
+        .owl-nav button.owl-next, .owl-nav button.owl-prev, button.owl-dot
+            margin: 0
+        .owl-nav [class*=owl-]:hover
+            color: #000
+
+@media only screen and (max-width: 768px) 
+    .goods-list__title
+        font-size: 14px
+    .goods-list__tags-tag
+        font-size: 11px
+    .goods-list__price-number,.goods-list__price-measure
+        font-size: 13px
+    .goods-list__item
+        &_catalog
+            flex-basis: 46%
+            margin: 0 5px 10px 5px
+            .goods-list__content
+                padding: 15px 10px
+            .goods-list__title
+                margin-bottom: 10px
+            .goods-list__tags
+                line-height: 1.3
+                font-size: 12px
+                margin-bottom: 10px
+                display: -webkit-box
+                -webkit-line-clamp: 1
+                -webkit-box-orient: vertical
+                overflow: hidden
+            .goods-list__price
+                margin-bottom: 10px
+            .goods-list__footer
+                position: relative
+                width: 100%
+                justify-content: space-around
+                padding: 0
+                opacity: 1
+                z-index: 1
+                visibility: visible
+            
+
+@media only screen and (max-width: 576px) 
+    .popular-goods__wrapper_slider
+        padding: 0 15px 0 15px
+    .goods-list_slider
+        margin-bottom: 0
+        > div.owl-nav
+            height: 65px
+            position: relative
+            top: unset
+            transform: unset
+            width: 85px
+            margin: 0 auto
+            left: unset
+            right: unset
+            display: flex
+            justify-content: space-between
+            font-size: 30px
+        .owl-nav button.owl-next, .owl-nav button.owl-prev, button.owl-dot
+            margin: 0
+        .owl-nav [class*=owl-]:hover
+            color: #000 
+            background: transparent
+            outline: none
+
+@media only screen and (max-width: 480px) 
+    .goods-list__item
+        &_catalog
+            flex-basis: 100%
+            max-width: 350px
+            &:not(:last-child)
+                margin: 0 0 20px 0
+            .goods-list__title
+            .goods-list__footer
+                flex-wrap: wrap
+                .site-btn
+                    flex-basis: 100%
+                    margin: 5px 0

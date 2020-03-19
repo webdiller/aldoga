@@ -1,0 +1,93 @@
+.about-reviews
+    &__wrapper
+        margin: 0 auto 80px auto
+        text-align: center
+        padding: 0 50px
+    &__title
+    &__slider
+        margin-bottom: 45px
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 35px
+        background-color: $lightgrey
+        transition: all .3s ease
+        text-align: left
+        &:hover
+            box-shadow: -6.691px 7.431px 20px 0px rgba(135, 135, 135, 0.2)
+    &__name
+        font-size: 20px
+        font-weight: 900
+        color: rgb(17, 17, 17)
+        line-height: 1.25
+        margin-bottom: 15px
+        text-align: left
+    &__text
+        font-size: 16px
+        color: rgb(17, 17, 17)
+        margin-bottom: 15px
+        line-height: 1.25
+        text-align: left
+        display: -webkit-box
+        -webkit-line-clamp: 7
+        -webkit-box-orient: vertical
+        overflow: hidden
+    &__more
+        text-align: left
+        margin-bottom: 35px
+    &__images
+        +reset-ul
+        display: flex
+        margin-top: auto
+        &-item
+            &:not(:last-child)
+                margin-right: 15px
+        &-link
+            display: block
+            width: 70px
+            height: 70px
+        &-img
+            max-width: 100%
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__btn
+        margin: 0 auto
+    &__slider
+        > div.owl-nav
+            height: 0
+            margin: 0
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -30px
+            right: -30px
+            display: flex
+            justify-content: space-between
+            font-size: 30px
+        .owl-nav [class*=owl-]:hover
+            color: #000
+            outline: none
+
+@media only screen and (max-width: 1300px) 
+    // 
+@media only screen and (max-width: 1200px) 
+    .about-reviews__item
+        padding: 20px 15px
+    .about-reviews__name
+        font-size: 16px
+@media only screen and (max-width: 992px) 
+    // 
+@media only screen and (max-width: 768px) 
+    .about-reviews__name
+        font-size: 14px
+    .about-reviews__more
+        margin-bottom: 20px
+
+@media only screen and (max-width: 576px) 
+    .about-reviews__wrapper
+        padding: 0 40px
+        margin-bottom: 35px
+    .about-reviews__slider
+        margin-bottom: 10px
