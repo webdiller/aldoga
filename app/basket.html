@@ -418,7 +418,8 @@
                         например, о
                         возможности самовывоза или планов.
                     </p>
-                    <div class="checkout-form">
+
+                    <div class="checkout-form checkout__form">
 
                         <div class="checkout-form__cities">
                             <input class="checkout-form__header-input"
@@ -450,96 +451,176 @@
                         <div class="checkout-form__city-content">
 
                             <div class="checkout-form__table">
+
                                 <div class="checkout-form__header">
-                                    <p class="checkout-form__header-text">Служба</p>
-                                    <p class="checkout-form__header-text">Ближайшая дата доставки</p>
-                                    <p class="checkout-form__header-text">Стоимость</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_date">Ближайшая дата
+                                        доставки</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_price">Стоимость</p>
                                 </div>
+
                                 <div class="checkout-form__body">
                                     <input name="CheckoutFormSelectCity"
+                                           checked
                                            id="CheckoutFormPickup"
-                                           type="text"
+                                           type="radio"
                                            class="checkout-form__body-input">
                                     <label class="checkout-form__label"
                                            for="CheckoutFormPickup">
                                         <span
-                                              class="checkout-form__label-text heckout-form__label-text_service">Самовывоз</span>
+                                              class="checkout-form__label-text checkout-form__label-text_service">Самовывоз</span>
                                         <span
-                                              class="checkout-form__label-text heckout-form__label-text_date">14.04.2020</span>
-                                        <span class="checkout-form__label-text heckout-form__label-text_price">0
-                                            Р</span>
+                                              class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">
+                                            0 Р
+                                        </span>
                                     </label>
 
                                     <input name="CheckoutFormSelectCity"
                                            id="CheckoutFormPDP"
-                                           type="text"
+                                           type="radio"
                                            class="checkout-form__body-input">
                                     <label class="checkout-form__label"
                                            for="CheckoutFormPDP">
                                         <span
-                                              class="checkout-form__label-text heckout-form__label-text_service">Курьером
+                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
                                             службы DPD до подъезда</span>
                                         <span
-                                              class="checkout-form__label-text heckout-form__label-text_date">13.04.2020</span>
-                                        <span class="checkout-form__label-text heckout-form__label-text_price">450
+                                              class="checkout-form__label-text checkout-form__label-text_date">13.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">450
                                             Р</span>
                                     </label>
 
                                     <input name="CheckoutFormSelectCity"
                                            id="CheckoutFormYandex"
-                                           type="text"
+                                           type="radio"
                                            class="checkout-form__body-input">
                                     <label class="checkout-form__label"
                                            for="CheckoutFormYandex">
                                         <span
-                                              class="checkout-form__label-text heckout-form__label-text_service">Курьером
+                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
                                             Яндекс.Еда до подъезда</span>
                                         <span
-                                              class="checkout-form__label-text heckout-form__label-text_date">14.04.2020</span>
-                                        <span class="checkout-form__label-text heckout-form__label-text_price">500
+                                              class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">500
                                             Р</span>
                                     </label>
                                 </div>
                             </div>
 
-                            <form class="checkout-form__form">
-                                <div class="checkout-form__group">
+                            <form class="checkout-form__form contact-form">
+
+                                <div class="contact-form__group">
                                     <input placeholder="Как вас зовут?"
                                            type="text"
-                                           class="checkout-form__input">
-                                    <span class="checkout-form__icon"></span>
+                                           class="contact-form__input">
+                                    <span class="contact-form__icon icon-user"></span>
                                 </div>
-                                <div class="checkout-form__group">
+
+                                <div class="contact-form__group">
                                     <input placeholder="Ваш email адрес"
                                            type="email"
-                                           class="checkout-form__input">
-                                    <span class="checkout-form__icon"></span>
+                                           class="contact-form__input">
+                                    <span class="contact-form__icon icon-envelope-open"></span>
                                 </div>
-                                <div class="checkout-form__group">
+
+                                <div class="contact-form__group">
                                     <input placeholder="Телефон для связи"
                                            type="number"
-                                           class="checkout-form__input">
-                                    <span class="checkout-form__icon"></span>
+                                           class="contact-form__input">
+                                    <span class="contact-form__icon icon-phone"></span>
                                 </div>
-                                <div class="checkout-form__description">
-                                    <p class="checkout-form__description-title">
+
+                                <div class="contact-form__description">
+                                    <p class="contact-form__description-title">
                                         Текущий пункт самовывоза:
                                     </p>
-                                    <p class="checkout-form__description-text">
+                                    <p class="contact-form__description-text">
                                         ул. Московская, 50, ТЦ “Московский”,
                                         2 этаж, служба доставки Boxberry
                                     </p>
                                     <a href="#"
-                                       class="checkout-form__description-link">Выбрать пункт доставки</a>
+                                       class="contact-form__description-link">Выбрать пункт доставки</a>
                                 </div>
                             </form>
 
                             <div class="checkout-form__footer">
+                                <p class="checkout-form__footer-title">Оплата:</p>
+
+                                <!-- 1 -->
+                                <input name="CheckoutFormPayment"
+                                       checked
+                                       id="payment1"
+                                       type="radio"
+                                       class="checkout-form__footer-input">
+                                <label for="payment1"
+                                       class="checkout-form__footer-label">
+                                    Картой на сайте
+                                </label>
+
+                                <!-- 2 -->
+                                <input name="CheckoutFormPayment"
+                                       checked
+                                       id="payment2"
+                                       type="radio"
+                                       class="checkout-form__footer-input">
+                                <label for="payment2"
+                                       class="checkout-form__footer-label">
+                                    Картой курьеру
+                                </label>
+
+                                <!-- 3 -->
+                                <input name="CheckoutFormPayment"
+                                       checked
+                                       id="payment3"
+                                       type="radio"
+                                       class="checkout-form__footer-input">
+                                <label for="payment3"
+                                       class="checkout-form__footer-label">
+                                    Наличными курьеру
+                                </label>
+
                             </div>
 
                         </div>
 
                     </div>
+
+                    <div class="checkout__payment payment">
+                        <div class="payment__group">
+                            <input placeholder="Есть промокод?"
+                                   type="text"
+                                   class="payment__input">
+                            <button class="payment__btn-apply">Применить</button>
+                        </div>
+                        <div class="payment__total">
+                            <div class="payment__total-group">
+                                <p class="payment__total-title">Ваша скидка по промокоду</p>
+                                <p class="payment__total-description payment__total-description_promocode">-300 Р (10%)
+                                </p>
+                            </div>
+                            <div class="payment__total-group">
+                                <p class="payment__total-title">Стоимость доставки</p>
+                                <p class="payment__total-description payment__total-description_delivery">550 Р</p>
+                            </div>
+                            <div class="payment__total-group">
+                                <p class="payment__total-title">Итого к оплате</p>
+                                <p class="payment__total-description payment__total-description_total">3000 Р</p>
+                            </div>
+                        </div>
+                        <div class="payment__btn-with-check">
+                            <button class="payment__btn-submit site-btn">Перейти к оплате</button>
+                            <input name="totalPaymentName"
+                                   id="totalPayment"
+                                   type="checkbox"
+                                   class="payment__custom-input">
+                            <label for="totalPayment"
+                                   class="payment__custom-label">
+                                Я СОГЛАСЕН на обработку и хранение моих персональных данных
+                            </label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 

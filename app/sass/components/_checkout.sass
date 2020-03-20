@@ -1,8 +1,133 @@
-.checkout
-    &__wrapper
-        margin-bottom: 50px
-    &__description-text
-        margin-bottom: 30px
+
+.payment
+    &__group
+        display: flex
+        width: 100%
+        margin-bottom: 35px
+    &__input
+        height: 40px
+        flex-basis: 70%
+        margin-right: 4px
+        border: 0
+        outline: 0
+        padding: 0 15px
+        background-color: #f4f4f4
+        font-size: 15px
+        font-family: "Lato"
+        color: #666666
+    &__btn-apply
+        +reset-btn
+        flex: 1
+        background: #fd9100
+        text-transform: uppercase
+        color: #fff
+        font-weight: 600
+        cursor: pointer
+    &__total
+        width: 100%
+    &__total-group
+        margin-bottom: 10px
+        display: flex
+        align-items: center
+    &__total-title
+        flex-basis: 70%
+        margin-right: 4px
+        font-size: 16px
+        color: #666666
+        font-weight: 600
+        text-align: right
+    &__total-description
+        text-align: right
+        flex: 1
+        &_promocode
+            font-size: 16px
+            font-weight: 900
+            color: #111
+        &_delivery
+            text-transform: uppercase
+            color: #333333
+            font-weight: 900
+            font-size: 16px
+        &_total
+            text-transform: uppercase
+            font-size: 18px
+            font-weight: 900
+    &__btn-with-check
+        max-width: 270px
+        margin-left: auto
+    &__btn-submit
+        width: 100%
+        margin-bottom: 25px
+    &__custom-input
+        display: none
+        &:checked
+            + label
+                &::after
+                    opacity: 1
+    &__custom-label
+        position: relative
+        display: block
+        padding-left: 30px
+        font-size: 13px
+        &:hover
+            cursor: pointer
+        &::before
+            content: ""
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            width: 14px
+            height: 14px
+            border-radius: 50%
+            border: 2px solid #dddddd
+        &::after
+            content: ""
+            position: absolute
+            top: 51%
+            transform: translateY(-50%)
+            left: 4px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: $orange
+            opacity: 0
+            transition: all .3s ease
+
+.contact-form
+    &__group
+        margin-bottom: 25px
+        display: flex
+    &__input
+        flex: 1
+        height: 40px
+        margin-right: 4px
+        border: 0
+        outline: none
+        padding: 0 15px
+        background-color: #fff
+        font-size: 15px
+        font-family: "Lato"
+        color: rgb(102, 102, 102)
+        &::placeholder
+            font-family: "Lato"
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        background: #fff
+    &__description
+
+        &-title
+            font-weight: 900
+            margin-bottom: 5px
+        &-text
+            margin-bottom: 10px
+        &-link
+            color: #fd9100
+            font-weight: 700
 
 .checkout-form
     &__cities
@@ -26,3 +151,157 @@
         cursor: pointer
         &:hover
             background-color: #fafafa
+    &__city-content
+        display: flex
+        flex-wrap: wrap
+        padding: 35px 35px 35px 25px
+        background: #f4f4f4
+        overflow: hidden
+    &__table
+        display: flex
+        flex-direction: column
+        flex-basis: 65%
+        margin-right: 60px
+    &__header
+        display: flex
+        padding: 0 20px 10px 65px
+    &__header-text
+        color: #6f6f6f
+        &_service
+            flex-basis: 45%
+        &_date
+            flex-basis: 40%
+        &_price
+            flex: 1
+            text-align: left
+    &__body
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            right: -30px
+            bottom: 0
+            width: 1px
+            background-color: #d7d7d7
+    &__body-input
+        display: none
+        &:checked
+            + label
+                border-color: #fd9100
+            + label::after
+                opacity: 1
+    &__label
+        position: relative
+        display: flex
+        align-items: center
+        transition: all .3s ease
+        padding: 25px 20px 25px 65px
+        height: 95px
+        border: 1px solid transparent
+        &:hover
+            background-color: #fff8ee
+            cursor: pointer
+        &::before
+            content: ""
+            position: absolute
+            top: 48%
+            transform: translateY(-50%)
+            left: 20px
+            width: 14px
+            height: 14px
+            border-radius: 50%
+            border: 2px solid #dddddd
+        &::after
+            content: ""
+            position: absolute
+            top: 48%
+            transform: translateY(-50%)
+            left: 24px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: $orange
+            opacity: 0
+            transition: all .3s ease
+    &__label-text
+        &_service
+            flex-basis: 45%
+            padding-right: 35px
+        &_date
+            flex-basis: 40%
+            font-weight: 900
+        &_price
+            flex: 1
+            text-align: left
+            font-weight: 900
+    &__form
+        flex: 1
+        padding-top: 35px
+    &__footer
+        display: flex
+        margin: 40px auto 0 auto
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: -20px
+            left: -100vw
+            padding: 0 20px
+            width: 200vw
+            margin: 0 auto
+            height: 1px
+            background-color: #d7d7d7
+        &-title
+            margin-right: 40px
+            font-weight: 900
+        &-input
+            display: none
+            &:checked
+                + label
+                    &::after
+                        opacity: 1
+        &-label
+            position: relative
+            padding-left: 30px
+            &:hover
+                cursor: pointer
+            &::before
+                content: ""
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 0
+                width: 14px
+                height: 14px
+                border-radius: 50%
+                border: 2px solid #dddddd
+            &::after
+                content: ""
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 4px
+                width: 10px
+                height: 10px
+                border-radius: 50%
+                background-color: $orange
+                opacity: 0
+                transition: all .3s ease
+            &:not(:last-child)
+                margin-right: 20px
+                
+
+.checkout
+    &__wrapper
+        margin-bottom: 50px
+    &__description-text
+        margin-bottom: 30px
+    &__form
+        margin-bottom: 65px
+    &__payment
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        max-width: 370px
+        margin-left: auto
