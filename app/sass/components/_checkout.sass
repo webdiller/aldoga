@@ -158,10 +158,12 @@
         background: #f4f4f4
         overflow: hidden
     &__table
-        display: flex
+        display: none
         flex-direction: column
         flex-basis: 65%
         margin-right: 60px
+        &.active
+            display: flex
     &__header
         display: flex
         padding: 0 20px 10px 65px
@@ -240,6 +242,7 @@
         padding-top: 35px
     &__footer
         display: flex
+        flex-wrap: wrap
         margin: 40px auto 0 auto
         position: relative
         &::before
@@ -305,3 +308,74 @@
         align-items: flex-end
         max-width: 370px
         margin-left: auto
+
+@media only screen and (max-width: 1100px)
+    .pagination__link
+        height: 35px
+        width: 35px
+        font-size: 14px
+    .pagination__link_btn
+        padding-top: 0
+        padding-bottom: 0
+        width: auto
+
+@media only screen and (max-width: 992px) 
+    .pagination__link
+        height: 28px
+        width: 28px
+        font-size: 13px
+    .pagination__link_btn
+        height: 28px
+        width: auto
+    .basket-orders__header-title
+        font-size: 13px
+    .basket-orders__img
+        height: 60px
+        width: 60px
+    .basket-orders__name
+        font-size: 16px
+    .basket-orders__tags
+        font-size: 13px
+        line-height: 1
+    .basket-orders__content-col
+        font-size: 14px
+    .checkout-form__body::before
+        display: none
+    .checkout-form__table
+        flex-basis: 100% 
+        margin-right: 0
+    .checkout-form__header-label
+        flex-basis: 20%
+        padding: 10px
+    .checkout-form__label
+        height: 50px
+    .checkout-form__city-content
+        padding: 15px 25px
+    .checkout-form__header-text
+        font-size: 14px
+    .checkout-form__label-text
+        font-size: 13px
+    .checkout-form__form
+        max-width: 600px
+    .checkout-form__footer
+        flex-basis: 100%
+    .contact-form__description-title
+        font-size: 14px
+    .contact-form__description-text
+        font-size: 14px
+    .contact-form__description-link
+        font-size: 14px
+    .checkout-form__footer-title
+        font-size: 14px
+    .checkout-form__footer-label
+        font-size: 13px
+
+@media only screen and (max-width: 768px) 
+    .pagination__item:not(:last-child)
+        margin-right: 5px
+    .pagination__link_btn
+        padding: 0 20px 
+
+@media only screen and (max-width: 480px) 
+    .pagination__link
+        font-size: 12px 

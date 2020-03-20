@@ -25,6 +25,7 @@
     &__wrapper
         margin-bottom: 50px
     &__list
+    &__table
         display: table
         width: 100%
         border-spacing: 0 10px
@@ -80,3 +81,50 @@
     &__tags
         color: #6f6f6f
         font-size: 14px
+
+@media only screen and (max-width: 992px) 
+    .basket-orders__header-title
+        font-size: 13px
+    .basket-orders__img
+        height: 60px
+        width: 60px
+    .basket-orders__name
+        font-size: 16px
+    .basket-orders__tags
+        font-size: 13px
+        line-height: 1
+    .basket-orders__content-col
+        font-size: 14px
+
+@media only screen and (max-width: 768px) 
+    .basket-orders__list
+        overflow-x: scroll
+        &::-webkit-scrollbar-track
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+            background-color: #fafafa
+        &::-webkit-scrollbar
+            width: 6px
+            height: 5px
+            background-color: #fafafa
+        &::-webkit-scrollbar-thumb
+            background-color: #111
+    .basket-orders__table
+        min-width: 650px
+    .basket-orders__header-title
+        padding-bottom: 0
+    .basket-orders__img
+        width: 45px
+        height: 45px 
+        margin-right: 10px
+    .basket-orders__name
+        font-size: 13px
+    .basket-orders__content-col
+        font-size: 12px
+    .site-counter_basket
+        .site-counter__control
+            width: 20px
+            height: 20px
+        .site-counter__input
+            width: 35px
+            height: 20px
+            font-size: 12px

@@ -21,221 +21,221 @@
 <body>
 
     <header class="header header_border">
-        <div class="header__wrapper wrapper wrapper_lg">
+		<div class="header__wrapper wrapper wrapper_lg">
 
-            <h2 class="header__logo site-logo">
-                <a href="index.html"
-                   class="site-logo__link">
-                    <img src="./images/dest/logo.png"
-                         alt="Форелевое хозяйство Алдога"
-                         class="site-logo__img">
-                </a>
-            </h2>
+			<h2 class="header__logo site-logo">
+				<a href="index.html"
+				   class="site-logo__link">
+					<img src="./images/dest/logo.png"
+						 alt="Форелевое хозяйство Алдога"
+						 class="site-logo__img">
+				</a>
+			</h2>
 
-            <ul class="header__list header-list">
-                <li class="header-list__item">
-                    <a href="catalog.html"
-                       class="header-list__link header-list__link_active">Наша продукция</a>
-                </li>
-                <li class="header-list__item">
-                    <a href="#"
-                       class="header-list__link">О Хозяйстве</a>
-                </li>
-                <li class="header-list__item">
-                    <a href="#"
-                       class="header-list__link">Доставка и оплата</a>
-                </li>
-                <li class="header-list__item">
-                    <a href="#"
-                       class="header-list__link">Рецепты</a>
-                </li>
-                <li class="header-list__item">
-                    <a href="#"
-                       class="header-list__link">Отзывы</a>
-                </li>
-                <li class="header-list__item">
-                    <a href="#"
-                       class="header-list__link">Контакты</a>
-                </li>
-            </ul>
+			<ul class="header__list header-list">
+				<li class="header-list__item">
+					<a href="catalog.html"
+					   class="header-list__link header-list__link_active">Наша продукция</a>
+				</li>
+				<li class="header-list__item">
+					<a href="#"
+					   class="header-list__link">О Хозяйстве</a>
+				</li>
+				<li class="header-list__item">
+					<a href="#"
+					   class="header-list__link">Доставка и оплата</a>
+				</li>
+				<li class="header-list__item">
+					<a href="#"
+					   class="header-list__link">Рецепты</a>
+				</li>
+				<li class="header-list__item">
+					<a href="#"
+					   class="header-list__link">Отзывы</a>
+				</li>
+				<li class="header-list__item">
+					<a href="#"
+					   class="header-list__link">Контакты</a>
+				</li>
+			</ul>
 
-            <div class="header__contact-bar contact-bar">
-                <div class="contact-bar__wrapper">
-                    <a href="tel:89214504515"
-                       class="contact-bar__link">8 921 450 45 15</a>
-                    <a href="#"
-                       class="contact-bar__interactive-link">Задать вопрос</a>
-                </div>
-            </div>
+			<div class="header__contact-bar contact-bar">
+				<div class="contact-bar__wrapper">
+					<a href="tel:89214504515"
+					   class="contact-bar__link">8 921 450 45 15</a>
+					<a href="#"
+					   class="contact-bar__interactive-link">Задать вопрос</a>
+				</div>
+			</div>
 
-            <div id="basket"
-                 class="header__basket basket">
-                <div class="basket__wrapper">
-                    <a href="#"
-                       class="basket__icon icon-shop">
-                        <span class="basket__count">10</span>
-                    </a>
-                </div>
-            </div>
+			<div id="basket"
+				 class="header__basket basket">
+				<div class="basket__wrapper">
+					<a href="#"
+					   class="basket__icon icon-shop">
+						<span class="basket__count">10</span>
+					</a>
+				</div>
+			</div>
 
-            <div class="header__status status">
-                <button id="statusBtn"
-                        class="status__wrapper">
-                    <span class="status__text">Статус заказа</span>
-                </button>
-                <!-- Выслать код -->
-                <div id="statusOverlay1"
-                     class="status__overlay">
-                    <p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
-                    <p class="status__descr site-text_small">Введите свой номер телефона и мы вам вышлем на него смс с
-                        кодом для входа
-                    </p>
-                    <div class="status__phone">
-                        <input id="statusInputGetCode"
-                               type="number"
-                               placeholder="Ваш телефон"
-                               class="status__phone-input">
-                        <span class="status__phone-icon icon-phone"></span>
-                    </div>
-                    <button id="statusBtnGetCode"
-                            class="status__btn site-btn">Выслать код</button>
-                </div>
+			<div class="header__status status">
+				<button id="statusBtn"
+						class="status__wrapper">
+					<span class="status__text">Статус заказа</span>
+				</button>
+				<!-- Выслать код -->
+				<div id="statusOverlay1"
+					 class="status__overlay">
+					<p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
+					<p class="status__descr site-text_small">Введите свой номер телефона и мы вам вышлем на него смс с
+						кодом для входа
+					</p>
+					<div class="status__phone">
+						<input id="statusInputGetCode"
+							   type="number"
+							   placeholder="Ваш телефон"
+							   class="status__phone-input">
+						<span class="status__phone-icon icon-phone"></span>
+					</div>
+					<button id="statusBtnGetCode"
+							class="status__btn site-btn">Выслать код</button>
+				</div>
 
-                <!-- Подтвердить код -->
-                <div id="statusOverlay2"
-                     class="status__overlay">
-                    <p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
-                    <p class="status__descr site-text_small">
-                        Код подтверждения выслан на номер <span id="statusOverlayPhoneChecker">+7 800 555 35 35</span>
-                        .Введите его в поле ниже:
-                    </p>
-                    <div class="status__phone">
-                        <input type="number"
-                               placeholder="Код подтверждения"
-                               class="status__phone-input">
-                    </div>
-                    <button class="status__btn site-btn">Войти</button>
-                </div>
-            </div>
+				<!-- Подтвердить код -->
+				<div id="statusOverlay2"
+					 class="status__overlay">
+					<p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
+					<p class="status__descr site-text_small">
+						Код подтверждения выслан на номер <span id="statusOverlayPhoneChecker">+7 800 555 35 35</span>
+						.Введите его в поле ниже:
+					</p>
+					<div class="status__phone">
+						<input type="number"
+							   placeholder="Код подтверждения"
+							   class="status__phone-input">
+					</div>
+					<button class="status__btn site-btn">Войти</button>
+				</div>
+			</div>
 
-            <button id="hamburger"
-                    class="hamburger header__hamburger hamburger--vortex"
-                    type="button">
-                <span class="hamburger-box hamburger__box">
-                    <span class="hamburger-inner hamburger__inner"></span>
-                </span>
-            </button>
+			<button id="hamburger"
+					class="hamburger header__hamburger hamburger--vortex"
+					type="button">
+				<span class="hamburger-box hamburger__box">
+					<span class="hamburger-inner hamburger__inner"></span>
+				</span>
+			</button>
 
-            <div class="hamburger-overlay"
-                 id="hamburgerOverlay">
-                <ul class="hamburger-overlay__list">
-                    <li class="hamburger-overlay__list-item">
-                        <a href="#"
-                           class="hamburger-overlay__list-link">
-                            Наша продукция
-                        </a>
-                    </li>
-                    <li class="hamburger-overlay__list-item">
-                        <a href="#"
-                           class="hamburger-overlay__list-link">
-                            О Хозяйстве
-                        </a>
-                    </li>
-                    <li class="hamburger-overlay__list-item">
-                        <a href="#"
-                           class="hamburger-overlay__list-link">
-                            Доставка и оплата
-                        </a>
-                    </li>
-                    <li class="hamburger-overlay__list-item">
-                        <a href="#"
-                           class="hamburger-overlay__list-link">
-                            Рецепты
-                        </a>
-                    </li>
-                    <li class="hamburger-overlay__list-item">
-                        <a href="#"
-                           class="hamburger-overlay__list-link">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="hamburger-overlay__list-item">
-                        <a href="#"
-                           class="hamburger-overlay__list-link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-                <div class="contact-bar hamburger-overlay__contact-bar">
-                    <div class="contact-bar__wrapper">
-                        <a href="tel:89214504515"
-                           class="contact-bar__link">8 921 450 45 15</a>
-                        <a href="#"
-                           class="contact-bar__interactive-link">Задать вопрос</a>
-                    </div>
-                </div>
-            </div>
+			<div class="hamburger-overlay"
+				 id="hamburgerOverlay">
+				<ul class="hamburger-overlay__list">
+					<li class="hamburger-overlay__list-item">
+						<a href="catalog.html"
+						   class="hamburger-overlay__list-link">
+							Наша продукция
+						</a>
+					</li>
+					<li class="hamburger-overlay__list-item">
+						<a href="#"
+						   class="hamburger-overlay__list-link">
+							О Хозяйстве
+						</a>
+					</li>
+					<li class="hamburger-overlay__list-item">
+						<a href="#"
+						   class="hamburger-overlay__list-link">
+							Доставка и оплата
+						</a>
+					</li>
+					<li class="hamburger-overlay__list-item">
+						<a href="#"
+						   class="hamburger-overlay__list-link">
+							Рецепты
+						</a>
+					</li>
+					<li class="hamburger-overlay__list-item">
+						<a href="#"
+						   class="hamburger-overlay__list-link">
+							Отзывы
+						</a>
+					</li>
+					<li class="hamburger-overlay__list-item">
+						<a href="#"
+						   class="hamburger-overlay__list-link">
+							Контакты
+						</a>
+					</li>
+				</ul>
+				<div class="contact-bar hamburger-overlay__contact-bar">
+					<div class="contact-bar__wrapper">
+						<a href="tel:89214504515"
+						   class="contact-bar__link">8 921 450 45 15</a>
+						<a href="#"
+						   class="contact-bar__interactive-link">Задать вопрос</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="basket-overlay"
-                 id="basketOverlay">
-                <ul class="basket-overlay__list">
-                    <li class="basket-overlay__item">
-                        <button class="basket-overlay__item-btn icon-cancel"></button>
-                        <a href="#"
-                           class="basket-overlay__item-link">
-                            <img data-src="./images/dest/products/product_1.jpg"
-                                 src="./images/dest/products/product_1-min.jpg"
-                                 alt=""
-                                 class="basket-overlay__item-img lazy">
-                            <div class="basket-overlay__item-content">
-                                <p class="basket-overlay__item-content-name">Стейки форели</p>
-                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-                                <span class="basket-overlay__item-content-price">5500 Р</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="basket-overlay__item">
-                        <button class="basket-overlay__item-btn icon-cancel"></button>
-                        <a href="#"
-                           class="basket-overlay__item-link">
-                            <img data-src="./images/dest/products/product_2.jpg"
-                                 src="./images/dest/products/product_2-min.jpg"
-                                 alt=""
-                                 class="basket-overlay__item-img lazy">
-                            <div class="basket-overlay__item-content">
-                                <p class="basket-overlay__item-content-name">Стейки форели</p>
-                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-                                <span class="basket-overlay__item-content-price">5500 Р</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="basket-overlay__item">
-                        <button class="basket-overlay__item-btn icon-cancel"></button>
-                        <a href="#"
-                           class="basket-overlay__item-link">
-                            <img data-src="./images/dest/products/product_3.jpg"
-                                 src="./images/dest/products/product_3-min.jpg"
-                                 alt=""
-                                 class="basket-overlay__item-img lazy">
-                            <div class="basket-overlay__item-content">
-                                <p class="basket-overlay__item-content-name">Стейки форели</p>
-                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-                                <span class="basket-overlay__item-content-price">5500 Р</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <div class="basket-overlay__total-price">
-                    <span class="basket-overlay__total-price-title">Итого:</span>
-                    <span class="basket-overlay__total-price-count">16 500 Р</span>
-                </div>
-                <div class="basket-overlay__btn-wrapper">
-                    <button class="site-btn basket-overlay__btn">Оформить заказ</button>
-                </div>
-            </div>
+			<div class="basket-overlay"
+				 id="basketOverlay">
+				<ul class="basket-overlay__list">
+					<li class="basket-overlay__item">
+						<button class="basket-overlay__item-btn icon-cancel"></button>
+						<a href="#"
+						   class="basket-overlay__item-link">
+							<img data-src="./images/dest/products/product_1.jpg"
+								 src="./images/dest/products/product_1-min.jpg"
+								 alt=""
+								 class="basket-overlay__item-img lazy">
+							<div class="basket-overlay__item-content">
+								<p class="basket-overlay__item-content-name">Стейки форели</p>
+								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+								<span class="basket-overlay__item-content-price">5500 Р</span>
+							</div>
+						</a>
+					</li>
+					<li class="basket-overlay__item">
+						<button class="basket-overlay__item-btn icon-cancel"></button>
+						<a href="#"
+						   class="basket-overlay__item-link">
+							<img data-src="./images/dest/products/product_2.jpg"
+								 src="./images/dest/products/product_2-min.jpg"
+								 alt=""
+								 class="basket-overlay__item-img lazy">
+							<div class="basket-overlay__item-content">
+								<p class="basket-overlay__item-content-name">Стейки форели</p>
+								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+								<span class="basket-overlay__item-content-price">5500 Р</span>
+							</div>
+						</a>
+					</li>
+					<li class="basket-overlay__item">
+						<button class="basket-overlay__item-btn icon-cancel"></button>
+						<a href="#"
+						   class="basket-overlay__item-link">
+							<img data-src="./images/dest/products/product_3.jpg"
+								 src="./images/dest/products/product_3-min.jpg"
+								 alt=""
+								 class="basket-overlay__item-img lazy">
+							<div class="basket-overlay__item-content">
+								<p class="basket-overlay__item-content-name">Стейки форели</p>
+								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+								<span class="basket-overlay__item-content-price">5500 Р</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="basket-overlay__total-price">
+					<span class="basket-overlay__total-price-title">Итого:</span>
+					<span class="basket-overlay__total-price-count">16 500 Р</span>
+				</div>
+				<div class="basket-overlay__btn-wrapper">
+					<a href="basket.html" class="site-btn basket-overlay__btn">Оформить заказ</a>
+				</div>
+			</div>
 
-        </div>
-    </header>
+		</div>
+	</header>
 
     <main class="main">
         <div class="main__wrapper">
@@ -259,149 +259,147 @@
                 <div class="basket-orders__wrapper wrapper wrapper_md">
                     <h2 class="site-title">Корзина</h2>
                     <div class="basket-orders__list">
-                        <div class="basket-orders__header">
-                            <p class="basket-orders__header-title basket-orders__header-title_product">Товар</p>
-                            <p class="basket-orders__header-title basket-orders__header-title_price">Цена</p>
-                            <p class="basket-orders__header-title basket-orders__header-title_number">Количество</p>
-                            <p class="basket-orders__header-title basket-orders__header-title_total">Итого</p>
-                            <p class="basket-orders__header-title basket-orders__header-title_delete">Удалить</p>
+                        <div class="basket-orders__table">
+                            <div class="basket-orders__header">
+                                <p class="basket-orders__header-title basket-orders__header-title_product">Товар</p>
+                                <p class="basket-orders__header-title basket-orders__header-title_price">Цена</p>
+                                <p class="basket-orders__header-title basket-orders__header-title_number">Количество</p>
+                                <p class="basket-orders__header-title basket-orders__header-title_total">Итого</p>
+                                <p class="basket-orders__header-title basket-orders__header-title_delete">Удалить</p>
+                            </div>
+
+                            <div class="basket-orders__content">
+                                <div class="basket-orders__content-col basket-orders__content-col_product">
+                                    <img data-src="./images/dest/products/product_1.jpg"
+                                         src="./images/dest/products/product_1.jpg"
+                                         alt=""
+                                         class="basket-orders__img lazy">
+                                    <div class="basket-orders__description">
+                                        <p class="basket-orders__name">Стейки форели</p>
+                                        <p class="basket-orders__tags">свежие, охлажденные</p>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_price">3300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_number">
+                                    <div class="site-counter site-counter_basket">
+                                        <button
+                                                class="site-counter__control site-counter__control_minus icon-minus"></button>
+                                        <input type="number"
+                                               value="1"
+                                               class="site-counter__input">
+                                        <button
+                                                class="site-counter__control site-counter__control_plus icon-plus"></button>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_total"> 3300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel">
+                                </div>
+
+                            </div>
+
+                            <div class="basket-orders__content">
+                                <div class="basket-orders__content-col basket-orders__content-col_product">
+                                    <img data-src="./images/dest/products/product_2.jpg"
+                                         src="./images/dest/products/product_2.jpg"
+                                         alt=""
+                                         class="basket-orders__img lazy">
+                                    <div class="basket-orders__description">
+                                        <p class="basket-orders__name">Стейки форели</p>
+                                        <p class="basket-orders__tags">свежие, охлажденные</p>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_price">2300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_number">
+                                    <div class="site-counter site-counter_basket">
+                                        <button
+                                                class="site-counter__control site-counter__control_minus icon-minus"></button>
+                                        <input type="number"
+                                               value="1"
+                                               class="site-counter__input">
+                                        <button
+                                                class="site-counter__control site-counter__control_plus icon-plus"></button>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_total"> 2300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel">
+                                </div>
+
+                            </div>
+
+                            <div class="basket-orders__content">
+                                <div class="basket-orders__content-col basket-orders__content-col_product">
+                                    <img data-src="./images/dest/products/product_4.jpg"
+                                         src="./images/dest/products/product_4.jpg"
+                                         alt=""
+                                         class="basket-orders__img lazy">
+                                    <div class="basket-orders__description">
+                                        <p class="basket-orders__name">Стейки форели</p>
+                                        <p class="basket-orders__tags">свежие, охлажденные</p>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_price">300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_number">
+                                    <div class="site-counter site-counter_basket">
+                                        <button
+                                                class="site-counter__control site-counter__control_minus icon-minus"></button>
+                                        <input type="number"
+                                               value="1"
+                                               class="site-counter__input">
+                                        <button
+                                                class="site-counter__control site-counter__control_plus icon-plus"></button>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_total">300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel">
+                                </div>
+
+                            </div>
+
+                            <div class="basket-orders__content">
+                                <div class="basket-orders__content-col basket-orders__content-col_product">
+                                    <img data-src="./images/dest/products/product_3.jpg"
+                                         src="./images/dest/products/product_3.jpg"
+                                         alt=""
+                                         class="basket-orders__img lazy">
+                                    <div class="basket-orders__description">
+                                        <p class="basket-orders__name">Стейки форели</p>
+                                        <p class="basket-orders__tags">свежие, охлажденные</p>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_price">1300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_number">
+                                    <div class="site-counter site-counter_basket">
+                                        <button
+                                                class="site-counter__control site-counter__control_minus icon-minus"></button>
+                                        <input type="number"
+                                               value="1"
+                                               class="site-counter__input">
+                                        <button
+                                                class="site-counter__control site-counter__control_plus icon-plus"></button>
+                                    </div>
+                                </div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_total"> 1300 Р</div>
+
+                                <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel">
+                                </div>
+
+                            </div>
                         </div>
-
-                        <div class="basket-orders__content">
-                            <div class="basket-orders__content-col basket-orders__content-col_product">
-                                <img data-src="./images/dest/products/product_1.jpg"
-                                     src="./images/dest/products/product_1.jpg"
-                                     alt=""
-                                     class="basket-orders__img lazy">
-                                <div class="basket-orders__description">
-                                    <p class="basket-orders__name">Стейки форели</p>
-                                    <p class="basket-orders__tags">свежие, охлажденные</p>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_price">3300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_number">
-                                <div id="siteCounter"
-                                     class="site-counter">
-                                    <button id="siteCounterPlus"
-                                            class="site-counter__control icon-minus"></button>
-                                    <input id="siteCounterInput"
-                                           type="number"
-                                           value="1"
-                                           class="site-counter__input">
-                                    <button id="siteCounterMinus"
-                                            class="site-counter__control icon-plus"></button>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_total"> 3300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel"></div>
-
-                        </div>
-
-                        <!-- <div class="basket-orders__content">
-                            <div class="basket-orders__content-col basket-orders__content-col_product">
-                                <img data-src="./images/dest/products/product_2.jpg"
-                                     src="./images/dest/products/product_2.jpg"
-                                     alt=""
-                                     class="basket-orders__img lazy">
-                                <div class="basket-orders__description">
-                                    <p class="basket-orders__name">Стейки форели</p>
-                                    <p class="basket-orders__tags">свежие, охлажденные</p>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_price">2300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_number">
-                                <div id="siteCounter"
-                                     class="site-counter">
-                                    <button id="siteCounterPlus"
-                                            class="site-counter__control icon-minus"></button>
-                                    <input id="siteCounterInput"
-                                           type="number"
-                                           value="1"
-                                           class="site-counter__input">
-                                    <button id="siteCounterMinus"
-                                            class="site-counter__control icon-plus"></button>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_total"> 2300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel"></div>
-
-                        </div>
-
-                        <div class="basket-orders__content">
-                            <div class="basket-orders__content-col basket-orders__content-col_product">
-                                <img data-src="./images/dest/products/product_4.jpg"
-                                     src="./images/dest/products/product_4.jpg"
-                                     alt=""
-                                     class="basket-orders__img lazy">
-                                <div class="basket-orders__description">
-                                    <p class="basket-orders__name">Стейки форели</p>
-                                    <p class="basket-orders__tags">свежие, охлажденные</p>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_price">300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_number">
-                                <div id="siteCounter"
-                                     class="site-counter">
-                                    <button id="siteCounterPlus"
-                                            class="site-counter__control icon-minus"></button>
-                                    <input id="siteCounterInput"
-                                           type="number"
-                                           value="1"
-                                           class="site-counter__input">
-                                    <button id="siteCounterMinus"
-                                            class="site-counter__control icon-plus"></button>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_total">300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel"></div>
-
-                        </div>
-
-                        <div class="basket-orders__content">
-                            <div class="basket-orders__content-col basket-orders__content-col_product">
-                                <img data-src="./images/dest/products/product_3.jpg"
-                                     src="./images/dest/products/product_3.jpg"
-                                     alt=""
-                                     class="basket-orders__img lazy">
-                                <div class="basket-orders__description">
-                                    <p class="basket-orders__name">Стейки форели</p>
-                                    <p class="basket-orders__tags">свежие, охлажденные</p>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_price">1300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_number">
-                                <div id="siteCounter"
-                                     class="site-counter">
-                                    <button id="siteCounterPlus"
-                                            class="site-counter__control icon-minus"></button>
-                                    <input id="siteCounterInput"
-                                           type="number"
-                                           value="1"
-                                           class="site-counter__input">
-                                    <button id="siteCounterMinus"
-                                            class="site-counter__control icon-plus"></button>
-                                </div>
-                            </div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_total"> 1300 Р</div>
-
-                            <div class="basket-orders__content-col basket-orders__content-col_delete icon-cancel"></div>
-
-                        </div> -->
                     </div>
 
                 </div>
@@ -429,7 +427,9 @@
                                    name="checkoutFormCity"
                                    id="checkoutFormMoscow">
                             <label class="checkout-form__header-label"
-                                   for="checkoutFormMoscow">Москва</label>
+                                   data-link="table1"
+                                   for="checkoutFormMoscow">Москва
+                            </label>
 
                             <input class="checkout-form__header-input"
                                    type="radio"
@@ -437,7 +437,9 @@
                                    name="checkoutFormCity"
                                    id="checkoutFormSPB">
                             <label class="checkout-form__header-label"
-                                   for="checkoutFormSPB">Санкт-Петербург</label>
+                                   data-link="table2"
+                                   for="checkoutFormSPB">Санкт-Петербург
+                            </label>
 
                             <input class="checkout-form__header-input"
                                    type="radio"
@@ -445,12 +447,17 @@
                                    name="checkoutFormCity"
                                    id="checkoutFormPetrozavodsk">
                             <label class="checkout-form__header-label"
-                                   for="checkoutFormPetrozavodsk">Петрозаводск</label>
+                                   data-link="table3"
+                                   for="checkoutFormPetrozavodsk">Петрозаводск
+                            </label>
                         </div>
 
-                        <div class="checkout-form__city-content">
+                        <div id="tableTabs"
+                             class="checkout-form__city-content">
 
-                            <div class="checkout-form__table">
+                            <!-- 1 Москва -->
+                            <div id="table1"
+                                 class="checkout-form__table active">
 
                                 <div class="checkout-form__header">
                                     <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
@@ -503,6 +510,126 @@
                                         <span
                                               class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
                                         <span class="checkout-form__label-text checkout-form__label-text_price">500
+                                            Р</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- 2 Санкт-Петербург -->
+                            <div id="table2"
+                                 class="checkout-form__table">
+
+                                <div class="checkout-form__header">
+                                    <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_date">Ближайшая дата
+                                        доставки</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_price">Стоимость</p>
+                                </div>
+
+                                <div class="checkout-form__body">
+                                    <input name="CheckoutFormSelectCity"
+                                           checked
+                                           id="CheckoutFormPickup"
+                                           type="radio"
+                                           class="checkout-form__body-input">
+                                    <label class="checkout-form__label"
+                                           for="CheckoutFormPickup">
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_service">Самовывоз</span>
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_date">15.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">
+                                            0 Р
+                                        </span>
+                                    </label>
+
+                                    <input name="CheckoutFormSelectCity"
+                                           id="CheckoutFormPDP"
+                                           type="radio"
+                                           class="checkout-form__body-input">
+                                    <label class="checkout-form__label"
+                                           for="CheckoutFormPDP">
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
+                                            службы DPD до подъезда</span>
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">550
+                                            Р</span>
+                                    </label>
+
+                                    <input name="CheckoutFormSelectCity"
+                                           id="CheckoutFormYandex"
+                                           type="radio"
+                                           class="checkout-form__body-input">
+                                    <label class="checkout-form__label"
+                                           for="CheckoutFormYandex">
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
+                                            Яндекс.Еда до подъезда</span>
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_date">15.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">650
+                                            Р</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- 3 Петрозаводск -->
+                            <div id="table3"
+                                 class="checkout-form__table">
+
+                                <div class="checkout-form__header">
+                                    <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_date">Ближайшая дата
+                                        доставки</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_price">Стоимость</p>
+                                </div>
+
+                                <div class="checkout-form__body">
+                                    <input name="CheckoutFormSelectCity"
+                                           checked
+                                           id="CheckoutFormPickup"
+                                           type="radio"
+                                           class="checkout-form__body-input">
+                                    <label class="checkout-form__label"
+                                           for="CheckoutFormPickup">
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_service">Самовывоз</span>
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_date">17.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">
+                                            0 Р
+                                        </span>
+                                    </label>
+
+                                    <input name="CheckoutFormSelectCity"
+                                           id="CheckoutFormPDP"
+                                           type="radio"
+                                           class="checkout-form__body-input">
+                                    <label class="checkout-form__label"
+                                           for="CheckoutFormPDP">
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
+                                            службы DPD до подъезда</span>
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_date">16.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">650
+                                            Р</span>
+                                    </label>
+
+                                    <input name="CheckoutFormSelectCity"
+                                           id="CheckoutFormYandex"
+                                           type="radio"
+                                           class="checkout-form__body-input">
+                                    <label class="checkout-form__label"
+                                           for="CheckoutFormYandex">
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
+                                            Яндекс.Еда до подъезда</span>
+                                        <span
+                                              class="checkout-form__label-text checkout-form__label-text_date">16.04.2020</span>
+                                        <span class="checkout-form__label-text checkout-form__label-text_price">750
                                             Р</span>
                                     </label>
                                 </div>
@@ -655,88 +782,88 @@
 
     <!-- Подвал -->
     <footer class="footer">
-        <div class="footer__wrapper wrapper wrapper_lg">
-            <div class="footer__content">
-                <ul class="footer__contact-list contact-list">
-                    <li class="contact-list__item">
-                        <a href="tel:89214504515"
-                           class="contact-list__link contact-list__link_phone">8 921 450-45-15</a>
-                    </li>
-                    <li class="contact-list__item">
-                        <a href="mailto:fish@aldoga.pro"
-                           class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
-                    </li>
-                    <li class="contact-list__item">
-                        <a href="#"
-                           class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
-                            пос. Тиурула</a>
-                    </li>
-                    <li class="contact-list__item contact-list__item_socials">
-                        <a href="#"
-                           class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
-                        <a href="#"
-                           class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
-                    </li>
-                </ul>
-                <div class="site-logo-large footer__logo">
-                    <a href="index.html"
-                       class="site-logo-large__link">
-                        <img src="./images/dest/logo-lg.png"
-                             alt="Форелевое хозяйство Алдога"
-                             class="site-logo-large__img">
-                    </a>
-                </div>
-                <ul class="footer__navigation-list navigation-list">
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Каталог
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Доставка и оплата
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Новости
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Купить оптом
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Рецепты
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Отзывы
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">О компании
-                        </a>
-                    </li>
-                    <li class="navigation-list__item">
-                        <a href="#"
-                           class="navigation-list__link">Контакты
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__copyright">
-                <p class="footer__copyright-text">© 2020 Все права защищены</p>
-                <img src="./images/dest/static/payment.jpg"
-                     alt="Оплата: visa, яндекс деньги, master card, mebmoney"
-                     class="footer__copyright-img">
-            </div>
-        </div>
-    </footer>
+		<div class="footer__wrapper wrapper wrapper_lg">
+			<div class="footer__content">
+				<ul class="footer__contact-list contact-list">
+					<li class="contact-list__item">
+						<a href="tel:89214504515"
+						   class="contact-list__link contact-list__link_phone">8 921 450-45-15</a>
+					</li>
+					<li class="contact-list__item">
+						<a href="mailto:fish@aldoga.pro"
+						   class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
+					</li>
+					<li class="contact-list__item">
+						<a href="#"
+						   class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
+							пос. Тиурула</a>
+					</li>
+					<li class="contact-list__item contact-list__item_socials">
+						<a href="#"
+						   class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
+						<a href="#"
+						   class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
+					</li>
+				</ul>
+				<div class="site-logo-large footer__logo">
+					<a href="index.html"
+					   class="site-logo-large__link">
+						<img src="./images/dest/logo-lg.png"
+							 alt="Форелевое хозяйство Алдога"
+							 class="site-logo-large__img">
+					</a>
+				</div>
+				<ul class="footer__navigation-list navigation-list">
+					<li class="navigation-list__item">
+						<a href="catalog.html"
+						   class="navigation-list__link">Каталог
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">Доставка и оплата
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">Новости
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">Купить оптом
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">Рецепты
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">Отзывы
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">О компании
+						</a>
+					</li>
+					<li class="navigation-list__item">
+						<a href="#"
+						   class="navigation-list__link">Контакты
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__copyright">
+				<p class="footer__copyright-text">© 2020 Все права защищены</p>
+				<img src="./images/dest/static/payment.jpg"
+					 alt="Оплата: visa, яндекс деньги, master card, mebmoney"
+					 class="footer__copyright-img">
+			</div>
+		</div>
+	</footer>
 
     <script src="js/app.min.js"></script>
 

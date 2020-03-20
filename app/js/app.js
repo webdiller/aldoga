@@ -198,6 +198,42 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}());
 
+	// Оформление заказа - (Табы с выбором города и формой обратной связи)
+	const checkoutFormModule = (function () {
+		$('input[name=checkoutFormCity]').change(function () {
+			let x = $(this).val();
+			if (x === 'moscow') {
+				$('.checkout-form__table').removeClass('active');
+				$('#table1').addClass('active');
+			} else if (x === 'spb') {
+				$('.checkout-form__table').removeClass('active');
+				$('#table2').addClass('active');
+			} else if (x === 'petrozavodsk') {
+				$('.checkout-form__table').removeClass('active');
+				$('#table3').addClass('active');
+			}
+		})
+		// $('input[name=checkoutFormCity]:checked').val();
+	}());
+
+	// Счетчик для товара
+	const siteCounterModule = (function () {
+		$('.site-counter__control_minus').click(function () {
+			let x = $(this).next('.site-counter__input').val();
+			$(this).next('.site-counter__input').val(parseInt(x) - 1);
+			$(this).next('.site-counter__input').attr('value', parseInt(x) - 1);
+			if (x <= 0) {
+				$(this).next('.site-counter__input').val(0);
+				$(this).next('.site-counter__input').attr('value', 0)
+			}
+		});
+		$('.site-counter__control_plus').click(function () {
+			let x = $(this).prev('.site-counter__input').val();
+			$(this).prev('.site-counter__input').val(parseInt(x) + 1);
+			$(this).prev('.site-counter__input').attr('value', parseInt(x) + 1);
+		});
+	}());
+
 	if ($(window).width() <= 991) {
 		const popularGoodsSliderModule = (function () {
 			$('#popularGoodsSlider').owlCarousel({
