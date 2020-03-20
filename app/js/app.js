@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 	const promoBanner = (function () {
+
 		$('#promoBannerForm input').click(function () {
 			var promoInput = document.querySelector("#promoBannerForm input");
 			/* Select the text field */
@@ -12,17 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
 				$('#promoBannerForm label').text('Скопировать Промокод');
 			}, 1000);
 		});
+
 		$('#promoBannerFormSmall input').click(function () {
-			var promoInput = document.querySelector("#promoBannerForm input");
+			var promoInput2 = document.querySelector("#promoBannerFormSmall input");
 			/* Select the text field */
-			promoInput.select();
+			promoInput2.select();
 			/* Copy the text inside the text field */
 			document.execCommand("copy");
-			$('#promoBannerForm label').text('СКОПИРОВАННО');
+			$('#promoBannerFormSmall label').text('СКОПИРОВАННО');
 			setTimeout(() => {
-				$('#promoBannerForm label').text('Скопировать Промокод');
+				$('#promoBannerFormSmall label').text('Скопировать Промокод');
 			}, 1000);
 		});
+
 	}());
 
 	const hamburgerModule = (function () {
