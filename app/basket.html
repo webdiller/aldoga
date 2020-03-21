@@ -21,221 +21,222 @@
 <body>
 
     <header class="header header_border">
-		<div class="header__wrapper wrapper wrapper_lg">
+        <div class="header__wrapper wrapper wrapper_lg">
 
-			<h2 class="header__logo site-logo">
-				<a href="index.html"
-				   class="site-logo__link">
-					<img src="./images/dest/logo.png"
-						 alt="Форелевое хозяйство Алдога"
-						 class="site-logo__img">
-				</a>
-			</h2>
+            <h2 class="header__logo site-logo">
+                <a href="index.html"
+                   class="site-logo__link">
+                    <img src="./images/dest/logo.png"
+                         alt="Форелевое хозяйство Алдога"
+                         class="site-logo__img">
+                </a>
+            </h2>
 
-			<ul class="header__list header-list">
-				<li class="header-list__item">
-					<a href="catalog.html"
-					   class="header-list__link header-list__link_active">Наша продукция</a>
-				</li>
-				<li class="header-list__item">
-					<a href="#"
-					   class="header-list__link">О Хозяйстве</a>
-				</li>
-				<li class="header-list__item">
-					<a href="#"
-					   class="header-list__link">Доставка и оплата</a>
-				</li>
-				<li class="header-list__item">
-					<a href="#"
-					   class="header-list__link">Рецепты</a>
-				</li>
-				<li class="header-list__item">
-					<a href="#"
-					   class="header-list__link">Отзывы</a>
-				</li>
-				<li class="header-list__item">
-					<a href="#"
-					   class="header-list__link">Контакты</a>
-				</li>
-			</ul>
+            <ul class="header__list header-list">
+                <li class="header-list__item">
+                    <a href="catalog.html"
+                       class="header-list__link header-list__link_active">Наша продукция</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="#"
+                       class="header-list__link">О Хозяйстве</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="#"
+                       class="header-list__link">Доставка и оплата</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="#"
+                       class="header-list__link">Рецепты</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="#"
+                       class="header-list__link">Отзывы</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="#"
+                       class="header-list__link">Контакты</a>
+                </li>
+            </ul>
 
-			<div class="header__contact-bar contact-bar">
-				<div class="contact-bar__wrapper">
-					<a href="tel:89214504515"
-					   class="contact-bar__link">8 921 450 45 15</a>
-					<a href="#"
-					   class="contact-bar__interactive-link">Задать вопрос</a>
-				</div>
-			</div>
+            <div class="header__contact-bar contact-bar">
+                <div class="contact-bar__wrapper">
+                    <a href="tel:89214504515"
+                       class="contact-bar__link">8 921 450 45 15</a>
+                    <a href="#"
+                       class="contact-bar__interactive-link">Задать вопрос</a>
+                </div>
+            </div>
 
-			<div id="basket"
-				 class="header__basket basket">
-				<div class="basket__wrapper">
-					<a href="#"
-					   class="basket__icon icon-shop">
-						<span class="basket__count">10</span>
-					</a>
-				</div>
-			</div>
+            <div id="basket"
+                 class="header__basket basket">
+                <div class="basket__wrapper">
+                    <a href="#"
+                       class="basket__icon icon-shop">
+                        <span class="basket__count">10</span>
+                    </a>
+                </div>
+            </div>
 
-			<div class="header__status status">
-				<button id="statusBtn"
-						class="status__wrapper">
-					<span class="status__text">Статус заказа</span>
-				</button>
-				<!-- Выслать код -->
-				<div id="statusOverlay1"
-					 class="status__overlay">
-					<p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
-					<p class="status__descr site-text_small">Введите свой номер телефона и мы вам вышлем на него смс с
-						кодом для входа
-					</p>
-					<div class="status__phone">
-						<input id="statusInputGetCode"
-							   type="number"
-							   placeholder="Ваш телефон"
-							   class="status__phone-input">
-						<span class="status__phone-icon icon-phone"></span>
-					</div>
-					<button id="statusBtnGetCode"
-							class="status__btn site-btn">Выслать код</button>
-				</div>
+            <div class="header__status status">
+                <button id="statusBtn"
+                        class="status__wrapper">
+                    <span class="status__text">Статус заказа</span>
+                </button>
+                <!-- Выслать код -->
+                <div id="statusOverlay1"
+                     class="status__overlay">
+                    <p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
+                    <p class="status__descr site-text_small">Введите свой номер телефона и мы вам вышлем на него смс с
+                        кодом для входа
+                    </p>
+                    <div class="status__phone">
+                        <input id="statusInputGetCode"
+                               type="number"
+                               placeholder="Ваш телефон"
+                               class="status__phone-input">
+                        <span class="status__phone-icon icon-phone"></span>
+                    </div>
+                    <button id="statusBtnGetCode"
+                            class="status__btn site-btn">Выслать код</button>
+                </div>
 
-				<!-- Подтвердить код -->
-				<div id="statusOverlay2"
-					 class="status__overlay">
-					<p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
-					<p class="status__descr site-text_small">
-						Код подтверждения выслан на номер <span id="statusOverlayPhoneChecker">+7 800 555 35 35</span>
-						.Введите его в поле ниже:
-					</p>
-					<div class="status__phone">
-						<input type="number"
-							   placeholder="Код подтверждения"
-							   class="status__phone-input">
-					</div>
-					<button class="status__btn site-btn">Войти</button>
-				</div>
-			</div>
+                <!-- Подтвердить код -->
+                <div id="statusOverlay2"
+                     class="status__overlay">
+                    <p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
+                    <p class="status__descr site-text_small">
+                        Код подтверждения выслан на номер <span id="statusOverlayPhoneChecker">+7 800 555 35 35</span>
+                        .Введите его в поле ниже:
+                    </p>
+                    <div class="status__phone">
+                        <input type="number"
+                               placeholder="Код подтверждения"
+                               class="status__phone-input">
+                    </div>
+                    <button class="status__btn site-btn">Войти</button>
+                </div>
+            </div>
 
-			<button id="hamburger"
-					class="hamburger header__hamburger hamburger--vortex"
-					type="button">
-				<span class="hamburger-box hamburger__box">
-					<span class="hamburger-inner hamburger__inner"></span>
-				</span>
-			</button>
+            <button id="hamburger"
+                    class="hamburger header__hamburger hamburger--vortex"
+                    type="button">
+                <span class="hamburger-box hamburger__box">
+                    <span class="hamburger-inner hamburger__inner"></span>
+                </span>
+            </button>
 
-			<div class="hamburger-overlay"
-				 id="hamburgerOverlay">
-				<ul class="hamburger-overlay__list">
-					<li class="hamburger-overlay__list-item">
-						<a href="catalog.html"
-						   class="hamburger-overlay__list-link">
-							Наша продукция
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							О Хозяйстве
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							Доставка и оплата
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							Рецепты
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							Отзывы
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							Контакты
-						</a>
-					</li>
-				</ul>
-				<div class="contact-bar hamburger-overlay__contact-bar">
-					<div class="contact-bar__wrapper">
-						<a href="tel:89214504515"
-						   class="contact-bar__link">8 921 450 45 15</a>
-						<a href="#"
-						   class="contact-bar__interactive-link">Задать вопрос</a>
-					</div>
-				</div>
-			</div>
+            <div class="hamburger-overlay"
+                 id="hamburgerOverlay">
+                <ul class="hamburger-overlay__list">
+                    <li class="hamburger-overlay__list-item">
+                        <a href="catalog.html"
+                           class="hamburger-overlay__list-link">
+                            Наша продукция
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            О Хозяйстве
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            Рецепты
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="contact-bar hamburger-overlay__contact-bar">
+                    <div class="contact-bar__wrapper">
+                        <a href="tel:89214504515"
+                           class="contact-bar__link">8 921 450 45 15</a>
+                        <a href="#"
+                           class="contact-bar__interactive-link">Задать вопрос</a>
+                    </div>
+                </div>
+            </div>
 
-			<div class="basket-overlay"
-				 id="basketOverlay">
-				<ul class="basket-overlay__list">
-					<li class="basket-overlay__item">
-						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
-						   class="basket-overlay__item-link">
-							<img data-src="./images/dest/products/product_1.jpg"
-								 src="./images/dest/products/product_1-min.jpg"
-								 alt=""
-								 class="basket-overlay__item-img lazy">
-							<div class="basket-overlay__item-content">
-								<p class="basket-overlay__item-content-name">Стейки форели</p>
-								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-								<span class="basket-overlay__item-content-price">5500 Р</span>
-							</div>
-						</a>
-					</li>
-					<li class="basket-overlay__item">
-						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
-						   class="basket-overlay__item-link">
-							<img data-src="./images/dest/products/product_2.jpg"
-								 src="./images/dest/products/product_2-min.jpg"
-								 alt=""
-								 class="basket-overlay__item-img lazy">
-							<div class="basket-overlay__item-content">
-								<p class="basket-overlay__item-content-name">Стейки форели</p>
-								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-								<span class="basket-overlay__item-content-price">5500 Р</span>
-							</div>
-						</a>
-					</li>
-					<li class="basket-overlay__item">
-						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
-						   class="basket-overlay__item-link">
-							<img data-src="./images/dest/products/product_3.jpg"
-								 src="./images/dest/products/product_3-min.jpg"
-								 alt=""
-								 class="basket-overlay__item-img lazy">
-							<div class="basket-overlay__item-content">
-								<p class="basket-overlay__item-content-name">Стейки форели</p>
-								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-								<span class="basket-overlay__item-content-price">5500 Р</span>
-							</div>
-						</a>
-					</li>
-				</ul>
-				<div class="basket-overlay__total-price">
-					<span class="basket-overlay__total-price-title">Итого:</span>
-					<span class="basket-overlay__total-price-count">16 500 Р</span>
-				</div>
-				<div class="basket-overlay__btn-wrapper">
-					<a href="basket.html" class="site-btn basket-overlay__btn">Оформить заказ</a>
-				</div>
-			</div>
+            <div class="basket-overlay"
+                 id="basketOverlay">
+                <ul class="basket-overlay__list">
+                    <li class="basket-overlay__item">
+                        <button class="basket-overlay__item-btn icon-cancel"></button>
+                        <a href="#"
+                           class="basket-overlay__item-link">
+                            <img data-src="./images/dest/products/product_1.jpg"
+                                 src="./images/dest/products/product_1-min.jpg"
+                                 alt=""
+                                 class="basket-overlay__item-img lazy">
+                            <div class="basket-overlay__item-content">
+                                <p class="basket-overlay__item-content-name">Стейки форели</p>
+                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+                                <span class="basket-overlay__item-content-price">5500 Р</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="basket-overlay__item">
+                        <button class="basket-overlay__item-btn icon-cancel"></button>
+                        <a href="#"
+                           class="basket-overlay__item-link">
+                            <img data-src="./images/dest/products/product_2.jpg"
+                                 src="./images/dest/products/product_2-min.jpg"
+                                 alt=""
+                                 class="basket-overlay__item-img lazy">
+                            <div class="basket-overlay__item-content">
+                                <p class="basket-overlay__item-content-name">Стейки форели</p>
+                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+                                <span class="basket-overlay__item-content-price">5500 Р</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="basket-overlay__item">
+                        <button class="basket-overlay__item-btn icon-cancel"></button>
+                        <a href="#"
+                           class="basket-overlay__item-link">
+                            <img data-src="./images/dest/products/product_3.jpg"
+                                 src="./images/dest/products/product_3-min.jpg"
+                                 alt=""
+                                 class="basket-overlay__item-img lazy">
+                            <div class="basket-overlay__item-content">
+                                <p class="basket-overlay__item-content-name">Стейки форели</p>
+                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+                                <span class="basket-overlay__item-content-price">5500 Р</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="basket-overlay__total-price">
+                    <span class="basket-overlay__total-price-title">Итого:</span>
+                    <span class="basket-overlay__total-price-count">16 500 Р</span>
+                </div>
+                <div class="basket-overlay__btn-wrapper">
+                    <a href="basket.html"
+                       class="site-btn basket-overlay__btn">Оформить заказ</a>
+                </div>
+            </div>
 
-		</div>
-	</header>
+        </div>
+    </header>
 
     <main class="main">
         <div class="main__wrapper">
@@ -244,11 +245,11 @@
             <div class="breadcrumb">
                 <ul class="breadcrumb__list wrapper">
                     <li class="breadcrumb__item">
-                        <a href="#"
+                        <a href="index.html"
                            class="breadcrumb__link">Главная</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a href="#"
+                        <a href="basket.html"
                            class="breadcrumb__link">Корзина</a>
                     </li>
                 </ul>
@@ -419,7 +420,8 @@
 
                     <div class="checkout-form checkout__form">
 
-                        <div class="checkout-form__cities">
+                        <div id="checkoutFormCities"
+                             class="checkout-form__cities">
                             <input class="checkout-form__header-input"
                                    checked
                                    type="radio"
@@ -461,175 +463,69 @@
 
                                 <div class="checkout-form__header">
                                     <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
-                                    <p class="checkout-form__header-text checkout-form__header-text_date">Ближайшая дата
-                                        доставки</p>
+                                    <p class="checkout-form__header-text checkout-form__header-text_date">
+                                        <span class="checkout-form__header-text_md">Дата</span>
+                                        <span class="checkout-form__header-text_lg">
+                                            Ближайшая дата доставки
+                                        </span>
+                                    </p>
                                     <p class="checkout-form__header-text checkout-form__header-text_price">Стоимость</p>
                                 </div>
 
                                 <div class="checkout-form__body">
+
                                     <input name="CheckoutFormSelectCity"
                                            checked
-                                           id="CheckoutFormPickup"
+                                           id="checkoutFormPickup"
                                            type="radio"
                                            class="checkout-form__body-input">
+
+                                    <!-- 1 MOSCOW -->
                                     <label class="checkout-form__label"
-                                           for="CheckoutFormPickup">
+                                           for="checkoutFormPickup">
                                         <span
                                               class="checkout-form__label-text checkout-form__label-text_service">Самовывоз</span>
-                                        <span
+                                        <span id="checkouPickupDate"
                                               class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">
+                                        <span id="checkouPickupPrice"
+                                              class="checkout-form__label-text checkout-form__label-text_price">
                                             0 Р
                                         </span>
                                     </label>
 
                                     <input name="CheckoutFormSelectCity"
-                                           id="CheckoutFormPDP"
+                                           id="checkoutFormPDP"
                                            type="radio"
                                            class="checkout-form__body-input">
+
+                                    <!-- 2 DPD -->
                                     <label class="checkout-form__label"
-                                           for="CheckoutFormPDP">
+                                           for="checkoutFormPDP">
                                         <span
                                               class="checkout-form__label-text checkout-form__label-text_service">Курьером
                                             службы DPD до подъезда</span>
-                                        <span
+                                        <span id="checkouDateDPD"
                                               class="checkout-form__label-text checkout-form__label-text_date">13.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">450
+                                        <span id="checkouPriceDPD"
+                                              class="checkout-form__label-text checkout-form__label-text_price">450
                                             Р</span>
                                     </label>
 
                                     <input name="CheckoutFormSelectCity"
-                                           id="CheckoutFormYandex"
+                                           id="checkoutFormYandex"
                                            type="radio"
                                            class="checkout-form__body-input">
+
+                                    <!-- 3 Yandex -->
                                     <label class="checkout-form__label"
-                                           for="CheckoutFormYandex">
+                                           for="checkoutFormYandex">
                                         <span
                                               class="checkout-form__label-text checkout-form__label-text_service">Курьером
                                             Яндекс.Еда до подъезда</span>
-                                        <span
+                                        <span id="checkouDateYandex"
                                               class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">500
-                                            Р</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- 2 Санкт-Петербург -->
-                            <div id="table2"
-                                 class="checkout-form__table">
-
-                                <div class="checkout-form__header">
-                                    <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
-                                    <p class="checkout-form__header-text checkout-form__header-text_date">Ближайшая дата
-                                        доставки</p>
-                                    <p class="checkout-form__header-text checkout-form__header-text_price">Стоимость</p>
-                                </div>
-
-                                <div class="checkout-form__body">
-                                    <input name="CheckoutFormSelectCity"
-                                           checked
-                                           id="CheckoutFormPickup"
-                                           type="radio"
-                                           class="checkout-form__body-input">
-                                    <label class="checkout-form__label"
-                                           for="CheckoutFormPickup">
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_service">Самовывоз</span>
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_date">15.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">
-                                            0 Р
-                                        </span>
-                                    </label>
-
-                                    <input name="CheckoutFormSelectCity"
-                                           id="CheckoutFormPDP"
-                                           type="radio"
-                                           class="checkout-form__body-input">
-                                    <label class="checkout-form__label"
-                                           for="CheckoutFormPDP">
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
-                                            службы DPD до подъезда</span>
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_date">14.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">550
-                                            Р</span>
-                                    </label>
-
-                                    <input name="CheckoutFormSelectCity"
-                                           id="CheckoutFormYandex"
-                                           type="radio"
-                                           class="checkout-form__body-input">
-                                    <label class="checkout-form__label"
-                                           for="CheckoutFormYandex">
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
-                                            Яндекс.Еда до подъезда</span>
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_date">15.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">650
-                                            Р</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- 3 Петрозаводск -->
-                            <div id="table3"
-                                 class="checkout-form__table">
-
-                                <div class="checkout-form__header">
-                                    <p class="checkout-form__header-text checkout-form__header-text_service">Служба</p>
-                                    <p class="checkout-form__header-text checkout-form__header-text_date">Ближайшая дата
-                                        доставки</p>
-                                    <p class="checkout-form__header-text checkout-form__header-text_price">Стоимость</p>
-                                </div>
-
-                                <div class="checkout-form__body">
-                                    <input name="CheckoutFormSelectCity"
-                                           checked
-                                           id="CheckoutFormPickup"
-                                           type="radio"
-                                           class="checkout-form__body-input">
-                                    <label class="checkout-form__label"
-                                           for="CheckoutFormPickup">
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_service">Самовывоз</span>
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_date">17.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">
-                                            0 Р
-                                        </span>
-                                    </label>
-
-                                    <input name="CheckoutFormSelectCity"
-                                           id="CheckoutFormPDP"
-                                           type="radio"
-                                           class="checkout-form__body-input">
-                                    <label class="checkout-form__label"
-                                           for="CheckoutFormPDP">
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
-                                            службы DPD до подъезда</span>
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_date">16.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">650
-                                            Р</span>
-                                    </label>
-
-                                    <input name="CheckoutFormSelectCity"
-                                           id="CheckoutFormYandex"
-                                           type="radio"
-                                           class="checkout-form__body-input">
-                                    <label class="checkout-form__label"
-                                           for="CheckoutFormYandex">
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_service">Курьером
-                                            Яндекс.Еда до подъезда</span>
-                                        <span
-                                              class="checkout-form__label-text checkout-form__label-text_date">16.04.2020</span>
-                                        <span class="checkout-form__label-text checkout-form__label-text_price">750
+                                        <span id="checkouPriceYandex"
+                                              class="checkout-form__label-text checkout-form__label-text_price">500
                                             Р</span>
                                     </label>
                                 </div>
@@ -714,7 +610,7 @@
                     </div>
 
                     <div class="checkout__payment payment">
-                        <div class="payment__group">
+                        <div id="promoBasket" class="payment__group">
                             <input placeholder="Есть промокод?"
                                    type="text"
                                    class="payment__input">
@@ -753,117 +649,141 @@
 
             <!-- Баннеры в подвале -->
             <div class="promo">
-                <div class="promo__wrapper wrapper wrapper_lg">
-                    <div class="promo__item promo__item_first">
-                        <div class="promo__item-content">
-                            <p class="promo__item-text">Получите скидку <strong
-                                        class="promo__item-text promo__item-text_strong">10%</strong></p>
-                            <p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
-                        </div>
-                    </div>
-                    <div class="promo__item promo__item_second">
-                        <form id="promoBannerForm"
-                              class="promo__item-form-group">
-                            <input readonly
-                                   id="promoBannerFormPromocode"
-                                   value="PROMO1ALDOGA"
-                                   placeholder="PROMO1ALDOGA"
-                                   type="text"
-                                   class="promo__item-input">
-                            <label for="promoBannerFormPromocode"
-                                   class="promo__item-label">скопировать промокод
-                            </label>
-                        </form>
-                    </div>
-                </div>
-            </div>
+				<div class="promo__wrapper wrapper wrapper_lg">
+
+					<div class="promo__item promo__item_sm">
+						<div class="promo__item-content">
+							<p class="promo__item-text">Получите скидку <strong
+										class="promo__item-text promo__item-text_strong">10%</strong>
+							</p>
+							<p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
+						</div>
+
+						<form id="promoBannerForm"
+							  class="promo__item-form-group">
+							<input readonly
+								   id="promoBannerFormPromocode"
+								   value="PROMO1ALDOGA"
+								   placeholder="PROMO1ALDOGA"
+								   type="text"
+								   class="promo__item-input">
+							<label for="promoBannerFormPromocode"
+								   class="promo__item-label">скопировать промокод
+							</label>
+						</form>
+					</div>
+
+					<div class="promo__item promo__item_first">
+						<div class="promo__item-content">
+							<p class="promo__item-text">Получите скидку <strong
+										class="promo__item-text promo__item-text_strong">10%</strong></p>
+							<p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
+						</div>
+					</div>
+
+					<div class="promo__item promo__item_second">
+						<form id="promoBannerFormSmall"
+							  class="promo__item-form-group">
+							<input readonly
+								   id="promoBannerFormPromocodeSmall"
+								   value="PROMO1ALDOGA"
+								   placeholder="PROMO1ALDOGA"
+								   type="text"
+								   class="promo__item-input">
+							<label for="promoBannerFormPromocodeSmall"
+								   class="promo__item-label">скопировать промокод
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
         </div>
     </main>
 
     <!-- Подвал -->
     <footer class="footer">
-		<div class="footer__wrapper wrapper wrapper_lg">
-			<div class="footer__content">
-				<ul class="footer__contact-list contact-list">
-					<li class="contact-list__item">
-						<a href="tel:89214504515"
-						   class="contact-list__link contact-list__link_phone">8 921 450-45-15</a>
-					</li>
-					<li class="contact-list__item">
-						<a href="mailto:fish@aldoga.pro"
-						   class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
-					</li>
-					<li class="contact-list__item">
-						<a href="#"
-						   class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
-							пос. Тиурула</a>
-					</li>
-					<li class="contact-list__item contact-list__item_socials">
-						<a href="#"
-						   class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
-						<a href="#"
-						   class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
-					</li>
-				</ul>
-				<div class="site-logo-large footer__logo">
-					<a href="index.html"
-					   class="site-logo-large__link">
-						<img src="./images/dest/logo-lg.png"
-							 alt="Форелевое хозяйство Алдога"
-							 class="site-logo-large__img">
-					</a>
-				</div>
-				<ul class="footer__navigation-list navigation-list">
-					<li class="navigation-list__item">
-						<a href="catalog.html"
-						   class="navigation-list__link">Каталог
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Доставка и оплата
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Новости
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Купить оптом
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Рецепты
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Отзывы
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">О компании
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Контакты
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__copyright">
-				<p class="footer__copyright-text">© 2020 Все права защищены</p>
-				<img src="./images/dest/static/payment.jpg"
-					 alt="Оплата: visa, яндекс деньги, master card, mebmoney"
-					 class="footer__copyright-img">
-			</div>
-		</div>
-	</footer>
+        <div class="footer__wrapper wrapper wrapper_lg">
+            <div class="footer__content">
+                <ul class="footer__contact-list contact-list">
+                    <li class="contact-list__item">
+                        <a href="tel:89214504515"
+                           class="contact-list__link contact-list__link_phone">8 921 450-45-15</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a href="mailto:fish@aldoga.pro"
+                           class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a href="#"
+                           class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
+                            пос. Тиурула</a>
+                    </li>
+                    <li class="contact-list__item contact-list__item_socials">
+                        <a href="#"
+                           class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
+                        <a href="#"
+                           class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
+                    </li>
+                </ul>
+                <div class="site-logo-large footer__logo">
+                    <a href="index.html"
+                       class="site-logo-large__link">
+                        <img src="./images/dest/logo-lg.png"
+                             alt="Форелевое хозяйство Алдога"
+                             class="site-logo-large__img">
+                    </a>
+                </div>
+                <ul class="footer__navigation-list navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="catalog.html"
+                           class="navigation-list__link">Каталог
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Новости
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Купить оптом
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Рецепты
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Отзывы
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">О компании
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">© 2020 Все права защищены</p>
+                <img src="./images/dest/static/payment.jpg"
+                     alt="Оплата: visa, яндекс деньги, master card, mebmoney"
+                     class="footer__copyright-img">
+            </div>
+        </div>
+    </footer>
 
     <script src="js/app.min.js"></script>
 

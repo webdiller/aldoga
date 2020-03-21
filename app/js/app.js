@@ -1,5 +1,63 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+	// Данные для доставки (таблица с табами на страницах: index.html и basket.html)
+	const deliveryObj = [
+		{
+			"Moscow": {
+				"pickup": {
+					"date": "14.04.2020",
+					"price": "0 Р",
+				},
+				"DPD": {
+					"date": "13.04.2020",
+					"price": "450 Р",
+				},
+				"Yandex": {
+					"date": "14.04.2020",
+					"price": "500 Р",
+				},
+			},
+			"SPB": {
+				"pickup": {
+					"date": "15.04.2020",
+					"price": "0 Р",
+				},
+				"DPD": {
+					"date": "16.04.2020",
+					"price": "650 Р",
+				},
+				"Yandex": {
+					"date": "17.04.2020",
+					"price": "700 Р",
+				},
+			},
+			"Petrozavodsk": {
+				"pickup": {
+					"date": "17.04.2020",
+					"price": "0 Р",
+				},
+				"DPD": {
+					"date": "17.04.2020",
+					"price": "750 Р",
+				},
+				"Yandex": {
+					"date": "17.04.2020",
+					"price": "800 Р",
+				},
+			},
+		}
+	];
+
+	// Действующие промокоды
+	const promocodesArr = [
+		'PROMO1ALDOGA',
+		'PROMO2ALDOGA',
+		'PROMO31ALDOGA',
+		'PROMO4ALDOGA',
+		'PROMO5ALDOGA',
+	];
+
+	// копирование промокода в футере
 	const promoBanner = (function () {
 
 		$('#promoBannerForm input').click(function () {
@@ -26,6 +84,23 @@ document.addEventListener("DOMContentLoaded", function () {
 			}, 1000);
 		});
 
+	}());
+
+	// применение промокода на странице basket.html
+	const promoBasketModule = (function () {
+		$('#promoBasket button').click(function () {
+			for (const i of promocodesArr) {
+				if ($('#promoBasket input').val() === i) {
+					$('#promoBasket input').val("");
+					$('#promoBasket input').attr("placeholder", "Промокод применен");
+					break;
+				} else {
+					$('#promoBasket input').val("");
+					$('#promoBasket input').attr("placeholder", "Несуществующий промокод");
+					break;
+				}
+			}
+		})
 	}());
 
 	const hamburgerModule = (function () {
@@ -102,54 +177,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}());
 
+	// Таблица с доставкой по городам на главной
 	const deliveryModule = (function () {
-		const deliveryObj = [
-			{
-				"Moscow": {
-					"pickup": {
-						"date": "14.04.2020",
-						"price": "0 Р",
-					},
-					"DPD": {
-						"date": "13.04.2020",
-						"price": "450 Р",
-					},
-					"Yandex": {
-						"date": "14.04.2020",
-						"price": "500 Р",
-					},
-				},
-				"SPB": {
-					"pickup": {
-						"date": "15.04.2020",
-						"price": "0 Р",
-					},
-					"DPD": {
-						"date": "16.04.2020",
-						"price": "650 Р",
-					},
-					"Yandex": {
-						"date": "17.04.2020",
-						"price": "700 Р",
-					},
-				},
-				"Petrozavodsk": {
-					"pickup": {
-						"date": "17.04.2020",
-						"price": "0 Р",
-					},
-					"DPD": {
-						"date": "17.04.2020",
-						"price": "750 Р",
-					},
-					"Yandex": {
-						"date": "17.04.2020",
-						"price": "800 Р",
-					},
-				},
-			}
-		];
-
 		$('#deliveryTabs input').click(function () {
 			let x = $(this).val();
 			if (x === 'moscow') {
@@ -176,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 
+
 		$('#deliverySlider').owlCarousel({
 			loop: true,
 			margin: 0,
@@ -186,6 +216,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	}());
 
+	// Оформление заказа - (Табы с выбором города и формой обратной связи)
+	const checkoutFormModule = (function () {
+		$('#checkoutFormCities input').click(function () {
+			let x = $(this).val();
+			if (x === 'moscow') {
+				$('#checkouPickupDate').text(deliveryObj[0].Moscow.pickup.date);
+				$('#checkouPickupPrice').text(deliveryObj[0].Moscow.pickup.price);
+
+				$('#checkouDateDPD').text(deliveryObj[0].Moscow.DPD.date);
+				$('#checkouPriceDPD').text(deliveryObj[0].Moscow.DPD.price);
+
+				$('#checkouDateYandex').text(deliveryObj[0].Moscow.Yandex.date);
+				$('#checkouPriceYandex').text(deliveryObj[0].Moscow.Yandex.price);
+
+			} else if (x === 'spb') {
+				$('#checkouPickupDate').text(deliveryObj[0].SPB.pickup.date);
+				$('#checkouPickupPrice').text(deliveryObj[0].SPB.pickup.price);
+
+				$('#checkouDateDPD').text(deliveryObj[0].SPB.DPD.date);
+				$('#checkouPriceDPD').text(deliveryObj[0].SPB.DPD.price);
+
+				$('#checkouDateYandex').text(deliveryObj[0].SPB.Yandex.date);
+				$('#checkouPriceYandex').text(deliveryObj[0].SPB.Yandex.price);
+
+			} else if (x === 'petrozavodsk') {
+				$('#checkouPickupDate').text(deliveryObj[0].Petrozavodsk.pickup.date);
+				$('#checkouPickupPrice').text(deliveryObj[0].Petrozavodsk.pickup.price);
+
+				$('#checkouDateDPD').text(deliveryObj[0].Petrozavodsk.DPD.date);
+				$('#checkouPriceDPD').text(deliveryObj[0].Petrozavodsk.DPD.price);
+
+				$('#checkouDateYandex').text(deliveryObj[0].Petrozavodsk.Yandex.date);
+				$('#checkouPriceYandex').text(deliveryObj[0].Petrozavodsk.Yandex.price);
+			}
+		})
+	}());
+
+	// Ленивая загрузка изображений
 	const lazyLoadModule = (function () {
 		var lazyLoadInstance = new LazyLoad({
 			elements_selector: ".lazy"
@@ -196,24 +264,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		$("#catalogWithFilterPriceToggle").click(function () {
 			$("#catalogWithFilterPriceToggle span").toggleClass('active');
 		})
-	}());
-
-	// Оформление заказа - (Табы с выбором города и формой обратной связи)
-	const checkoutFormModule = (function () {
-		$('input[name=checkoutFormCity]').change(function () {
-			let x = $(this).val();
-			if (x === 'moscow') {
-				$('.checkout-form__table').removeClass('active');
-				$('#table1').addClass('active');
-			} else if (x === 'spb') {
-				$('.checkout-form__table').removeClass('active');
-				$('#table2').addClass('active');
-			} else if (x === 'petrozavodsk') {
-				$('.checkout-form__table').removeClass('active');
-				$('#table3').addClass('active');
-			}
-		})
-		// $('input[name=checkoutFormCity]:checked').val();
 	}());
 
 	// Счетчик для товара
@@ -233,6 +283,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			$(this).prev('.site-counter__input').attr('value', parseInt(x) + 1);
 		});
 	}());
+
+
 
 	if ($(window).width() <= 991) {
 		const popularGoodsSliderModule = (function () {

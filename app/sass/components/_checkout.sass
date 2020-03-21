@@ -1,4 +1,3 @@
-
 .payment
     &__group
         display: flex
@@ -176,6 +175,8 @@
         &_price
             flex: 1
             text-align: left
+        &_md
+            display: none
     &__body
         position: relative
         &::before
@@ -294,7 +295,6 @@
             &:not(:last-child)
                 margin-right: 20px
                 
-
 .checkout
     &__wrapper
         margin-bottom: 50px
@@ -320,6 +320,16 @@
         width: auto
 
 @media only screen and (max-width: 992px) 
+    .payment__total-title
+        font-size: 14px
+    .payment__total-description_promocode
+        font-size: 14px
+    .payment__total-description_delivery
+        font-size: 14px
+    .payment__input
+        font-size: 14px
+    .payment__btn-apply
+        font-size: 12px
     .pagination__link
         height: 28px
         width: 28px
@@ -327,18 +337,6 @@
     .pagination__link_btn
         height: 28px
         width: auto
-    .basket-orders__header-title
-        font-size: 13px
-    .basket-orders__img
-        height: 60px
-        width: 60px
-    .basket-orders__name
-        font-size: 16px
-    .basket-orders__tags
-        font-size: 13px
-        line-height: 1
-    .basket-orders__content-col
-        font-size: 14px
     .checkout-form__body::before
         display: none
     .checkout-form__table
@@ -371,11 +369,94 @@
         font-size: 13px
 
 @media only screen and (max-width: 768px) 
+    .checkout-form__header-label
+        flex-basis: auto
+        max-width: 150px
+        font-size: 13px
     .pagination__item:not(:last-child)
         margin-right: 5px
     .pagination__link_btn
         padding: 0 20px 
+    .checkout-form__city-content
+        padding: 10px
+    .checkout-form__header
+        padding: 0 10px 10px 30px
+    .checkout-form__header-text
+        font-size: 12px
+    .checkout-form__label-text
+        font-size: 12px
+    .checkout-form__label
+        padding: 10px 10px 10px 30px
+        height: 45px
+        &::before
+            left: 6px
+            width: 10px
+            height: 10px
+        &::after
+            left: 10px
+            width: 5px
+            height: 5px
+    .checkout-form__header-text_lg
+        display: none
+    .checkout-form__header-text_md
+        display: block
 
+@media only screen and (max-width: 576px) 
+    .payment__input
+        height: 35px
+    .payment__btn-apply
+        height: 35px
+        padding: 0 10px
+        font-size: 11px
+    .payment__total-title,
+    .payment__custom-label,
+    .payment__input
+        font-size: 12px
+    .checkout-form__header-label
+        flex-grow: 1
+        max-width: none
+        font-size: 11px
+    .checkout-form__header
+        padding-left: 30px
+    .checkout-form__header-text
+        font-size: 10px
+    .checkout-form__label-text
+        font-size: 10px
+    .checkout-form__header-text_service
+        flex-basis: 60%
+    .checkout-form__label-text_service
+        flex-basis: 60%
+    .checkout-form__header-text_date
+        flex-basis: 20%
+    .checkout-form__label-text_date
+        flex-basis: 20%
+    .checkout-form__label-text_service
+        padding-right: 10px
+    .checkout-form__label-text_price
+        text-align: center
+    .contact-form__input
+        height: 35px
+        font-size: 13px
+    .contact-form__icon
+        width: 35px
+        height: 35px
+    .contact-form__description-title,
+    .contact-form__description-text,
+    .contact-form__description-link
+        font-size: 12px
+    .checkout-form__city-content
+        padding-bottom: 0
+    .checkout-form__footer-title
+        margin-bottom: 10px
+    .checkout-form__footer-label
+        flex-basis: 100%
+        margin-bottom: 10px
+        font-size: 12px
+    
 @media only screen and (max-width: 480px) 
     .pagination__link
-        font-size: 12px 
+        font-size: 12px
+
+@media only screen and (max-width: 380px) 
+    .checkout-form__label-text
+        font-size: 9px
