@@ -107,15 +107,112 @@
 @media only screen and (max-width: 768px) 
     .orders__content
         flex-wrap: wrap
+        margin-bottom: 30px
+    .orders__payment
+        margin-bottom: 30px
+    // Заголовки заказов
     .orders__select-order
         order: 1
-        margin-right: 0
-        margin-top: 0
+        margin-right: 30px
+        margin-top: 15px
+    // Таблица
     .orders__basket-orders
         order: 2
         flex: auto
         margin: 0
+        .basket-orders__table
+            min-width: 300px
+            overflow-x: hidden
+        .basket-orders__description,
+        .basket-orders__header-title_product
+            padding-left: 15px
+        .basket-orders__tags
+            max-width: 105px
+            text-overflow: ellipsis
+            white-space: nowrap
+            overflow: hidden
+        .basket-orders__header-title
+            font-size: 12px
+        .basket-orders__name
+            font-size: 13px
+        .basket-orders__content-col
+            font-size: 12px
+        .basket-orders__list
+            &::-webkit-scrollbar-track
+                -webkit-box-shadow: 0
+                background-color: #fff
+            &::-webkit-scrollbar
+                width: 0
+                height: 0
+                background-color: #fff
+            &::-webkit-scrollbar-thumb
+                background-color: #fff
+    // Опции
     .orders__options
         order: 3
+        margin: 25px 0 0 0
         flex-basis: 100%
-        margin: 0
+        flex-direction: row
+        flex-wrap: wrap
+    .orders__options-item
+        flex-basis: 50%
+        margin-bottom: 0
+    .orders__options-item:not(:last-child)
+        margin-bottom: 0
+
+@media only screen and (max-width: 576px) 
+    .orders__select-order
+        min-width: 70px
+        margin-right: 15px
+        padding-right: 10px
+    .orders__select-order-title
+        font-size: 12px
+    .orders__select-order-label
+        font-size: 11px
+
+@media only screen and (max-width: 420px) 
+    .orders__basket-orders 
+        overflow-x: hidden
+        .basket-orders__list
+            overflow-x: scroll
+            &::-webkit-scrollbar-track
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+                background-color: #fafafa
+            &::-webkit-scrollbar
+                width: 6px
+                height: 5px
+                background-color: #fafafa
+            &::-webkit-scrollbar-thumb
+                background-color: #111
+        .basket-orders__table
+            min-width: 380px
+        .basket-orders__content-col
+            height: 45px
+        .basket-orders__name,
+        .basket-orders__content-col
+            font-size: 11px
+        .basket-orders__description
+    .orders__payment .payment__btn-with-check
+        max-width: 100%
+    .orders__select-order
+        max-height: 130px
+    .orders__options
+        order: 2
+        flex-basis: auto
+        flex: 1
+        margin-top: 15px
+        margin-bottom: -5px
+    .orders__basket-orders
+        flex-basis: 100%
+        order: 3
+    .orders__options-item
+        margin-right: 10px
+        flex-basis: 45%
+    .orders__options-item:not(:last-child)
+        margin-bottom: 5px
+    .orders__options-item-title
+        margin-bottom: 5px
+        font-size: 12px
+    .orders__options-item-value
+        font-size: 10px
+        margin-bottom: 5px

@@ -57,6 +57,48 @@ document.addEventListener("DOMContentLoaded", function () {
 		'PROMO5ALDOGA',
 	];
 
+	// заказы с товарами (действует на страницах: orders.html...)
+	const orders = [
+		{
+			'id': '12b92lk',
+			'satatus': 'в обработке',
+			'deliveryDate': '28.06.2020',
+			'deliveryType': 'курьером до подъезда ООО "СДЭК"',
+			'deliveryAddress': 'г. Москва, ул. Московская, д 1, кв. 186',
+			'paymentType': 'картой на сайте',
+			'goods': [
+				{
+					'name': 'Стейки форели',
+					'tags': 'свежие, охлаждённые',
+					'price': '3000 р',
+					'amount': '1',
+					'total': '3000 р',
+				},
+				{
+					'name': 'Икра красная',
+					'tags': 'свежая, солёная',
+					'price': '100 р',
+					'amount': '30',
+					'total': '3000 р',
+				},
+				{
+					'name': 'Форель охлаждённая',
+					'tags': 'тушка потрошённая, без головы',
+					'price': '500 р',
+					'amount': '10',
+					'total': '5000 р',
+				},
+				{
+					'name': 'Сыр фермерский',
+					'tags': 'сладковатый, ореховый',
+					'price': '600 р',
+					'amount': '3',
+					'total': '1800 р',
+				},
+			]
+		}
+	]
+
 	// копирование промокода в футере
 	const promoBanner = (function () {
 
