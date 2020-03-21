@@ -1,0 +1,121 @@
+.orders
+    &__wrapper
+    &__content
+        display: flex
+        align-items: flex-start
+        margin-bottom: 60px
+    &__select-order
+        display: flex
+        flex-direction: column
+        flex-basis: 11.5%
+        margin-top: 60px
+        min-width: 100px
+        padding-right: 35px
+        margin-right: 35px
+        align-self: stretch
+        overflow-y: scroll
+        max-height: 480px
+        &::-webkit-scrollbar-track
+            -webkit-box-shadow: inset 0 0 6px #e6e6e6
+            background-color: #fafafa
+        &::-webkit-scrollbar
+            width: 2px
+            height: 5px
+            background-color: #fafafa
+        &::-webkit-scrollbar-thumb
+            background-color: #111
+        &-title
+            font-size: 18px
+            color: #111111
+            line-height: 1
+            font-weight: 900
+            margin-bottom: 10px
+        &-input
+            position: absolute
+            visibility: hidden
+            opacity: 0
+            width: 0
+            height: 0
+            z-index: -1
+            &:checked
+                + label
+                    color: $orange
+        &-label
+            margin-bottom: 10px
+            transition: all .3s ease
+            cursor: pointer
+            color: #666666
+    &__options
+        display: flex
+        flex-direction: column
+        flex-basis: 19.5%
+        margin-top: 60px
+        margin-right: 60px
+        margin-bottom: -20px
+        &-item
+            &:not(:last-child)
+                margin-bottom: 20px
+            &-title
+                line-height: 1
+                font-size: 18px
+                font-weight: 900
+                margin-bottom: 15px
+            &-value
+                font-size: 16px
+                margin-bottom: 20px
+                color: #666666
+    &__basket-orders
+        flex: 1
+        .basket-orders__header-title_product
+            text-align: left
+            padding-left: 40px
+        .basket-orders__content-col_product
+            height: 100px
+        .basket-orders__description
+            padding-left: 40px
+    &__payment
+        max-width: 420px
+        margin-left: auto
+        margin-bottom: 60px
+        .payment__total
+            margin-bottom: 35px
+
+@media only screen and (max-width: 1100px) 
+    .orders__select-order
+        padding-right: 15px
+        margin-right: 15px
+        flex-basis: 5%
+    .orders__options
+        flex-basis: 13%
+        min-width: 150px
+        margin-right: 25px
+    .orders__select-order-title,
+    .orders__options-item-title,
+    .basket-orders__header-title,
+    .basket-orders__name,
+    .basket-orders__content-col
+        font-size: 14px
+    .orders__select-order-label,
+    .orders__options-item-value,
+    .basket-orders__tags 
+        font-size: 12px
+
+@media only screen and (max-width: 992px) 
+    .orders__basket-orders .basket-orders__content-col_product
+        height: 70px 
+
+@media only screen and (max-width: 768px) 
+    .orders__content
+        flex-wrap: wrap
+    .orders__select-order
+        order: 1
+        margin-right: 0
+        margin-top: 0
+    .orders__basket-orders
+        order: 2
+        flex: auto
+        margin: 0
+    .orders__options
+        order: 3
+        flex-basis: 100%
+        margin: 0
