@@ -46,6 +46,7 @@ function scripts() {
 		'app/libs/jquery/jquery-3.4.1.min.js',
 		'app/libs/lazyload/lazyload.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
+		'app/libs/sweetalert/sweetalert2.min.js',
 		'app/js/app.js' // app.js. Always at the end
 		])
 	.pipe(concat('app.min.js'))

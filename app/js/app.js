@@ -336,6 +336,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
+	// слайдер с изображениями на странице article.html
 	const mainSectionSliderModule = (function () {
 		$('#mainSectionSlider').owlCarousel({
 			loop: true,
@@ -360,6 +361,30 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	}());
+
+	// not used
+	const sweetAlertsModule = (function () {
+	}());
+
+	const mapModule = (function () {
+		let m = $('.header__wrapper').css('margin-right');
+		$('.contact-map__cart').css('margin-right', m);
+
+		if (parseInt(m) <= 20) {
+			$('.contact-map__cart').css('margin-right', '20px');
+		}
+
+	}());
+
+	$(window).resize(function () {
+		let m = $('.header__wrapper').css('margin-right');
+
+		$('.contact-map__cart').css('margin-right', m);
+
+		if (parseInt(m) <= 20) {
+			$('.contact-map__cart').css('margin-right', '20px');
+		}
+	});
 
 	if ($(window).width() <= 991) {
 		const popularGoodsSliderModule = (function () {
