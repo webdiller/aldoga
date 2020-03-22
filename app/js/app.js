@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
 					'total': '1800 р',
 				},
 			]
-		}
-	]
+		},
+	];
 
 	// копирование промокода в футере
 	const promoBanner = (function () {
@@ -145,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}());
 
+	// бургер-меню в шапке
 	const hamburgerModule = (function () {
 		$('#hamburger').click(function () {
 			$(this).toggleClass('is-active');
@@ -152,6 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
+	// статус заказа в шапке
 	const statusModule = (function () {
 		$("#statusBtn").click(function () {
 			$("#statusOverlay1").toggleClass("active");
@@ -173,6 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
+	// корзина в шапке
 	const basketModule = (function () {
 		$('#basket').click(function () {
 			$('#basketOverlay').toggleClass('active');
@@ -216,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					items: 3
 				}
 			}
-		})
+		});
 	}());
 
 	// Таблица с доставкой по городам на главной
@@ -326,7 +329,37 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
+	// аспектное соотношения для видуо проигрываетеля
+	const aspectRatioModule = (function () {
+		$('p iframe').each(function () {
+			$(this).parent().addClass('aspect-ratio');
+		});
+	}());
 
+	const mainSectionSliderModule = (function () {
+		$('#mainSectionSlider').owlCarousel({
+			loop: true,
+			margin: 30,
+			nav: true,
+			autoHeight: false,
+			items: 3,
+			dots: false,
+			responsive: {
+				0: {
+					items: 2,
+					margin: 10
+				},
+				576: {
+					items: 2,
+					margin: 20
+				},
+				768: {
+					items: 3,
+					margin: 30
+				}
+			}
+		});
+	}());
 
 	if ($(window).width() <= 991) {
 		const popularGoodsSliderModule = (function () {

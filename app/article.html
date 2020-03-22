@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Алдога - Заказы</title>
+    <title>Алдога - Новость или рецепт</title>
     <meta name="description"
           content="Алдога описание">
     <meta name="viewport"
@@ -42,7 +42,7 @@
                        class="header-list__link">О Хозяйстве</a>
                 </li>
                 <li class="header-list__item">
-                    <a href="#"
+                    <a href="delivery-payment.html"
                        class="header-list__link">Доставка и оплата</a>
                 </li>
                 <li class="header-list__item">
@@ -154,7 +154,7 @@
                         </a>
                     </li>
                     <li class="hamburger-overlay__list-item">
-                        <a href="reviews.html"
+                        <a href="#"
                            class="hamburger-overlay__list-link">
                             Отзывы
                         </a>
@@ -249,203 +249,113 @@
                            class="breadcrumb__link">Главная</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a href="basket.html"
-                           class="breadcrumb__link">Заказы</a>
+                        <a href="catalog.html"
+                           class="breadcrumb__link">Новость или рецепт</a>
                     </li>
                 </ul>
             </div>
 
+            <section class="main-section main-section__wrapper wrapper">
+                <h1 class="site-title main-section__title">Новость или рецепт</h1>
+                <!-- Заголовок с изображением -->
+                <article class="main-section__image-with-content">
+                    <div class="main-section__image-with-content-img-wrapper">
+                        <img src="./images/dest/static/article-image.jpg"
+                             alt=""
+                             class="main-section__image-with-content-img">
+                    </div>
+                    <div class="main-section__image-with-content-content">
+                        <h2 class="main-section__image-with-content-title-1">H1 заголовок новости</h2>
+                        <p class="main-section__image-with-content-text site-text site-text_small">
+                            Идейные соображения высшего порядка, а также новая модель организационной деятельности в
+                            значительной степени обуславливает создание дальнейших направлений развития. Повседневная
+                            практика показывает, что укрепление и развитие структуры требуют определения и уточнения
+                            форм развития.
+                        </p>
+                        <p class="main-section__image-with-content-text site-text site-text_small">
+                            Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности
+                            играет важную роль в формировании системы обучения кадров, соответствует насущным
+                            потребностям. Таким образом укрепление и развитие структуры обеспечивает широкому кругу
+                            (специалистов) участие в формировании соответствующий условий активизации.
+                        </p>
+                    </div>
+                </article>
 
-            <!-- Оформление заказа -->
-            <div class="orders">
-                <div class="orders__wrapper wrapper wrapper_sm">
-
-                    <div class="site-title">Заказы</div>
-
-                    <div class="orders__content">
-
-                        <div class="orders__select-order">
-                            <p class="orders__select-order-title">Заказ №</p>
-
-                            <input class="orders__select-order-input"
-                                   checked
-                                   value="#12b92lk"
-                                   type="radio"
-                                   name="selectOrder"
-                                   id="order1">
-                            <label class="orders__select-order-label"
-                                   for="order1">#12b92lk
-                            </label>
-
-                            <input class="orders__select-order-input"
-                                   value="#13b92lk"
-                                   type="radio"
-                                   name="selectOrder"
-                                   id="order2">
-                            <label class="orders__select-order-label"
-                                   for="order2">#13b92lk
-                            </label>
-
-                            <input class="orders__select-order-input"
-                                   value="#14b92lk"
-                                   type="radio"
-                                   name="selectOrder"
-                                   id="order3">
-                            <label class="orders__select-order-label"
-                                   for="order3">#14b92lk
-                            </label>
-
-                        </div>
-
-                        <div class="orders__options">
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Статус заказа</p>
-                                <p class="orders__options-item-value">В обработке</p>
-                            </div>
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Дата доставки</p>
-                                <p class="orders__options-item-value">28.06.2020</p>
-                            </div>
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Способ доставки</p>
-                                <p class="orders__options-item-value">
-                                    Курьером до подъезда
-                                    ООО “СДЭК”
-                                </p>
-                                <p class="orders__options-item-value">
-                                    г. Москва, ул. Московская,
-                                    д 1, кв. 186
-                                </p>
-                            </div>
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Оплата</p>
-                                <p class="orders__options-item-value">Картой на сайте</p>
-                            </div>
-                        </div>
-
-                        <div class="basket-orders orders__basket-orders">
-                            <div class="basket-orders__list">
-                                <div class="basket-orders__table">
-                                    <div class="basket-orders__header">
-                                        <p class="basket-orders__header-title basket-orders__header-title_product">Товар
-                                        </p>
-                                        <p class="basket-orders__header-title basket-orders__header-title_price">Цена
-                                        </p>
-                                        <p class="basket-orders__header-title basket-orders__header-title_number">
-                                            Количество
-                                        </p>
-                                        <p class="basket-orders__header-title basket-orders__header-title_total">Итого
-                                        </p>
-                                    </div>
-
-                                    <div class="basket-orders__content">
-                                        <div class="basket-orders__content-col basket-orders__content-col_product">
-                                            <div class="basket-orders__description">
-                                                <p class="basket-orders__name">Стейки форели</p>
-                                                <p class="basket-orders__tags">свежие, охлажденные</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_price">3300 Р
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_number">
-                                            30 кг
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 3300 Р
-                                        </div>
-
-                                    </div>
-
-                                    <div class="basket-orders__content">
-                                        <div class="basket-orders__content-col basket-orders__content-col_product">
-                                            <div class="basket-orders__description">
-                                                <p class="basket-orders__name">Стейки форели</p>
-                                                <p class="basket-orders__tags">свежие, охлажденные</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_price">2300 Р
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_number">
-                                            1 кг
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 2300 Р
-                                        </div>
-
-                                    </div>
-
-                                    <div class="basket-orders__content">
-                                        <div class="basket-orders__content-col basket-orders__content-col_product">
-                                            <div class="basket-orders__description">
-                                                <p class="basket-orders__name">Стейки форели</p>
-                                                <p class="basket-orders__tags">свежие, охлажденные</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_price">300 Р
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_number">
-                                            30 кг
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_total">300 Р
-                                        </div>
-
-                                    </div>
-
-                                    <div class="basket-orders__content">
-                                        <div class="basket-orders__content-col basket-orders__content-col_product">
-                                            <div class="basket-orders__description">
-                                                <p class="basket-orders__name">Стейки форели</p>
-                                                <p class="basket-orders__tags">свежие, охлажденные</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_price">1300 Р
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_number">
-                                            1 кг
-                                        </div>
-
-                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 1300 Р
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                <article class="main-section__article">
+                    <h2 class="main-section__article-title-2">H2 Подзаголовок</h2>
+                    <p class="main-section__article-text site-text site-text_small">
+                        Повседневная практика показывает, что консультация с широким активом способствует подготовки и
+                        реализации модели развития. С другой стороны постоянный количественный рост и сфера нашей
+                        активности в значительной степени обуславливает создание систем массового участия. Задача
+                        организации, в особенности же укрепление и развитие структуры требуют определения и уточнения
+                        направлений прогрессивного развития. Идейные соображения высшего порядка, а также дальнейшее
+                        развитие различных форм деятельности представляет собой интересный эксперимент проверки новых
+                        предложений. Таким образом постоянное информационно-пропагандистское обеспечение нашей
+                        деятельности требуют от нас анализа форм развития.
+                    </p>
+                    <div id="mainSectionSlider"
+                         class="main-section__article-slider owl-carousel owl-theme">
+                        <img src="./images/dest/products/product_1.jpg"
+                             alt=""
+                             class="main-section__article-slider-item item">
+                        <img src="./images/dest/products/product_2.jpg"
+                             alt=""
+                             class="main-section__article-slider-item item">
+                        <img src="./images/dest/products/product_3.jpg"
+                             alt=""
+                             class="main-section__article-slider-item item">
+                        <img src="./images/dest/products/product_4.jpg"
+                             alt=""
+                             class="main-section__article-slider-item item">
+                        <img src="./images/dest/products/product_5.jpg"
+                             alt=""
+                             class="main-section__article-slider-item item">
                     </div>
 
-                    <div class="payment orders__payment">
-                        <div class="payment__total">
-                            <div class="payment__total-group">
-                                <p class="payment__total-title">Ваша скидка по промокоду</p>
-                                <p class="payment__total-description payment__total-description_promocode">-300 Р (10%)
-                                </p>
-                            </div>
-                            <div class="payment__total-group">
-                                <p class="payment__total-title">Стоимость доставки</p>
-                                <p class="payment__total-description payment__total-description_delivery">550 Р</p>
-                            </div>
-                            <div class="payment__total-group">
-                                <p class="payment__total-title">Итого к оплате</p>
-                                <p class="payment__total-description payment__total-description_total">3000 Р</p>
-                            </div>
-                        </div>
-                        <div class="payment__btn-with-check">
-                            <button class="payment__btn-submit site-btn">Повторить заказ</button>
-                        </div>
-                    </div>
+                    <ul class="main-section__article-list main-section__article-list_dots">
+                        <li class="main-section__article-list-item">Равным образом дальнейшее развитие.</li>
+                        <li class="main-section__article-list-item">Различных форм деятельности в значительной степени
+                            обуславливает создание форм развития.</li>
+                        <li class="main-section__article-list-item">Повседневная практика показывает, что начало повседневной
+                            работы по формированию позиции
+                            позволяет оценить значение соответствующий условий активизации.
+                        </li>
+                    </ul>
+                    <ul class="main-section__article-list main-section__article-list_numeric">
+                        <li class="main-section__article-list-item">Равным образом дальнейшее развитие.</li>
+                        <li class="main-section__article-list-item">Различных форм деятельности в значительной степени
+                            обуславливает создание форм развития.</li>
+                        <li class="main-section__article-list-item">Повседневная практика показывает, что начало повседневной
+                            работы по формированию позиции
+                            позволяет оценить значение соответствующий условий активизации.
+                        </li>
+                    </ul>
+                </article>
 
-                </div>
-            </div>
+                <article class="main-section__article">
+                    <h3 class="main-section__article-title-3">H3 Подзаголовок</h3>
+                    <p class="main-section__article-text site-text site-text_small">
+                        Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей
+                        деятельности позволяет оценить значение системы обучения кадров, соответствует насущным
+                        потребностям. Таким образом рамки и место обучения кадров требуют от нас анализа соответствующий
+                        условий активизации. Товарищи! постоянное информационно-пропагандистское обеспечение нашей
+                        деятельности требуют определения и уточнения соответствующий условий активизации. Не следует,
+                        однако
+                        забывать, что консультация с широким активом позволяет выполнять важные задания по разработке
+                        форм
+                        развития.
+                    </p>
+                    <p class="main-section__video">
+                        <iframe width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/Qiy-UJ9qCHs"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </p>
+
+                </article>
+            </section>
 
         </div>
     </main>
@@ -490,7 +400,7 @@
                         </a>
                     </li>
                     <li class="navigation-list__item">
-                        <a href="delivery-payment.html"
+                        <a href="#"
                            class="navigation-list__link">Доставка и оплата
                         </a>
                     </li>
@@ -510,7 +420,7 @@
                         </a>
                     </li>
                     <li class="navigation-list__item">
-                        <a href="#"
+                        <a href="reviews.html"
                            class="navigation-list__link">Отзывы
                         </a>
                     </li>
