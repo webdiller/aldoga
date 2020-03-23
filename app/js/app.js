@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		'PROMO5ALDOGA',
 	];
 
-	// заказы с товарами (действует на страницах: orders.html...)
+	// Заказы с товарами (действует на страницах: orders.html...)
 	const orders = [
 		{
 			'id': '12b92lk',
@@ -97,10 +97,86 @@ document.addEventListener("DOMContentLoaded", function () {
 				},
 			]
 		},
+		{
+			'id': '13b92lk',
+			'satatus': 'в обработке',
+			'deliveryDate': '29.06.2020',
+			'deliveryType': 'Почта России',
+			'deliveryAddress': 'г. Владивосток, Постышева 2, 41',
+			'paymentType': 'при получении',
+			'goods': [
+				{
+					'name': 'Икра форели',
+					'tags': 'свежие',
+					'price': '200 р',
+					'amount': '10',
+					'total': '2000 р',
+				},
+				{
+					'name': 'Икра красная',
+					'tags': 'свежая, солёная',
+					'price': '100 р',
+					'amount': '30',
+					'total': '3000 р',
+				},
+				{
+					'name': 'Форель охлаждённая',
+					'tags': 'тушка потрошённая, без головы',
+					'price': '500 р',
+					'amount': '10',
+					'total': '5000 р',
+				},
+				{
+					'name': 'Сыр фермерский',
+					'tags': 'сладковатый, ореховый',
+					'price': '600 р',
+					'amount': '3',
+					'total': '1800 р',
+				},
+			]
+		},
 	];
 
-	// копирование промокода в футере
-	const promoBanner = (function () {
+	// Таблица с заказами. Работает на страницах: orders.html
+	const ordersModule = (function () {
+
+		$('#ordersSelectOrder input').change(function () {
+			console.log(this);
+		});
+
+		// создать выбор заказjs
+		for (const key in orders) {
+			if (orders.hasOwnProperty(key)) {
+				const order = orders[key];
+				const id = order.id;
+				const satatus = order.satatus;
+				const deliveryDate = order.deliveryDate;
+				const deliveryType = order.deliveryType;
+				const deliveryAddress = order.deliveryAddress;
+
+				$('#ordersSelectOrder').append($('<input>')
+					.addClass('orders__select-order-input')
+					.attr('id', id)
+					.attr('type', 'radio')
+					.attr('name', 'selectOrder')
+				);
+
+				$('#ordersSelectOrder').append($('<label>')
+					.addClass('orders__select-order-label')
+					.attr('for', id)
+					.attr('value', id)
+					.text(`#${id}`)
+				);
+
+			}
+		}
+
+		// $('#ordersSelectOrder').append(''); 
+
+	}());
+
+	// Копирование промокода в футере
+	const promoBannermodule = (function () {
 
 		$('#promoBannerForm input').click(function () {
 			var promoInput = document.querySelector("#promoBannerForm input");
@@ -128,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	}());
 
-	// применение промокода на странице basket.html
+	// Применение промокода на странице basket.html
 	const promoBasketModule = (function () {
 		$('#promoBasket button').click(function () {
 			for (const i of promocodesArr) {
@@ -145,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	}());
 
-	// бургер-меню в шапке
+	// Бургер-меню в шапке
 	const hamburgerModule = (function () {
 		$('#hamburger').click(function () {
 			$(this).toggleClass('is-active');
@@ -153,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
-	// статус заказа в шапке
+	// Статус заказа в шапке
 	const statusModule = (function () {
 		$("#statusBtn").click(function () {
 			$("#statusOverlay1").toggleClass("active");
@@ -175,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
-	// корзина в шапке
+	// Корзина в шапке
 	const basketModule = (function () {
 		$('#basket').click(function () {
 			$('#basketOverlay').toggleClass('active');
@@ -329,14 +405,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
-	// аспектное соотношения для видуо проигрываетеля
+	// Аспектное соотношения для видуо проигрываетеля
 	const aspectRatioModule = (function () {
 		$('p iframe').each(function () {
 			$(this).parent().addClass('aspect-ratio');
 		});
 	}());
 
-	// слайдер с изображениями на странице article.html
+	// Слайдер с изображениями на странице article.html
 	const mainSectionSliderModule = (function () {
 		$('#mainSectionSlider').owlCarousel({
 			loop: true,
