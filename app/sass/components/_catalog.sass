@@ -21,6 +21,7 @@
         width: 42px
         height: 42px
         color: #000
+        white-space: nowrap
         &:active,
         &:focus,
         &:hover
@@ -111,14 +112,42 @@
         margin-bottom: 80px
     &__pagination
 
+@media only screen and (max-width: 1100px) 
+    .pagination__link
+        height: 35px
+        width: 35px
+        font-size: 14px
+    .pagination__link_btn
+        padding-top: 0
+        padding-bottom: 0
+        width: auto
 @media only screen and (max-width: 992px) 
+    .pagination__link
+        height: 28px
+        width: 28px
+        font-size: 13px
+    .pagination__link_btn
+        height: 28px
+        width: auto
     .catalog__goods-list
         margin: 0 -15px 30px -15px
 
 @media only screen and (max-width: 768px) 
+    .pagination__item:not(:last-child)
+        margin-right: 5px
+    .pagination__link_btn
+        padding: 0 20px 
     .catalog__goods-list
         margin: 0 -10px 30px -10px
 
 @media only screen and (max-width: 480px) 
+    .pagination__link
+        font-size: 12px
     .catalog__goods-list
         margin: 0 0 30px 0
+
+@media only screen and (max-width: 380px) 
+    .pagination__link
+        font-size: 10px
+        &_btn
+            padding: 0 10px

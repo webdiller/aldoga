@@ -215,6 +215,12 @@
       "css": "cancel-circled-1",
       "code": 59416,
       "src": "entypo"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59417,
+      "src": "fontawesome"
     }
   ]
 }

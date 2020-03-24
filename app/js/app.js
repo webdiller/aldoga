@@ -442,6 +442,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const sweetAlertsModule = (function () {
 	}());
 
+	// яндекс карты
 	const mapModule = (function () {
 		let m = $('.header__wrapper').css('margin-right');
 		$('.contact-map__cart').css('margin-right', m);
@@ -450,6 +451,39 @@ document.addEventListener("DOMContentLoaded", function () {
 			$('.contact-map__cart').css('margin-right', '20px');
 		}
 
+	}());
+
+	// fancybox 
+	const fancyboxModule = (function () {
+		$('[data-fancybox="cart"]').fancybox({
+			thumbs: {
+				autoStart: true,
+				infobar: true,
+			}
+		});
+
+	}());
+
+	// Слайдер на страницах: cart.html
+	const popularGoodsCardSliderModule = (function () {
+		$('#popularGoodsCardSlider').owlCarousel({
+			loop: true,
+			margin: 30,
+			nav: true,
+			items: 3,
+			dots: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				576: {
+					items: 2
+				},
+				990: {
+					items: 3
+				}
+			}
+		});
 	}());
 
 	$(window).resize(function () {
