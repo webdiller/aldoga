@@ -511,6 +511,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			$('.site-overlay').toggleClass('active');
 		});
 
+		// переход на - оставить отзыв
+		$('[data-bind="modal_leave_review_button"]').click(function () {
+			$('[data-bind="modal_leave_review"]').toggleClass('active');
+			$('.site-overlay').toggleClass('active');
+		});
+
 		// кнопка - закрыть окно
 		$('[data-bind="modal_close"]').click(function () {
 			$('[data-type="modal"]').removeClass('active');
@@ -518,7 +524,30 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 
 
-	}())
+	}());
+
+	// кастомный инпут
+	const customInputModule = (function () {
+
+		var inputs = document.querySelectorAll('#file');
+		Array.prototype.forEach.call(inputs, function (input) {
+			var label = input.nextElementSibling,
+				labelVal = label.innerHTML;
+			input.addEventListener('change', function (e) {
+				var fileName = '';
+				if (this.files && this.files.length > 1)
+					fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+				else
+					fileName = e.target.value.split('\\').pop();
+				if (fileName)
+					label.querySelector('[data-bind="help"]').innerHTML = fileName;
+				else
+					label.innerHTML = labelVal;
+			});
+		});
+
+
+	}());
 
 	$(window).resize(function () {
 		let m = $('.header__wrapper').css('margin-right');

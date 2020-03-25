@@ -539,8 +539,7 @@
 
                         <ul class="pagination pagination_reviews pagination">
                             <li class="pagination__item">
-                                <a class="pagination__link pagination__link_btn"
-                                   href="#">Оставить отзыв</a>
+                                <button data-bind="modal_leave_review_button" class="pagination__link pagination__link_btn">Оставить отзыв</button>
                             </li>
                             <li class="pagination__item">
                                 <a class="pagination__link pagination__link_selected"
@@ -656,7 +655,7 @@
 
     <div class="all-modals">
 
-        <!-- задать вопрос из шапки -->
+        <!-- Задать вопрос из шапки -->
         <div data-bind="modal_question"
              class="modal modal_question"
              data-type="modal">
@@ -842,6 +841,52 @@
 
             </div>
         </div>
+
+        <!-- Оставить отзыв. Страницы: reviews.html -->
+        <div data-bind="modal_leave_review"
+             class="modal modal_leave-review"
+             data-type="modal">
+            <div class="modal__header">
+                <button data-bind="modal_close"
+                        class="modal__close icon-cancel"></button>
+            </div>
+            <p class="site-title">Оставить отзыв</p>
+            <div class="feedback">
+                <form class="feedback__form contact-form contact-form_leave-review">
+
+                    <div class="contact-form__group">
+                        <input placeholder="Ваше имя и фамилия"
+                               type="text"
+                               class="contact-form__input">
+                    </div>
+
+                    <div class="contact-form__group contact-form__group_textarea">
+                        <textarea class="contact-form__textarea"
+                                  placeholder="Текст отзыва"></textarea>
+                    </div>
+
+                    <div class="contact-form__group contact-form__group_file">
+                        <input type="file"
+                               name="file"
+                               id="file"
+                               class="inputfile contact-form__input contact-form__input_file"
+                               data-multiple-caption="{count} files selected"
+                               multiple />
+                        <label class="contact-form__file-label"
+                               for="file">
+                            <span class="contact-form__label-help" data-bind="help">Прикрепить фото</span>
+                            <span class="contact-form__label-icon icon-attach"></span>
+                        </label>
+                    </div>
+
+                    <div class="modal__btn-wrapper">
+                        <button class="site-btn modal__btn">Отправить</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
 
         <div data-bind="overlay"
              class="site-overlay">
