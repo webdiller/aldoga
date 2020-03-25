@@ -4,6 +4,27 @@
     flex-wrap: wrap
     justify-content: center
     margin: -15px -15px -15px -15px
+    &_cart
+        &.owl-carousel .owl-stage
+            display: flex
+        &.owl-carousel .owl-item
+            display: flex
+        > div.owl-nav
+            height: 0
+            margin: 0
+            position: absolute
+            top: 45%
+            transform: translateY(-50%)
+            left: -60px
+            right: -60px
+            display: flex
+            justify-content: space-between
+            font-size: 30px
+            .owl-nav [class*=owl-]:hover
+                color: #000
+                outline: none
+        &.owl-theme .owl-nav [class*=owl-]
+            margin: 0
     &__item
         position: relative
         width: 30%
@@ -111,12 +132,19 @@
 .popular-goods
     text-align: center
     &__wrapper
+        &_cart
+            margin-bottom: 90px
     &__title
     &__list
         margin-bottom: 20px
     &__btn
 
 
+@media only screen and (max-width: 1350px) 
+    .popular-goods__wrapper_cart
+        max-width: 85%
+        .popular-goods__list
+            margin: 0 auto 
 @media only screen and (max-width: 992px) 
     .popular-goods
         text-align: center

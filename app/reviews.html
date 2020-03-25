@@ -21,221 +21,222 @@
 <body>
 
     <header class="header header_border">
-		<div class="header__wrapper wrapper wrapper_lg">
+        <div class="header__wrapper wrapper wrapper_lg">
 
-			<h2 class="header__logo site-logo">
-				<a href="index.html"
-				   class="site-logo__link">
-					<img src="./images/dest/logo.png"
-						 alt="Форелевое хозяйство Алдога"
-						 class="site-logo__img">
-				</a>
-			</h2>
+            <h2 class="header__logo site-logo">
+                <a href="index.html"
+                   class="site-logo__link">
+                    <img src="./images/dest/logo.png"
+                         alt="Форелевое хозяйство Алдога"
+                         class="site-logo__img">
+                </a>
+            </h2>
 
-			<ul class="header__list header-list">
-				<li class="header-list__item">
-					<a href="catalog.html"
-					   class="header-list__link header-list__link_active">Наша продукция</a>
-				</li>
-				<li class="header-list__item">
-					<a href="#"
-					   class="header-list__link">О Хозяйстве</a>
-				</li>
-				<li class="header-list__item">
-					<a href="delivery-payment.html"
-					   class="header-list__link">Доставка и оплата</a>
-				</li>
-				<li class="header-list__item">
-					<a href="news.html"
-					   class="header-list__link">Рецепты</a>
-				</li>
-				<li class="header-list__item">
-					<a href="reviews.html"
-					   class="header-list__link">Отзывы</a>
-				</li>
-				<li class="header-list__item">
-					<a href="contacts.html"
-					   class="header-list__link">Контакты</a>
-				</li>
-			</ul>
+            <ul class="header__list header-list">
+                <li class="header-list__item">
+                    <a href="catalog.html"
+                       class="header-list__link header-list__link_active">Наша продукция</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="#"
+                       class="header-list__link">О Хозяйстве</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="delivery-payment.html"
+                       class="header-list__link">Доставка и оплата</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="news.html"
+                       class="header-list__link">Рецепты</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="reviews.html"
+                       class="header-list__link">Отзывы</a>
+                </li>
+                <li class="header-list__item">
+                    <a href="contacts.html"
+                       class="header-list__link">Контакты</a>
+                </li>
+            </ul>
 
-			<div class="header__contact-bar contact-bar">
-				<div class="contact-bar__wrapper">
-					<a href="tel:89214504515"
-					   class="contact-bar__link">8 921 450 45 15</a>
-					<a href="#"
-					   class="contact-bar__interactive-link">Задать вопрос</a>
-				</div>
-			</div>
+            <div class="header__contact-bar contact-bar">
+                <div class="contact-bar__wrapper">
+                    <a href="tel:89214504515"
+                       class="contact-bar__link">8 921 450 45 15</a>
+                    <a href="#"
+                       class="contact-bar__interactive-link">Задать вопрос</a>
+                </div>
+            </div>
 
-			<div id="basket"
-				 class="header__basket basket">
-				<div class="basket__wrapper">
-					<a href="#"
-					   class="basket__icon icon-shop">
-						<span class="basket__count">10</span>
-					</a>
-				</div>
-			</div>
+            <div id="basket"
+                 class="header__basket basket">
+                <div class="basket__wrapper">
+                    <a href="#"
+                       class="basket__icon icon-shop">
+                        <span class="basket__count">10</span>
+                    </a>
+                </div>
+            </div>
 
-			<div class="header__status status">
-				<button id="statusBtn"
-						class="status__wrapper">
-					<span class="status__text">Статус заказа</span>
-				</button>
-				<!-- Выслать код -->
-				<div id="statusOverlay1"
-					 class="status__overlay">
-					<p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
-					<p class="status__descr site-text_small">Введите свой номер телефона и мы вам вышлем на него смс с
-						кодом для входа
-					</p>
-					<div class="status__phone">
-						<input id="statusInputGetCode"
-							   type="number"
-							   placeholder="Ваш телефон"
-							   class="status__phone-input">
-						<span class="status__phone-icon icon-phone"></span>
-					</div>
-					<button id="statusBtnGetCode"
-							class="status__btn site-btn">Выслать код</button>
-				</div>
+            <div class="header__status status">
+                <button id="statusBtn"
+                        class="status__wrapper">
+                    <span class="status__text">Статус заказа</span>
+                </button>
+                <!-- Выслать код -->
+                <div id="statusOverlay1"
+                     class="status__overlay">
+                    <p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
+                    <p class="status__descr site-text_small">Введите свой номер телефона и мы вам вышлем на него смс с
+                        кодом для входа
+                    </p>
+                    <div class="status__phone">
+                        <input id="statusInputGetCode"
+                               type="number"
+                               placeholder="Ваш телефон"
+                               class="status__phone-input">
+                        <span class="status__phone-icon icon-phone"></span>
+                    </div>
+                    <button id="statusBtnGetCode"
+                            class="status__btn site-btn">Выслать код</button>
+                </div>
 
-				<!-- Подтвердить код -->
-				<div id="statusOverlay2"
-					 class="status__overlay">
-					<p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
-					<p class="status__descr site-text_small">
-						Код подтверждения выслан на номер <span id="statusOverlayPhoneChecker">+7 800 555 35 35</span>
-						.Введите его в поле ниже:
-					</p>
-					<div class="status__phone">
-						<input type="number"
-							   placeholder="Код подтверждения"
-							   class="status__phone-input">
-					</div>
-					<button class="status__btn site-btn">Войти</button>
-				</div>
-			</div>
+                <!-- Подтвердить код -->
+                <div id="statusOverlay2"
+                     class="status__overlay">
+                    <p class="status__title site-text_lg site-text_bold">Вход на сайт</p>
+                    <p class="status__descr site-text_small">
+                        Код подтверждения выслан на номер <span id="statusOverlayPhoneChecker">+7 800 555 35 35</span>
+                        .Введите его в поле ниже:
+                    </p>
+                    <div class="status__phone">
+                        <input type="number"
+                               placeholder="Код подтверждения"
+                               class="status__phone-input">
+                    </div>
+                    <button class="status__btn site-btn">Войти</button>
+                </div>
+            </div>
 
-			<button id="hamburger"
-					class="hamburger header__hamburger hamburger--vortex"
-					type="button">
-				<span class="hamburger-box hamburger__box">
-					<span class="hamburger-inner hamburger__inner"></span>
-				</span>
-			</button>
+            <button id="hamburger"
+                    class="hamburger header__hamburger hamburger--vortex"
+                    type="button">
+                <span class="hamburger-box hamburger__box">
+                    <span class="hamburger-inner hamburger__inner"></span>
+                </span>
+            </button>
 
-			<div class="hamburger-overlay"
-				 id="hamburgerOverlay">
-				<ul class="hamburger-overlay__list">
-					<li class="hamburger-overlay__list-item">
-						<a href="catalog.html"
-						   class="hamburger-overlay__list-link">
-							Наша продукция
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							О Хозяйстве
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="delivery-payment.html"
-						   class="hamburger-overlay__list-link">
-							Доставка и оплата
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="news.html"
-						   class="hamburger-overlay__list-link">
-							Рецепты
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="#"
-						   class="hamburger-overlay__list-link">
-							Отзывы
-						</a>
-					</li>
-					<li class="hamburger-overlay__list-item">
-						<a href="contacts.html"
-						   class="hamburger-overlay__list-link">
-							Контакты
-						</a>
-					</li>
-				</ul>
-				<div class="contact-bar hamburger-overlay__contact-bar">
-					<div class="contact-bar__wrapper">
-						<a href="tel:89214504515"
-						   class="contact-bar__link">8 921 450 45 15</a>
-						<a href="#"
-						   class="contact-bar__interactive-link">Задать вопрос</a>
-					</div>
-				</div>
-			</div>
+            <div class="hamburger-overlay"
+                 id="hamburgerOverlay">
+                <ul class="hamburger-overlay__list">
+                    <li class="hamburger-overlay__list-item">
+                        <a href="catalog.html"
+                           class="hamburger-overlay__list-link">
+                            Наша продукция
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            О Хозяйстве
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="delivery-payment.html"
+                           class="hamburger-overlay__list-link">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="news.html"
+                           class="hamburger-overlay__list-link">
+                            Рецепты
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="#"
+                           class="hamburger-overlay__list-link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="hamburger-overlay__list-item">
+                        <a href="contacts.html"
+                           class="hamburger-overlay__list-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="contact-bar hamburger-overlay__contact-bar">
+                    <div class="contact-bar__wrapper">
+                        <a href="tel:89214504515"
+                           class="contact-bar__link">8 921 450 45 15</a>
+                        <a href="#"
+                           class="contact-bar__interactive-link">Задать вопрос</a>
+                    </div>
+                </div>
+            </div>
 
-			<div class="basket-overlay"
-				 id="basketOverlay">
-				<ul class="basket-overlay__list">
-					<li class="basket-overlay__item">
-						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
-						   class="basket-overlay__item-link">
-							<img data-src="./images/dest/products/product_1.jpg"
-								 src="./images/dest/products/product_1-min.jpg"
-								 alt=""
-								 class="basket-overlay__item-img lazy">
-							<div class="basket-overlay__item-content">
-								<p class="basket-overlay__item-content-name">Стейки форели</p>
-								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-								<span class="basket-overlay__item-content-price">5500 Р</span>
-							</div>
-						</a>
-					</li>
-					<li class="basket-overlay__item">
-						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
-						   class="basket-overlay__item-link">
-							<img data-src="./images/dest/products/product_2.jpg"
-								 src="./images/dest/products/product_2-min.jpg"
-								 alt=""
-								 class="basket-overlay__item-img lazy">
-							<div class="basket-overlay__item-content">
-								<p class="basket-overlay__item-content-name">Стейки форели</p>
-								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-								<span class="basket-overlay__item-content-price">5500 Р</span>
-							</div>
-						</a>
-					</li>
-					<li class="basket-overlay__item">
-						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
-						   class="basket-overlay__item-link">
-							<img data-src="./images/dest/products/product_3.jpg"
-								 src="./images/dest/products/product_3-min.jpg"
-								 alt=""
-								 class="basket-overlay__item-img lazy">
-							<div class="basket-overlay__item-content">
-								<p class="basket-overlay__item-content-name">Стейки форели</p>
-								<p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
-								<span class="basket-overlay__item-content-price">5500 Р</span>
-							</div>
-						</a>
-					</li>
-				</ul>
-				<div class="basket-overlay__total-price">
-					<span class="basket-overlay__total-price-title">Итого:</span>
-					<span class="basket-overlay__total-price-count">16 500 Р</span>
-				</div>
-				<div class="basket-overlay__btn-wrapper">
-					<a href="basket.html" class="site-btn basket-overlay__btn">Оформить заказ</a>
-				</div>
-			</div>
+            <div class="basket-overlay"
+                 id="basketOverlay">
+                <ul class="basket-overlay__list">
+                    <li class="basket-overlay__item">
+                        <button class="basket-overlay__item-btn icon-cancel"></button>
+                        <a href="#"
+                           class="basket-overlay__item-link">
+                            <img data-src="./images/dest/products/product_1.jpg"
+                                 src="./images/dest/products/product_1-min.jpg"
+                                 alt=""
+                                 class="basket-overlay__item-img lazy">
+                            <div class="basket-overlay__item-content">
+                                <p class="basket-overlay__item-content-name">Стейки форели</p>
+                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+                                <span class="basket-overlay__item-content-price">5500 Р</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="basket-overlay__item">
+                        <button class="basket-overlay__item-btn icon-cancel"></button>
+                        <a href="#"
+                           class="basket-overlay__item-link">
+                            <img data-src="./images/dest/products/product_2.jpg"
+                                 src="./images/dest/products/product_2-min.jpg"
+                                 alt=""
+                                 class="basket-overlay__item-img lazy">
+                            <div class="basket-overlay__item-content">
+                                <p class="basket-overlay__item-content-name">Стейки форели</p>
+                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+                                <span class="basket-overlay__item-content-price">5500 Р</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="basket-overlay__item">
+                        <button class="basket-overlay__item-btn icon-cancel"></button>
+                        <a href="#"
+                           class="basket-overlay__item-link">
+                            <img data-src="./images/dest/products/product_3.jpg"
+                                 src="./images/dest/products/product_3-min.jpg"
+                                 alt=""
+                                 class="basket-overlay__item-img lazy">
+                            <div class="basket-overlay__item-content">
+                                <p class="basket-overlay__item-content-name">Стейки форели</p>
+                                <p class="basket-overlay__item-content-tags">Свежие, охлажденные</p>
+                                <span class="basket-overlay__item-content-price">5500 Р</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="basket-overlay__total-price">
+                    <span class="basket-overlay__total-price-title">Итого:</span>
+                    <span class="basket-overlay__total-price-count">16 500 Р</span>
+                </div>
+                <div class="basket-overlay__btn-wrapper">
+                    <a href="basket.html"
+                       class="site-btn basket-overlay__btn">Оформить заказ</a>
+                </div>
+            </div>
 
-		</div>
-	</header>
+        </div>
+    </header>
 
     <main class="main">
         <div class="main__wrapper">
@@ -273,7 +274,9 @@
                                 что есть возможность заказать много рыбы
                                 и угостить ею всю мою деревню. Спасибо!
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью
+                            </button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -301,7 +304,8 @@
                                 Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
                                 счет
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -329,7 +333,8 @@
                                 вкусно получилось.
                                 Рыба очень свежая, на засол
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -361,7 +366,8 @@
                                 что есть возможность заказать много рыбы
                                 и угостить ею всю мою деревню. Спасибо!
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -389,7 +395,8 @@
                                 Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
                                 счет
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -417,7 +424,8 @@
                                 вкусно получилось.
                                 Рыба очень свежая, на засол
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -449,7 +457,8 @@
                                 что есть возможность заказать много рыбы
                                 и угостить ею всю мою деревню. Спасибо!
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -477,7 +486,8 @@
                                 Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
                                 счет
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -505,7 +515,8 @@
                                 вкусно получилось.
                                 Рыба очень свежая, на засол
                             </p>
-                            <button class="site-more about-reviews__more">Отзыв полностью</button>
+                            <button data-bind="modal_review_button"
+                                    class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
                                     <a href="#"
@@ -525,23 +536,28 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <ul class="pagination pagination_reviews pagination">
                             <li class="pagination__item">
-                                <a class="pagination__link pagination__link_btn" href="#">Оставить отзыв</a>
+                                <a class="pagination__link pagination__link_btn"
+                                   href="#">Оставить отзыв</a>
                             </li>
                             <li class="pagination__item">
-                                <a class="pagination__link pagination__link_selected" href="#">1</a>
+                                <a class="pagination__link pagination__link_selected"
+                                   href="#">1</a>
                             </li>
                             <li class="pagination__item">
-                                <a class="pagination__link" href="#">2</a>
+                                <a class="pagination__link"
+                                   href="#">2</a>
                             </li>
                             <li class="pagination__item">
-                                <a class="pagination__link" href="#">3</a>
+                                <a class="pagination__link"
+                                   href="#">3</a>
                             </li>
 
                             <li class="pagination__item">
-                                <a class="pagination__link pagination__link_next  icon-right-open-mini" href="#">
+                                <a class="pagination__link pagination__link_next  icon-right-open-mini"
+                                   href="#">
                                 </a>
                             </li>
                         </ul>
@@ -555,88 +571,282 @@
 
     <!-- Подвал -->
     <footer class="footer">
-		<div class="footer__wrapper wrapper wrapper_lg">
-			<div class="footer__content">
-				<ul class="footer__contact-list contact-list">
-					<li class="contact-list__item">
-						<a href="tel:89214504515"
-						   class="contact-list__link contact-list__link_phone">8 921 450-45-15</a>
-					</li>
-					<li class="contact-list__item">
-						<a href="mailto:fish@aldoga.pro"
-						   class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
-					</li>
-					<li class="contact-list__item">
-						<a href="#"
-						   class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
-							пос. Тиурула</a>
-					</li>
-					<li class="contact-list__item contact-list__item_socials">
-						<a href="#"
-						   class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
-						<a href="#"
-						   class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
-					</li>
-				</ul>
-				<div class="site-logo-large footer__logo">
-					<a href="index.html"
-					   class="site-logo-large__link">
-						<img src="./images/dest/logo-lg.png"
-							 alt="Форелевое хозяйство Алдога"
-							 class="site-logo-large__img">
-					</a>
-				</div>
-				<ul class="footer__navigation-list navigation-list">
-					<li class="navigation-list__item">
-						<a href="catalog.html"
-						   class="navigation-list__link">Каталог
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Доставка и оплата
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Новости
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">Купить оптом
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="news.html"
-						   class="navigation-list__link">Рецепты
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="reviews.html"
-						   class="navigation-list__link">Отзывы
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="#"
-						   class="navigation-list__link">О компании
-						</a>
-					</li>
-					<li class="navigation-list__item">
-						<a href="contacts.html"
-						   class="navigation-list__link">Контакты
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__copyright">
-				<p class="footer__copyright-text">© 2020 Все права защищены</p>
-				<img src="./images/dest/static/payment.jpg"
-					 alt="Оплата: visa, яндекс деньги, master card, mebmoney"
-					 class="footer__copyright-img">
-			</div>
-		</div>
-	</footer>
+        <div class="footer__wrapper wrapper wrapper_lg">
+            <div class="footer__content">
+                <ul class="footer__contact-list contact-list">
+                    <li class="contact-list__item">
+                        <a href="tel:89214504515"
+                           class="contact-list__link contact-list__link_phone">8 921 450-45-15</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a href="mailto:fish@aldoga.pro"
+                           class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <a href="#"
+                           class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
+                            пос. Тиурула</a>
+                    </li>
+                    <li class="contact-list__item contact-list__item_socials">
+                        <a href="#"
+                           class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
+                        <a href="#"
+                           class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
+                    </li>
+                </ul>
+                <div class="site-logo-large footer__logo">
+                    <a href="index.html"
+                       class="site-logo-large__link">
+                        <img src="./images/dest/logo-lg.png"
+                             alt="Форелевое хозяйство Алдога"
+                             class="site-logo-large__img">
+                    </a>
+                </div>
+                <ul class="footer__navigation-list navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="catalog.html"
+                           class="navigation-list__link">Каталог
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Новости
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">Купить оптом
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="news.html"
+                           class="navigation-list__link">Рецепты
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="reviews.html"
+                           class="navigation-list__link">Отзывы
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#"
+                           class="navigation-list__link">О компании
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="contacts.html"
+                           class="navigation-list__link">Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright-text">© 2020 Все права защищены</p>
+                <img src="./images/dest/static/payment.jpg"
+                     alt="Оплата: visa, яндекс деньги, master card, mebmoney"
+                     class="footer__copyright-img">
+            </div>
+        </div>
+    </footer>
+
+    <div class="all-modals">
+
+        <!-- задать вопрос из шапки -->
+        <div data-bind="modal_question"
+             class="modal modal_question"
+             data-type="modal">
+            <div class="modal__header">
+                <button data-bind="modal_close"
+                        class="modal__close icon-cancel"></button>
+            </div>
+            <p class="modal__title">Задать вопрос</p>
+            <p class="modal__description">Заполните поля ниже и в ближайшее время наш сотрудник с вами свяжется!</p>
+            <div class="feedback">
+
+                <form class="feedback__form contact-form">
+                    <div class="contact-form__inputs">
+
+                        <div class="contact-form__group">
+                            <input placeholder="Как вас зовут?"
+                                   type="text"
+                                   class="contact-form__input">
+                            <span class="contact-form__icon icon-user"></span>
+                        </div>
+
+                        <div class="contact-form__group">
+                            <input placeholder="Ваш email адрес"
+                                   type="email"
+                                   required
+                                   class="contact-form__input">
+                            <span class="contact-form__icon icon-envelope-open"></span>
+                        </div>
+
+                        <div class="contact-form__group">
+                            <input placeholder="Телефон для связи"
+                                   type="number"
+                                   class="contact-form__input">
+                            <span class="contact-form__icon icon-phone"></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__group contact-form__group_textarea">
+                        <textarea class="contact-form__textarea"
+                                  placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="modal__btn-wrapper">
+                        <button class="site-btn modal__btn">Свяжитесь со мной</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Успех - Заказ принят. Страницы: basket.html orders.html  -->
+        <div data-bind="modal_success_order"
+             class="modal modal_success"
+             data-type="modal">
+            <div class="modal__header">
+                <button data-bind="modal_close"
+                        class="modal__close icon-cancel"></button>
+            </div>
+            <div class="modal__center">
+                <p class="modal__title">Спасибо, ваш заказ принят!</p>
+                <p class="modal__description">Спасибо! В ближайшее время наш сотрудник с вами свяжется!</p>
+                <div class="feedback">
+
+                    <form class="feedback__form contact-form">
+
+                        <div class="modal__btn-wrapper">
+                            <a href="index.html"
+                               class="site-btn modal__btn">Вернуться на главную</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Успех - Отправка данных в форме. Страница contacts.html -->
+        <div data-bind="modal_success"
+             class="modal modal_success"
+             data-type="modal">
+            <div class="modal__header">
+                <button data-bind="modal_close"
+                        class="modal__close icon-cancel"></button>
+            </div>
+            <div class="modal__center">
+                <p class="modal__title">Спасибо!</p>
+                <p class="modal__description">Спасибо! В ближайшее время наш сотрудник с вами свяжется!</p>
+                <div class="feedback">
+
+                    <form class="feedback__form contact-form">
+
+                        <div class="modal__btn-wrapper">
+                            <a href="index.html"
+                               class="site-btn modal__btn">Вернуться на главную</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Смотреть отзыв. Страницы: reviews.html  -->
+        <div data-bind="modal_review"
+             class="modal modal_review"
+             data-type="modal">
+            <div class="modal__header">
+                <button data-bind="modal_close"
+                        class="modal__close icon-cancel"></button>
+            </div>
+            <div class="modal__center">
+                <div class="modal__review">
+                    <div class="modal__images cart-images">
+                        <div class="cart-images__thumbnails">
+                            <a data-fancybox="cart"
+                               href="./images/dest/products/product_5.jpg"
+                               class="cart-images__thumbnail-wrapper active">
+                                <img src="./images/dest/products/product_5-min.jpg"
+                                     alt=""
+                                     class="cart-images__thumbnail">
+                            </a>
+                            <a data-fancybox="cart"
+                               href="./images/dest/products/product_7.jpg"
+                               class="cart-images__thumbnail-wrapper">
+                                <img src="./images/dest/products/product_7-min.jpg"
+                                     alt=""
+                                     class="cart-images__thumbnail">
+                            </a>
+                            <a data-fancybox="cart"
+                               href="./images/dest/products/product_6.jpg"
+                               class="cart-images__thumbnail-wrapper">
+                                <img src="./images/dest/products/product_6-min.jpg"
+                                     alt=""
+                                     class="cart-images__thumbnail">
+                            </a>
+                            <a data-fancybox="cart"
+                               href="./images/dest/products/product_1.jpg"
+                               class="cart-images__thumbnail-wrapper">
+                                <img src="./images/dest/products/product_1-min.jpg"
+                                     alt=""
+                                     class="cart-images__thumbnail">
+                            </a>
+                        </div>
+
+                        <a data-fancybox="cart"
+                           href="./images/dest/products/product_5.jpg"
+                           class="cart-images__main-img-wrapper">
+                            <img src="./images/dest/products/product_5.jpg"
+                                 alt=""
+                                 class="cart-images__main-img">
+                        </a>
+                    </div>
+                    <div class="modal__review-content">
+                        <p class="modal__author-name">Максим Л.</p>
+                        <p class="modal__author-text">
+                            Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
+                            вкусняшки приносили еще и пользу.
+                        </p>
+                        <p class="modal__author-text">Как раз о таком десертике хочется Вам рассказать. Вкус у десерта
+                            натуральный: лимон за счет Я
+                            люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
+                            вкусняшки приносили еще и пользу. Как раз о таком десертике хочется Вам рассказать. Вкус у
+                            десерта натуральный: лимон за счет
+                        </p>
+                        <p class="modal__author-text">Я люблю пить чай с разными вкусняшками. А в сезон вирусных
+                            заболеваний
+                            хочется, чтобы эти
+                            вкусняшки приносили еще и пользу.
+                        </p>
+                        <div class="modal__links">
+                            <p class="modal__links-title">Ссылка на отзыв:</p>
+                            <a href="#!"
+                               class="modal__links-link modal__links-link_ok icon-odnoklassniki">
+                            </a>
+                            <a href="#!"
+                               class="modal__links-link modal__links-link_vk icon-vk"></a>
+                            <a href="#!"
+                               class="modal__links-link modal__links-link_fb icon-facebook"></a>
+                            <a href="#!"
+                               class="modal__links-link modal__links-link_insta icon-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div data-bind="overlay"
+             class="site-overlay">
+        </div>
+    </div>
 
     <script src="js/app.min.js"></script>
 

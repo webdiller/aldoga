@@ -47,7 +47,6 @@ function scripts() {
 		'app/libs/lazyload/lazyload.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
 		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
-		'app/libs/mixitup/dist/mixitup.min.js',
 		'app/js/app.js' // app.js. Always at the end
 		])
 	.pipe(concat('app.min.js'))

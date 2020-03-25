@@ -28,10 +28,12 @@
 .icon-left-open:before { content: '\e82c'; } /* '' */
 .icon-left-open-big:before { content: '\e82d'; } /* '' */
 .icon-shop:before { content: '\e835'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-ticket:before { content: '\f145'; } /* '' */
 .icon-rouble:before { content: '\f158'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-copyright:before { content: '\f1f9'; } /* '' */
+.icon-odnoklassniki:before { content: '\f263'; } /* '' */
 .icon-shopping-bag:before { content: '\f290'; } /* '' */
 .icon-envelope-open:before { content: '\f2b6'; } /* '' */

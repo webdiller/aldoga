@@ -474,17 +474,51 @@ document.addEventListener("DOMContentLoaded", function () {
 			dots: false,
 			responsive: {
 				0: {
-					items: 1
+					items: 1,
+					margin: 0
 				},
 				576: {
-					items: 2
+					items: 2,
+					margin: 20
 				},
 				990: {
-					items: 3
+					items: 3,
+					margin: 30
 				}
 			}
 		});
 	}());
+
+
+	// модальные окна
+	const modalsModule = (function () {
+
+		// закрыть оверлей со всеми окнами
+		$('[data-bind="overlay"]').click(function () {
+			$(this).removeClass('active');
+			$('[data-type="modal"').removeClass('active');
+		});
+
+		// переход на - задать вопрос
+		$('[data-bind="modal_question_button"]').click(function () {
+			$('[data-bind="modal_question"]').toggleClass('active');
+			$('.site-overlay').toggleClass('active');
+		});
+
+		// переход на - смотреть отзыв
+		$('[data-bind="modal_review_button"]').click(function () {
+			$('[data-bind="modal_review"]').toggleClass('active');
+			$('.site-overlay').toggleClass('active');
+		});
+
+		// кнопка - закрыть окно
+		$('[data-bind="modal_close"]').click(function () {
+			$('[data-type="modal"]').removeClass('active');
+			$('.site-overlay').removeClass('active');
+		});
+
+
+	}())
 
 	$(window).resize(function () {
 		let m = $('.header__wrapper').css('margin-right');
