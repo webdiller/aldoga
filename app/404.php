@@ -24,10 +24,10 @@
             <div class="breadcrumb">
                 <ul class="breadcrumb__list wrapper">
                     <li class="breadcrumb__item">
-                        <a href="index.html" class="breadcrumb__link">Главная</a>
+                        <a href="index.php" class="breadcrumb__link">Главная</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a href="404.html" class="breadcrumb__link">404</a>
+                        <a href="404.php" class="breadcrumb__link">404</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
                     </p>
                     <p class="error__subtitle">
                         Вернитесь на
-                        <a class="error__link" href="index.html">ГЛАВНУЮ</a>
+                        <a class="error__link" href="index.php">ГЛАВНУЮ</a>
                     </p>
                 </div>
             </section>

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-	// Данные для доставки (таблица с табами на страницах: index.html и basket.html)
+	// Данные для доставки (таблица с табами на страницах: index.php и basket.html)
 	const deliveryObj = [
 		{
 			"Moscow": {
@@ -489,7 +489,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
-
 	// модальные окна
 	const modalsModule = (function () {
 
@@ -584,4 +583,24 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		}());
 	}
+
+	const filterModule = (function () {
+
+		$('.ccontainer2').isotope({
+			itemSelector: '.card',
+			layoutMode: 'fitRows'
+		});
+
+		$('.menu li a').click(function () {
+			$('.menu li a').removeClass('active');
+			$(this).addClass('active');
+
+			let selector = $(this).attr('data-filter');
+			$('.ccontainer2').isotope({
+				filter: selector
+			});
+			return false;
+		});
+
+	}());
 });

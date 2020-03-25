@@ -2,29 +2,29 @@
     <div class="header__wrapper wrapper wrapper_lg">
 
         <h2 class="header__logo site-logo">
-            <a href="index.html" class="site-logo__link">
+            <a href="index.php" class="site-logo__link">
                 <img src="./images/dest/logo.png" alt="Форелевое хозяйство Алдога" class="site-logo__img">
             </a>
         </h2>
 
         <ul class="header__list header-list">
             <li class="header-list__item">
-                <a href="catalog.html" class="header-list__link">Наша продукция</a>
+                <a href="catalog.php" class="header-list__link">Наша продукция</a>
             </li>
             <li class="header-list__item">
                 <a href="#" class="header-list__link">О Хозяйстве</a>
             </li>
             <li class="header-list__item">
-                <a href="delivery-payment.html" class="header-list__link">Доставка и оплата</a>
+                <a href="delivery-payment.php" class="header-list__link">Доставка и оплата</a>
             </li>
             <li class="header-list__item">
-                <a href="news.html" class="header-list__link">Рецепты</a>
+                <a href="news.php" class="header-list__link">Рецепты</a>
             </li>
             <li class="header-list__item">
-                <a href="reviews.html" class="header-list__link">Отзывы</a>
+                <a href="reviews.php" class="header-list__link">Отзывы</a>
             </li>
             <li class="header-list__item">
-                <a href="contacts.html" class="header-list__link">Контакты</a>
+                <a href="contacts.php" class="header-list__link">Контакты</a>
             </li>
         </ul>
 
@@ -83,7 +83,7 @@
         <div class="hamburger-overlay" id="hamburgerOverlay">
             <ul class="hamburger-overlay__list">
                 <li class="hamburger-overlay__list-item">
-                    <a href="catalog.html" class="hamburger-overlay__list-link">
+                    <a href="catalog.php" class="hamburger-overlay__list-link">
                         Наша продукция
                     </a>
                 </li>
@@ -93,22 +93,22 @@
                     </a>
                 </li>
                 <li class="hamburger-overlay__list-item">
-                    <a href="#" class="hamburger-overlay__list-link">
+                    <a href="delivery-payment.php" class="hamburger-overlay__list-link">
                         Доставка и оплата
                     </a>
                 </li>
                 <li class="hamburger-overlay__list-item">
-                    <a href="news.html" class="hamburger-overlay__list-link">
+                    <a href="news.php" class="hamburger-overlay__list-link">
                         Рецепты
                     </a>
                 </li>
                 <li class="hamburger-overlay__list-item">
-                    <a href="reviews.html" class="hamburger-overlay__list-link">
+                    <a href="reviews.php" class="hamburger-overlay__list-link">
                         Отзывы
                     </a>
                 </li>
                 <li class="hamburger-overlay__list-item">
-                    <a href="contacts.html" class="hamburger-overlay__list-link">
+                    <a href="contacts.php" class="hamburger-overlay__list-link">
                         Контакты
                     </a>
                 </li>
@@ -162,7 +162,7 @@
                 <span class="basket-overlay__total-price-count">16 500 Р</span>
             </div>
             <div class="basket-overlay__btn-wrapper">
-                <a href="basket.html" class="site-btn basket-overlay__btn">Оформить заказ</a>
+                <a href="basket.php" class="site-btn basket-overlay__btn">Оформить заказ</a>
             </div>
         </div>
 

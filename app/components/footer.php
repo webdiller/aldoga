@@ -18,17 +18,17 @@
                 </li>
             </ul>
             <div class="site-logo-large footer__logo">
-                <a href="index.html" class="site-logo-large__link">
+                <a href="index.php" class="site-logo-large__link">
                     <img src="./images/dest/logo-lg.png" alt="Форелевое хозяйство Алдога" class="site-logo-large__img">
                 </a>
             </div>
             <ul class="footer__navigation-list navigation-list">
                 <li class="navigation-list__item">
-                    <a href="catalog.html" class="navigation-list__link">Каталог
+                    <a href="catalog.php" class="navigation-list__link">Каталог
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="delivery-payment.html" class="navigation-list__link">Доставка и оплата
+                    <a href="delivery-payment.php" class="navigation-list__link">Доставка и оплата
                     </a>
                 </li>
                 <li class="navigation-list__item">
@@ -40,11 +40,11 @@
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="news.html" class="navigation-list__link">Рецепты
+                    <a href="news.php" class="navigation-list__link">Рецепты
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="reviews.html" class="navigation-list__link">Отзывы
+                    <a href="reviews.php" class="navigation-list__link">Отзывы
                     </a>
                 </li>
                 <li class="navigation-list__item">
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="contacts.html" class="navigation-list__link">Контакты
+                    <a href="contacts.php" class="navigation-list__link">Контакты
                     </a>
                 </li>
             </ul>

@@ -134,7 +134,7 @@
 					<ul id="popularGoodsSlider" class="popular-goods__list goods-list goods-list_slider owl-carousel owl-theme">
 						<!-- 1 -->
 						<li class="goods-list__item">
-							<a href="cart.html" class="goods-list__link">
+							<a href="cart.php" class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_5.jpg" src="./images/dest/products/product_5-min.jpg" alt="" class="goods-list__img lazy">
 								</div>
@@ -153,7 +153,7 @@
 						</li>
 						<!-- 2 -->
 						<li class="goods-list__item">
-							<a href="cart.html" class="goods-list__link">
+							<a href="cart.php" class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="goods-list__img lazy">
 								</div>
@@ -172,7 +172,7 @@
 						</li>
 						<!-- 3 -->
 						<li class="goods-list__item">
-							<a href="cart.html" class="goods-list__link">
+							<a href="cart.php" class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_7.jpg" src="./images/dest/products/product_7-min.jpg" alt="" class="goods-list__img lazy">
 								</div>
@@ -190,7 +190,7 @@
 						</li>
 						<!-- 4 -->
 						<li class="goods-list__item">
-							<a href="cart.html" class="goods-list__link">
+							<a href="cart.php" class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_8.jpg" src="./images/dest/products/product_8-min.jpg" alt="" class="goods-list__img lazy">
 								</div>
@@ -208,7 +208,7 @@
 						</li>
 						<!-- 5 -->
 						<li class="goods-list__item">
-							<a href="cart.html" class="goods-list__link">
+							<a href="cart.php" class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_9.jpg" src="./images/dest/products/product_9-min.jpg" alt="" class="goods-list__img lazy">
 								</div>
@@ -226,7 +226,7 @@
 						</li>
 						<!-- 6 -->
 						<li class="goods-list__item">
-							<a href="cart.html" class="goods-list__link">
+							<a href="cart.php" class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_10.jpg" src="./images/dest/products/product_10-min.jpg" alt="" class="goods-list__img lazy">
 								</div>
@@ -244,7 +244,7 @@
 							</a>
 						</li>
 					</ul>
-					<a href="cart.html" class="site-btn popular-goods__btn">Перейти в каталог
+					<a href="cart.php" class="site-btn popular-goods__btn">Перейти в каталог
 					</a>
 				</div>
 			</section>
@@ -649,7 +649,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="reviews.html" class="site-btn site-btn_wide about-reviews__btn">Все отзывы
+					<a href="reviews.php" class="site-btn site-btn_wide about-reviews__btn">Все отзывы
 					</a>
 				</div>
 			</section>

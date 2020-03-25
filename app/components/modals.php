@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <!-- Успех - Заказ принят. Страницы: basket.html orders.html  -->
+    <!-- Успех - Заказ принят. Страницы: basket.php orders.php  -->
     <div data-bind="modal_success_order" class="modal modal_success" data-type="modal">
         <div class="modal__header">
             <button data-bind="modal_close" class="modal__close icon-cancel"></button>
@@ -54,7 +54,7 @@
                 <form class="feedback__form contact-form">
 
                     <div class="modal__btn-wrapper">
-                        <a href="index.html" class="site-btn modal__btn">Вернуться на главную</a>
+                        <a href="index.php" class="site-btn modal__btn">Вернуться на главную</a>
                     </div>
 
                 </form>
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <!-- Успех - Отправка данных в форме. Страница contacts.html -->
+    <!-- Успех - Отправка данных в форме. Страница contacts.php -->
     <div data-bind="modal_success" class="modal modal_success" data-type="modal">
         <div class="modal__header">
             <button data-bind="modal_close" class="modal__close icon-cancel"></button>
@@ -75,7 +75,7 @@
                 <form class="feedback__form contact-form">
 
                     <div class="modal__btn-wrapper">
-                        <a href="index.html" class="site-btn modal__btn">Вернуться на главную</a>
+                        <a href="index.php" class="site-btn modal__btn">Вернуться на главную</a>
                     </div>
 
                 </form>
@@ -83,65 +83,67 @@
         </div>
     </div>
 
-    <!-- Смотреть отзыв. Страницы: reviews.html  -->
+    <!-- Смотреть отзыв. Страницы: reviews.php  -->
     <div data-bind="modal_review" class="modal modal_review" data-type="modal">
-        <div class="modal__header">
-            <button data-bind="modal_close" class="modal__close icon-cancel"></button>
-        </div>
-        <div class="modal__center">
-            <div class="modal__review">
-                <div class="modal__images cart-images">
-                    <div class="cart-images__thumbnails">
-                        <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
-                            <img src="./images/dest/products/product_5-min.jpg" alt="" class="cart-images__thumbnail">
-                        </a>
-                        <a data-fancybox="cart" href="./images/dest/products/product_7.jpg" class="cart-images__thumbnail-wrapper">
-                            <img src="./images/dest/products/product_7-min.jpg" alt="" class="cart-images__thumbnail">
-                        </a>
-                        <a data-fancybox="cart" href="./images/dest/products/product_6.jpg" class="cart-images__thumbnail-wrapper">
-                            <img src="./images/dest/products/product_6-min.jpg" alt="" class="cart-images__thumbnail">
-                        </a>
-                        <a data-fancybox="cart" href="./images/dest/products/product_1.jpg" class="cart-images__thumbnail-wrapper">
-                            <img src="./images/dest/products/product_1-min.jpg" alt="" class="cart-images__thumbnail">
-                        </a>
-                    </div>
-
-                    <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__main-img-wrapper">
-                        <img src="./images/dest/products/product_5.jpg" alt="" class="cart-images__main-img">
-                    </a>
-                </div>
-                <div class="modal__review-content">
-                    <p class="modal__author-name">Максим Л.</p>
-                    <p class="modal__author-text">
-                        Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
-                        вкусняшки приносили еще и пользу.
-                    </p>
-                    <p class="modal__author-text">Как раз о таком десертике хочется Вам рассказать. Вкус у десерта
-                        натуральный: лимон за счет Я
-                        люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
-                        вкусняшки приносили еще и пользу. Как раз о таком десертике хочется Вам рассказать. Вкус у
-                        десерта натуральный: лимон за счет
-                    </p>
-                    <p class="modal__author-text">Я люблю пить чай с разными вкусняшками. А в сезон вирусных
-                        заболеваний
-                        хочется, чтобы эти
-                        вкусняшки приносили еще и пользу.
-                    </p>
-                    <div class="modal__links">
-                        <p class="modal__links-title">Ссылка на отзыв:</p>
-                        <a href="#!" class="modal__links-link modal__links-link_ok icon-odnoklassniki">
-                        </a>
-                        <a href="#!" class="modal__links-link modal__links-link_vk icon-vk"></a>
-                        <a href="#!" class="modal__links-link modal__links-link_fb icon-facebook"></a>
-                        <a href="#!" class="modal__links-link modal__links-link_insta icon-instagram"></a>
-                    </div>
-                </div>
+        <div class="modal__document">
+            <div class="modal__header">
+                <button data-bind="modal_close" class="modal__close icon-cancel"></button>
             </div>
+            <div class="modal__center">
+                <div class="modal__review">
+                    <div class="modal__images cart-images">
+                        <div class="cart-images__thumbnails">
+                            <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
+                                <img src="./images/dest/products/product_5-min.jpg" alt="" class="cart-images__thumbnail">
+                            </a>
+                            <a data-fancybox="cart" href="./images/dest/products/product_7.jpg" class="cart-images__thumbnail-wrapper">
+                                <img src="./images/dest/products/product_7-min.jpg" alt="" class="cart-images__thumbnail">
+                            </a>
+                            <a data-fancybox="cart" href="./images/dest/products/product_6.jpg" class="cart-images__thumbnail-wrapper">
+                                <img src="./images/dest/products/product_6-min.jpg" alt="" class="cart-images__thumbnail">
+                            </a>
+                            <a data-fancybox="cart" href="./images/dest/products/product_1.jpg" class="cart-images__thumbnail-wrapper">
+                                <img src="./images/dest/products/product_1-min.jpg" alt="" class="cart-images__thumbnail">
+                            </a>
+                        </div>
 
+                        <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__main-img-wrapper">
+                            <img src="./images/dest/products/product_5.jpg" alt="" class="cart-images__main-img">
+                        </a>
+                    </div>
+                    <div class="modal__review-content">
+                        <p class="modal__author-name">Максим Л.</p>
+                        <p class="modal__author-text">
+                            Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
+                            вкусняшки приносили еще и пользу.
+                        </p>
+                        <p class="modal__author-text">Как раз о таком десертике хочется Вам рассказать. Вкус у десерта
+                            натуральный: лимон за счет Я
+                            люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
+                            вкусняшки приносили еще и пользу. Как раз о таком десертике хочется Вам рассказать. Вкус у
+                            десерта натуральный: лимон за счет
+                        </p>
+                        <p class="modal__author-text">Я люблю пить чай с разными вкусняшками. А в сезон вирусных
+                            заболеваний
+                            хочется, чтобы эти
+                            вкусняшки приносили еще и пользу.
+                        </p>
+                        <div class="modal__links">
+                            <p class="modal__links-title">Ссылка на отзыв:</p>
+                            <a href="#!" class="modal__links-link modal__links-link_ok icon-odnoklassniki">
+                            </a>
+                            <a href="#!" class="modal__links-link modal__links-link_vk icon-vk"></a>
+                            <a href="#!" class="modal__links-link modal__links-link_fb icon-facebook"></a>
+                            <a href="#!" class="modal__links-link modal__links-link_insta icon-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <!-- Оставить отзыв. Страницы: reviews.html -->
+    <!-- Оставить отзыв. Страницы: reviews.php -->
     <div data-bind="modal_leave_review" class="modal modal_leave-review" data-type="modal">
         <div class="modal__header">
             <button data-bind="modal_close" class="modal__close icon-cancel"></button>
