@@ -137,43 +137,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	];
 
-	// Таблица с заказами. Работает на страницах: orders.html
-	const ordersModule = (function () {
+	// Таблица с заказами. Работает на страницах: orders.html.
+	// const ordersModule = (function () {
 
 		$('#ordersSelectOrder input').change(function () {
-			console.log(this);
+			let $currentOrder = $(this).val();
+			
+			$('#ordersOptions .orders__options-order').removeClass('active');
+			$('#ordersOptions .orders__options-order[data-order-options="' + $currentOrder + '"]').addClass('active');
+
+			$('#ordersTables .basket-orders__table').removeClass('active');
+			$('#ordersTables .basket-orders__table[data-order-goods="' + $currentOrder + '"]').addClass('active');
+			
 		});
-
-		// создать выбор заказjs
-		for (const key in orders) {
-			if (orders.hasOwnProperty(key)) {
-				const order = orders[key];
-				const id = order.id;
-				const satatus = order.satatus;
-				const deliveryDate = order.deliveryDate;
-				const deliveryType = order.deliveryType;
-				const deliveryAddress = order.deliveryAddress;
-
-				$('#ordersSelectOrder').append($('<input>')
-					.addClass('orders__select-order-input')
-					.attr('id', id)
-					.attr('type', 'radio')
-					.attr('name', 'selectOrder')
-				);
-
-				$('#ordersSelectOrder').append($('<label>')
-					.addClass('orders__select-order-label')
-					.attr('for', id)
-					.attr('value', id)
-					.text(`#${id}`)
-				);
-
-			}
-		}
-
-		// $('#ordersSelectOrder').append(''); 
-
-	}());
 
 	// Копирование промокода в футере
 	const promoBannermodule = (function () {

@@ -25,10 +25,16 @@
     &__wrapper
         margin-bottom: 50px
     &__list
+        &.active
+            display: block
     &__table
         display: table
         width: 100%
         border-spacing: 0 10px
+        &_order
+            display: none
+            &.active
+                display: table
     &__header
         display: table-row
     &__header-title

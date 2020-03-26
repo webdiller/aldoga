@@ -261,7 +261,7 @@
                                         ул. Московская, 50, ТЦ “Московский”,
                                         2 этаж, служба доставки Boxberry
                                     </p>
-                                    <a href="#!" class="contact-form__description-link">Выбрать пункт доставки</a>
+                                    <a href="!#" class="contact-form__description-link">Выбрать пункт доставки</a>
                                 </div>
                             </form>
 

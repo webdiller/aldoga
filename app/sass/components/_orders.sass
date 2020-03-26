@@ -46,12 +46,15 @@
             cursor: pointer
             color: #666666
     &__options
-        display: flex
-        flex-direction: column
         flex-basis: 19.5%
         margin-top: 60px
         margin-right: 60px
         margin-bottom: -20px
+        &-order
+            display: none
+            flex-direction: column
+            &.active
+                display: flex
         &-item
             &:not(:last-child)
                 margin-bottom: 20px
@@ -152,6 +155,7 @@
         order: 3
         margin: 25px 0 0 0
         flex-basis: 100%
+    .orders__options-order
         flex-direction: row
         flex-wrap: wrap
     .orders__options-item

@@ -44,49 +44,107 @@
                         <div id="ordersSelectOrder" class="orders__select-order">
                             <p class="orders__select-order-title">Заказ №</p>
 
-                            <input class="orders__select-order-input" checked value="#12b92lk" type="radio" name="selectOrder" id="order1">
+                            <input class="orders__select-order-input" checked value="12b92lk" type="radio" name="selectOrder" id="order1">
                             <label class="orders__select-order-label" for="order1">#12b92lk
                             </label>
 
-                            <input class="orders__select-order-input" value="#13b92lk" type="radio" name="selectOrder" id="order2">
+                            <input class="orders__select-order-input" value="13b92lk" type="radio" name="selectOrder" id="order2">
                             <label class="orders__select-order-label" for="order2">#13b92lk
                             </label>
 
-                            <input class="orders__select-order-input" value="#14b92lk" type="radio" name="selectOrder" id="order3">
+                            <input class="orders__select-order-input" value="14b92lk" type="radio" name="selectOrder" id="order3">
                             <label class="orders__select-order-label" for="order3">#14b92lk
                             </label>
 
                         </div>
 
-                        <div class="orders__options">
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Статус заказа</p>
-                                <p class="orders__options-item-value">В обработке</p>
+                        <div id="ordersOptions" class="orders__options">
+
+                            <div data-order-options="12b92lk" class="orders__options-order active">
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Статус заказа</p>
+                                    <p class="orders__options-item-value">В обработке</p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Дата доставки</p>
+                                    <p class="orders__options-item-value">28.06.2020</p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Способ доставки</p>
+                                    <p class="orders__options-item-value">
+                                        Курьером до подъезда
+                                        ООО “СДЭК”
+                                    </p>
+                                    <p class="orders__options-item-value">
+                                        г. Москва, ул. Московская,
+                                        д 1, кв. 186
+                                    </p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Оплата</p>
+                                    <p class="orders__options-item-value">Картой на сайте</p>
+                                </div>
                             </div>
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Дата доставки</p>
-                                <p class="orders__options-item-value">28.06.2020</p>
+
+                            <div data-order-options="13b92lk" class="orders__options-order">
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Статус заказа</p>
+                                    <p class="orders__options-item-value">В обработке</p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Дата доставки</p>
+                                    <p class="orders__options-item-value">15.07.2020</p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Способ доставки</p>
+                                    <p class="orders__options-item-value">
+                                        Курьером до подъезда
+                                        ООО “СДЭК”
+                                    </p>
+                                    <p class="orders__options-item-value">
+                                        г. Москва, ул. Московская,
+                                        д 1, кв. 226
+                                    </p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Оплата</p>
+                                    <p class="orders__options-item-value">При получении</p>
+                                </div>
                             </div>
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Способ доставки</p>
-                                <p class="orders__options-item-value">
-                                    Курьером до подъезда
-                                    ООО “СДЭК”
-                                </p>
-                                <p class="orders__options-item-value">
-                                    г. Москва, ул. Московская,
-                                    д 1, кв. 186
-                                </p>
+
+                            <div data-order-options="14b92lk" class="orders__options-order">
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Статус заказа</p>
+                                    <p class="orders__options-item-value">В пути</p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Дата доставки</p>
+                                    <p class="orders__options-item-value">30.06.2020</p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Способ доставки</p>
+                                    <p class="orders__options-item-value">
+                                        Курьером до подъезда
+                                        ООО “СДЭК”
+                                    </p>
+                                    <p class="orders__options-item-value">
+                                        г. Москва, ул. Московская,
+                                        д 2, кв. 126
+                                    </p>
+                                </div>
+                                <div class="orders__options-item">
+                                    <p class="orders__options-item-title">Оплата</p>
+                                    <p class="orders__options-item-value">Картой на сайте</p>
+                                </div>
                             </div>
-                            <div class="orders__options-item">
-                                <p class="orders__options-item-title">Оплата</p>
-                                <p class="orders__options-item-value">Картой на сайте</p>
-                            </div>
+
                         </div>
 
                         <div class="basket-orders orders__basket-orders">
-                            <div class="basket-orders__list">
-                                <div class="basket-orders__table">
+
+                            <div id="ordersTables" class="basket-orders__list">
+
+                                <div data-order-goods="12b92lk" class="basket-orders__table basket-orders__table_order active">
                                     <div class="basket-orders__header">
                                         <p class="basket-orders__header-title basket-orders__header-title_product">Товар
                                         </p>
@@ -179,7 +237,199 @@
 
                                     </div>
                                 </div>
+
+                                <div data-order-goods="13b92lk" class="basket-orders__table basket-orders__table_order">
+                                    <div class="basket-orders__header">
+                                        <p class="basket-orders__header-title basket-orders__header-title_product">Товар
+                                        </p>
+                                        <p class="basket-orders__header-title basket-orders__header-title_price">Цена
+                                        </p>
+                                        <p class="basket-orders__header-title basket-orders__header-title_number">
+                                            Количество
+                                        </p>
+                                        <p class="basket-orders__header-title basket-orders__header-title_total">Итого
+                                        </p>
+                                    </div>
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">6600 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            60 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 6600 Р
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">300 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            30 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total">300 Р
+                                        </div>
+
+                                    </div>
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">1300 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            1 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 1300 Р
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div data-order-goods="14b92lk" class="basket-orders__table basket-orders__table_order">
+                                    <div class="basket-orders__header">
+                                        <p class="basket-orders__header-title basket-orders__header-title_product">Товар
+                                        </p>
+                                        <p class="basket-orders__header-title basket-orders__header-title_price">Цена
+                                        </p>
+                                        <p class="basket-orders__header-title basket-orders__header-title_number">
+                                            Количество
+                                        </p>
+                                        <p class="basket-orders__header-title basket-orders__header-title_total">Итого
+                                        </p>
+                                    </div>
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">6600 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            60 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 6600 Р
+                                        </div>
+
+                                    </div>
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">6600 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            60 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 6600 Р
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">300 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            30 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total">300 Р
+                                        </div>
+
+                                    </div>
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">300 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            30 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total">300 Р
+                                        </div>
+
+                                    </div>
+
+                                    <div class="basket-orders__content">
+                                        <div class="basket-orders__content-col basket-orders__content-col_product">
+                                            <div class="basket-orders__description">
+                                                <p class="basket-orders__name">Стейки форели</p>
+                                                <p class="basket-orders__tags">свежие, охлажденные</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_price">1300 Р
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_number">
+                                            1 кг
+                                        </div>
+
+                                        <div class="basket-orders__content-col basket-orders__content-col_total"> 1300 Р
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>
