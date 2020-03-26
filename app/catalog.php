@@ -32,7 +32,7 @@
 				</ul>
 			</div>
 
-			<div class="wrapper">
+			<!-- <div class="wrapper">
 
 				<div class="isotop-example123">
 
@@ -115,7 +115,7 @@
 
 				</div>
 
-			</div>
+			</div> -->
 
 			<!-- Каталог -->
 			<!-- <div id="catalogWithFilter" class="catalog">

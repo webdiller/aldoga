@@ -91,7 +91,7 @@
             </div>
             <div class="modal__center">
                 <div class="modal__review">
-                    <div class="modal__images cart-images cart-images_large">
+                    <div class="modal__images cart-images">
                         <div class="cart-images__thumbnails">
                             <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
                                 <img src="./images/dest/products/product_5-min.jpg" alt="" class="cart-images__thumbnail">
