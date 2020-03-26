@@ -40,8 +40,8 @@
                     <div class="contact-map__map">
 
                         <!-- Карта -->
-                        <div class="contact-map__iframe-wrapper aspect-ratio aspect-ratio_map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae62e1fe1204303ec32f24bf6c174d2df23748eb258a165092ea06bd1ef4dd968&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                        <div class="contact-map__iframe-wrapper">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae62e1fe1204303ec32f24bf6c174d2df23748eb258a165092ea06bd1ef4dd968&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
                         </div>
 
                         <!-- Список -->
