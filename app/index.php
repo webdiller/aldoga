@@ -61,7 +61,7 @@
 					<h2 class="our-production__title site-title">Наша продукция</h2>
 					<ul class="our-production__list production-list">
 						<li class="production-list__item">
-							<a href="#" class="production-list__link">
+							<a href="catalog.php" class="production-list__link">
 								<img data-src="./images/dest/products/product_5.jpg" src="./images/dest/products/product_5-min.jpg" alt="" class="production-list__img lazy">
 								<div class="production-list__content">
 									<p class="production-list__title">форель</p>
@@ -74,7 +74,7 @@
 							</a>
 						</li>
 						<li class="production-list__item">
-							<a href="#" class="production-list__link">
+							<a href="catalog.php" class="production-list__link">
 								<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="production-list__img lazy">
 								<div class="production-list__content">
 									<p class="production-list__title">икра форели</p>
@@ -85,7 +85,7 @@
 							</a>
 						</li>
 						<li class="production-list__item">
-							<a href="#" class="production-list__link">
+							<a href="catalog.php" class="production-list__link">
 								<img data-src="./images/dest/products/product_7.jpg" src="./images/dest/products/product_7-min.jpg" alt="" class="production-list__img lazy">
 								<div class="production-list__content">
 									<p class="production-list__title">сыры</p>
@@ -96,7 +96,7 @@
 							</a>
 						</li>
 						<li class="production-list__item">
-							<a href="#" class="production-list__link">
+							<a href="catalog.php" class="production-list__link">
 								<img data-src="./images/dest/products/product_8.jpg" src="./images/dest/products/product_8-min.jpg" alt="" class="production-list__img lazy">
 								<div class="production-list__content">
 									<p class="production-list__title">ягоды</p>

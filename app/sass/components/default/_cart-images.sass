@@ -1,17 +1,21 @@
 .cart-images
     display: flex
+    &_large
+        width: 585px
+        flex-basis: 585px
+        height: 440px
     &__thumbnails
         display: flex
         flex-direction: column
-        margin-right: 10px
-        width: 100px
+        margin-right: 15px
+        width: 115px
     &__thumbnail-wrapper
         position: relative
         display: block
         width: 100px
         height: 100px
         &:not(:last-child)
-            margin-bottom: 10px
+            margin-bottom: 13.5px
         &:hover
             &::after
                 opacity: 1
@@ -49,9 +53,9 @@
         object-fit: cover
     &__main-img-wrapper
         position: relative
-        flex-basis: 470px
-        width: 470px
-        height: 430px
+        flex-basis: 100%
+        width: 100%
+        height: 100%
         &:hover
             &::after
                 opacity: 1
@@ -76,3 +80,52 @@
         width: 100%
         height: 100%
         object-fit: cover
+
+@media only screen and (max-width: 1100px) 
+    .cart-images_large
+        flex-wrap: wrap
+        flex-basis: 400px
+        width: 400px
+        .cart-images__thumbnails
+            order: 2
+            flex-direction: row
+            height: 90px
+            width: 100%
+            flex-basis: 100%
+            margin-top: auto
+            margin-right: 0
+        .cart-images__thumbnail-wrapper
+            height: 100%
+        .cart-images__thumbnail-wrapper:not(:last-child)
+            margin-bottom: 0
+            margin-right: 10px
+        .cart-images__main-img-wrapper
+            order: 1
+            width: 100%
+            flex-basis: 100%
+            height: calc(100% - 110px)
+            margin-bottom: 10px
+
+@media only screen and (max-width: 768px) 
+    .cart-images_large
+        height: auto
+        .cart-images__main-img-wrapper
+            height: calc(100% - 70px)
+        .cart-images__thumbnails
+            height: 60px
+
+@media only screen and (max-width: 576px) 
+    .cart-images_large .cart-images__main-img-wrapper
+        margin-bottom: 0
+        order: 2
+    .cart-images_large .cart-images__thumbnails
+        order: 1
+        margin-top: 0
+        margin-bottom: 10px
+    .cart-images_large .cart-images__thumbnail-wrapper
+        flex-basis: calc(25% - 10px)
+        margin-right: 10px 
+    .cart-images_large .cart-images__thumbnail-wrapper:last-child
+        flex-basis: 25%
+        margin-right: 0
+    
