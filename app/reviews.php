@@ -7,7 +7,7 @@
     <title>Алдога - Отзывы</title>
     <meta name="description" content="Алдога описание">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="img/dest/preview.jpg">
     <link rel="stylesheet" href="css/app.min.css">
 

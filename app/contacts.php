@@ -7,7 +7,7 @@
     <title>Алдога - Контакты</title>
     <meta name="description" content="Алдога описание">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="images/favicon.png">
     <meta property="og:image" content="img/dest/preview.jpg">
     <link rel="stylesheet" href="css/app.min.css">
 
@@ -41,8 +41,7 @@
 
                         <!-- Карта -->
                         <div class="contact-map__iframe-wrapper aspect-ratio aspect-ratio_map">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae62e1fe1204303ec32f24bf6c174d2df23748eb258a165092ea06bd1ef4dd968&amp;source=constructor" width="100%" height="400" frameborder="0">
-                            </iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae62e1fe1204303ec32f24bf6c174d2df23748eb258a165092ea06bd1ef4dd968&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
                         </div>
 
                         <!-- Список -->

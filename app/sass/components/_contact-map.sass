@@ -43,7 +43,20 @@
     &__map
         position: relative
     &__iframe-wrapper
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            width: calc( 100% - 80px )
+            height: calc( 100% - 80px )
+            margin: 40px
+            z-index: 10
     &__information-wrapper
+        content: ""
         position: absolute
         display: flex
         align-items: center
@@ -53,6 +66,7 @@
         height: auto
         width: 360px
         margin: 0 auto
+        z-index: 30
     &__cart 
         position: absolute
         margin-left: auto
