@@ -12,7 +12,7 @@
                 <a href="catalog.php" class="header-list__link">Наша продукция</a>
             </li>
             <li class="header-list__item">
-                <a href="#" class="header-list__link">О Хозяйстве</a>
+                <a href="#!" class="header-list__link">О Хозяйстве</a>
             </li>
             <li class="header-list__item">
                 <a href="delivery-payment.php" class="header-list__link">Доставка и оплата</a>
@@ -37,7 +37,7 @@
 
         <div id="basket" class="header__basket basket">
             <div class="basket__wrapper">
-                <a href="#" class="basket__icon icon-shop">
+                <a href="#!" class="basket__icon icon-shop">
                     <span class="basket__count">10</span>
                 </a>
             </div>
@@ -88,7 +88,7 @@
                     </a>
                 </li>
                 <li class="hamburger-overlay__list-item">
-                    <a href="#" class="hamburger-overlay__list-link">
+                    <a href="#!" class="hamburger-overlay__list-link">
                         О Хозяйстве
                     </a>
                 </li>
@@ -125,7 +125,7 @@
             <ul class="basket-overlay__list">
                 <li class="basket-overlay__item">
                     <button class="basket-overlay__item-btn icon-cancel"></button>
-                    <a href="#" class="basket-overlay__item-link">
+                    <a href="#!" class="basket-overlay__item-link">
                         <img data-src="./images/dest/products/product_1.jpg" src="./images/dest/products/product_1-min.jpg" alt="" class="basket-overlay__item-img lazy">
                         <div class="basket-overlay__item-content">
                             <p class="basket-overlay__item-content-name">Стейки форели</p>
@@ -136,7 +136,7 @@
                 </li>
                 <li class="basket-overlay__item">
                     <button class="basket-overlay__item-btn icon-cancel"></button>
-                    <a href="#" class="basket-overlay__item-link">
+                    <a href="#!" class="basket-overlay__item-link">
                         <img data-src="./images/dest/products/product_2.jpg" src="./images/dest/products/product_2-min.jpg" alt="" class="basket-overlay__item-img lazy">
                         <div class="basket-overlay__item-content">
                             <p class="basket-overlay__item-content-name">Стейки форели</p>
@@ -147,7 +147,7 @@
                 </li>
                 <li class="basket-overlay__item">
                     <button class="basket-overlay__item-btn icon-cancel"></button>
-                    <a href="#" class="basket-overlay__item-link">
+                    <a href="#!" class="basket-overlay__item-link">
                         <img data-src="./images/dest/products/product_3.jpg" src="./images/dest/products/product_3-min.jpg" alt="" class="basket-overlay__item-img lazy">
                         <div class="basket-overlay__item-content">
                             <p class="basket-overlay__item-content-name">Стейки форели</p>

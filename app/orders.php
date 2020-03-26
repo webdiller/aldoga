@@ -5,16 +5,11 @@
 
     <meta charset="utf-8">
     <title>Алдога - Заказы</title>
-    <meta name="description"
-          content="Алдога описание">
-    <meta name="viewport"
-          content="width=device-width">
-    <link rel="icon"
-          href="img/favicon.png">
-    <meta property="og:image"
-          content="img/dest/preview.jpg">
-    <link rel="stylesheet"
-          href="css/app.min.css">
+    <meta name="description" content="Алдога описание">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="img/dest/preview.jpg">
+    <link rel="stylesheet" href="css/app.min.css">
 
 </head>
 
@@ -29,12 +24,10 @@
             <div class="breadcrumb">
                 <ul class="breadcrumb__list wrapper">
                     <li class="breadcrumb__item">
-                        <a href="index.php"
-                           class="breadcrumb__link">Главная</a>
+                        <a href="index.php" class="breadcrumb__link">Главная</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a href="basket.php"
-                           class="breadcrumb__link">Заказы</a>
+                        <a href="basket.php" class="breadcrumb__link">Заказы</a>
                     </li>
                 </ul>
             </div>
@@ -51,32 +44,16 @@
                         <div id="ordersSelectOrder" class="orders__select-order">
                             <p class="orders__select-order-title">Заказ №</p>
 
-                            <input class="orders__select-order-input"
-                                   checked
-                                   value="#12b92lk"
-                                   type="radio"
-                                   name="selectOrder"
-                                   id="order1">
-                            <label class="orders__select-order-label"
-                                   for="order1">#12b92lk
+                            <input class="orders__select-order-input" checked value="#12b92lk" type="radio" name="selectOrder" id="order1">
+                            <label class="orders__select-order-label" for="order1">#12b92lk
                             </label>
 
-                            <input class="orders__select-order-input"
-                                   value="#13b92lk"
-                                   type="radio"
-                                   name="selectOrder"
-                                   id="order2">
-                            <label class="orders__select-order-label"
-                                   for="order2">#13b92lk
+                            <input class="orders__select-order-input" value="#13b92lk" type="radio" name="selectOrder" id="order2">
+                            <label class="orders__select-order-label" for="order2">#13b92lk
                             </label>
 
-                            <input class="orders__select-order-input"
-                                   value="#14b92lk"
-                                   type="radio"
-                                   name="selectOrder"
-                                   id="order3">
-                            <label class="orders__select-order-label"
-                                   for="order3">#14b92lk
+                            <input class="orders__select-order-input" value="#14b92lk" type="radio" name="selectOrder" id="order3">
+                            <label class="orders__select-order-label" for="order3">#14b92lk
                             </label>
 
                         </div>
@@ -224,7 +201,7 @@
                             </div>
                         </div>
                         <div class="payment__btn-with-check">
-                            <button class="payment__btn-submit site-btn">Повторить заказ</button>
+                            <button type="button" data-bind="modal_success_order_button" class="payment__btn-submit site-btn">Повторить заказ</button>
                         </div>
                     </div>
 

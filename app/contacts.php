@@ -49,7 +49,7 @@
                             <div class="contact-map__cart">
                                 <ul class="contact-list contact-list_cart">
                                     <li class="contact-list__item">
-                                        <a href="#" class="contact-list__link contact-list__link_address">
+                                        <a href="#!" class="contact-list__link contact-list__link_address">
                                             р. Карелия, о. Кильпола
                                             Форелевое хоз-ва “Алдога
                                         </a>
@@ -104,7 +104,7 @@
 
                         <div class="feedback__payment payment">
                             <div class="payment__btn-with-check">
-                                <button class="payment__btn-submit site-btn">Отправить</button>
+                                <button type="button" data-bind="modal_success_button" class="payment__btn-submit site-btn">Отправить</button>
                                 <input name="totalPaymentName" id="totalPayment" type="checkbox" class="payment__custom-input">
                                 <label for="totalPayment" class="payment__custom-label">
                                     Я СОГЛАСЕН на обработку и хранение моих персональных данных

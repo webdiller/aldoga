@@ -167,6 +167,8 @@
         &__wrapper_slider
             padding-left: 30px
             padding-right: 30px
+        &__wrapper_cart
+            margin-bottom: 60px
     .goods-list__item
         width: 100%
         &_catalog
@@ -231,6 +233,9 @@
             color: #000
 
 @media only screen and (max-width: 768px) 
+    .popular-goods
+        &__wrapper_cart
+            margin-bottom: 30px
     .goods-list__title
         font-size: 14px
     .goods-list__tags-tag
@@ -265,7 +270,11 @@
             margin-bottom: 20px
     .goods-list__footer
         margin-top: 10px
-            
+    .goods-list
+        &_cart
+            > div.owl-nav
+                left: -30px
+                right: -30px
 
 @media only screen and (max-width: 576px) 
     .goods-list__item
@@ -322,3 +331,8 @@
             margin-bottom: 20px
             flex-basis: 100%
             max-width: 320px
+    .goods-list
+        &_cart
+            > div.owl-nav
+                left: -15px
+                right: -15px

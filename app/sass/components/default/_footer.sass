@@ -58,10 +58,12 @@
     &__item
         flex-basis: 50%
         margin-bottom: 25px
+        &:nth-child(even)
+            text-align: right
     &__link
         +reset-link
         position: relative
-        display: block
+        display: inline-block
         color: #fff
         transition: all .4s ease
         &:hover,
@@ -137,6 +139,7 @@
         font-size: 12px
     .footer__navigation-list
         padding-left: 30px
+        max-width: 250px
     .footer__copyright-text
         font-size: 12px
     .footer__copyright
@@ -161,8 +164,9 @@
         flex: 1
         padding-right: 30px
     .footer__contact-list
-        flex: 1
         order: 3 
+        flex-basis: auto
+        margin-left: auto
     .contact-list__link_address
         max-width: 190px
 

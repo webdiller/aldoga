@@ -122,7 +122,7 @@
 						обуславливает создание систем массового участия. Товарищи! укрепление и развитие структуры
 						требуют от нас анализа модели развития.
 					</p>
-					<a href="#" class="about__more site-more">Читать подробнее</a>
+					<a href="#!" class="about__more site-more">Читать подробнее</a>
 				</div>
 			</section>
 
@@ -520,15 +520,15 @@
 								что есть возможность заказать много рыбы
 								и угостить ею всю мою деревню. Спасибо!
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more" data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
@@ -542,15 +542,15 @@
 								Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
 								счет
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more" data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
@@ -564,15 +564,15 @@
 								вкусно получилось.
 								Рыба очень свежая, на засол
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more" data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
@@ -586,15 +586,15 @@
 								вкусно получилось.
 								Рыба очень свежая, на засол
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more" data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
@@ -608,15 +608,15 @@
 								Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
 								счет
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more" data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
@@ -633,15 +633,15 @@
 								что есть возможность заказать много рыбы
 								и угостить ею всю мою деревню. Спасибо!
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more" data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#" class="about-reviews__images-link">
+									<a href="#!" class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
 									</a>
 								</li>

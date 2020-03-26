@@ -55,12 +55,12 @@
                             </button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -77,12 +77,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -99,12 +99,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -125,12 +125,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -147,12 +147,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -169,12 +169,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -195,12 +195,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -217,12 +217,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -239,12 +239,12 @@
                             <button data-bind="modal_review_button" class="site-more about-reviews__more">Отзыв полностью</button>
                             <ul class="about-reviews__images">
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
                                 <li class="about-reviews__images-item">
-                                    <a href="#" class="about-reviews__images-link">
+                                    <a href="#!" class="about-reviews__images-link">
                                         <img src="./images/dest/static/fishman.jpg" alt="" class="about-reviews__images-img">
                                     </a>
                                 </li>
@@ -256,17 +256,17 @@
                                 <button data-bind="modal_leave_review_button" class="pagination__link pagination__link_btn">Оставить отзыв</button>
                             </li>
                             <li class="pagination__item">
-                                <a class="pagination__link pagination__link_selected" href="#">1</a>
+                                <a class="pagination__link pagination__link_selected" href="#!">1</a>
                             </li>
                             <li class="pagination__item">
-                                <a class="pagination__link" href="#">2</a>
+                                <a class="pagination__link" href="#!">2</a>
                             </li>
                             <li class="pagination__item">
-                                <a class="pagination__link" href="#">3</a>
+                                <a class="pagination__link" href="#!">3</a>
                             </li>
 
                             <li class="pagination__item">
-                                <a class="pagination__link pagination__link_next  icon-right-open-mini" href="#">
+                                <a class="pagination__link pagination__link_next  icon-right-open-mini" href="#!">
                                 </a>
                             </li>
                         </ul>

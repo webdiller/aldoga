@@ -142,17 +142,17 @@
 
                     <ul class="pagination news__pagination">
                         <li class="pagination__item">
-                            <a class="pagination__link pagination__link_selected" href="#">1</a>
+                            <a class="pagination__link pagination__link_selected" href="#!">1</a>
                         </li>
                         <li class="pagination__item">
-                            <a class="pagination__link" href="#">2</a>
+                            <a class="pagination__link" href="#!">2</a>
                         </li>
                         <li class="pagination__item">
-                            <a class="pagination__link" href="#">3</a>
+                            <a class="pagination__link" href="#!">3</a>
                         </li>
 
                         <li class="pagination__item">
-                            <a class="pagination__link pagination__link_next  icon-right-open-mini" href="#">
+                            <a class="pagination__link pagination__link_next  icon-right-open-mini" href="#!">
                             </a>
                         </li>
                     </ul>

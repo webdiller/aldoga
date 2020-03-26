@@ -381,12 +381,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}());
 
-	const catalogWithFilterModule = (function () {
-		$("#catalogWithFilterPriceToggle").click(function () {
-			$("#catalogWithFilterPriceToggle span").toggleClass('active');
-		})
-	}());
-
 	// Счетчик для товара
 	const siteCounterModule = (function () {
 		$('.site-counter__control_minus').click(function () {
@@ -516,6 +510,18 @@ document.addEventListener("DOMContentLoaded", function () {
 			$('.site-overlay').toggleClass('active');
 		});
 
+		// переход на - отпрака успешна
+		$('[data-bind="modal_success_button"]').click(function () {
+			$('[data-bind="modal_success"]').toggleClass('active');
+			$('.site-overlay').toggleClass('active');
+		});
+
+		// переход на - отпрака успешна
+		$('[data-bind="modal_success_order_button"]').click(function () {
+			$('[data-bind="modal_success_order"]').toggleClass('active');
+			$('.site-overlay').toggleClass('active');
+		});
+
 		// кнопка - закрыть окно
 		$('[data-bind="modal_close"]').click(function () {
 			$('[data-type="modal"]').removeClass('active');
@@ -584,13 +590,47 @@ document.addEventListener("DOMContentLoaded", function () {
 		}());
 	}
 
+	// Сортировка и фильтр на страницах: catalog.php
 	const filterModule = (function () {
 
-		$('.catalog__list').isotope({
+		var sortByAscending = true;
+
+		var $grid = $('.catalog__list').isotope({
 			itemSelector: '.goods-list__item_catalog',
-			layoutMode: 'fitRows'
+			layoutMode: 'fitRows',
+			getSortData: {
+				name: '.name',
+				symbol: '.symbol',
+				number: '.number parseInt',
+				category: '[data-category]',
+				weight: function (itemElem) {
+					var weight = $(itemElem).find('.weight').text();
+					return parseFloat(weight.replace(/[\(\)]/g, ''));
+				}
+			}
 		});
 
+		$('.catalog__sorting-btn').on('click', function () {
+			sortByAscending = !sortByAscending;
+			var sortValue = $(this).attr('data-sort-value');
+			$('.catalog__sorting-btn').toggleClass('active');
+
+			if (sortByAscending === true) {
+				$grid.isotope({
+					sortBy: sortValue,
+					sortAscending: false
+				});
+			} else {
+				$grid.isotope({
+					sortBy: sortValue,
+					sortAscending: true
+				});
+			}
+
+		});
+
+
+		// Фильтр
 		$('.catalog__filter button').click(function () {
 			$('.catalog__filter button').removeClass('active');
 			$(this).addClass('active');
@@ -601,6 +641,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 			return false;
 		});
+
 
 	}());
 });

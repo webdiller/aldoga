@@ -9,12 +9,12 @@
                     <a href="mailto:fish@aldoga.pro" class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
                 </li>
                 <li class="contact-list__item">
-                    <a href="#" class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
+                    <a href="#!" class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
                         пос. Тиурула</a>
                 </li>
                 <li class="contact-list__item contact-list__item_socials">
-                    <a href="#" class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
-                    <a href="#" class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
+                    <a href="#!" class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
+                    <a href="#!" class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
                 </li>
             </ul>
             <div class="site-logo-large footer__logo">
@@ -32,11 +32,11 @@
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">Новости
+                    <a href="#!" class="navigation-list__link">Новости
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">Купить оптом
+                    <a href="#!" class="navigation-list__link">Купить оптом
                     </a>
                 </li>
                 <li class="navigation-list__item">
@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li class="navigation-list__item">
-                    <a href="#" class="navigation-list__link">О компании
+                    <a href="#!" class="navigation-list__link">О компании
                     </a>
                 </li>
                 <li class="navigation-list__item">

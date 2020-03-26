@@ -41,13 +41,13 @@
 							<img src="./images/dest/logo.png" alt="" class="logo">
 							<div class="menu">
 								<ul>
-									<li><a data-filter=".all" href="#">All</a></li>
-									<li><a data-filter=".finance" href="#">Finance</a></li>
-									<li><a data-filter=".tehnology" href="#">Tehnology</a></li>
-									<li><a data-filter=".ideas" href="#">Ideas</a></li>
-									<li><a data-filter=".news" href="#">News</a></li>
-									<li><a data-filter=".entertaiment" href="#">Entertaiment</a></li>
-									<li><a data-filter=".leadership" href="#">Leadership</a></li>
+									<li><a data-filter=".all" href="#!">All</a></li>
+									<li><a data-filter=".finance" href="#!">Finance</a></li>
+									<li><a data-filter=".tehnology" href="#!">Tehnology</a></li>
+									<li><a data-filter=".ideas" href="#!">Ideas</a></li>
+									<li><a data-filter=".news" href="#!">News</a></li>
+									<li><a data-filter=".entertaiment" href="#!">Entertaiment</a></li>
+									<li><a data-filter=".leadership" href="#!">Leadership</a></li>
 								</ul>
 							</div>
 						</div>
@@ -133,7 +133,7 @@
 						<div class="catalog__sorting">
 							<div class="catalog__sorting-item">
 								<p class="catalog__sorting-title">Сортировать по:</p>
-								<button class="catalog__sorting-btn">Цене</button>
+								<button data-sort-value="number" class="catalog__sorting-btn">Цене</button>
 							</div>
 						</div>
 					</div>
@@ -141,6 +141,7 @@
 
 					<ul class="catalog__list">
 
+						<!-- Стейки форели -->
 						<li class="goods-list__item goods-list__item_catalog all forel">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_1.jpg" src="./images/dest/products/product_1-min.jpg" alt="" class="goods-list__img lazy">
@@ -149,7 +150,7 @@
 								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number">3000 Р</span>
+									<span class="goods-list__price-number number">3000 Р</span>
 									<span class="goods-list__price-measure"></span>
 								</p>
 								<div class="goods-list__footer">
@@ -159,16 +160,17 @@
 							</div>
 						</li>
 
+						<!-- Форель охлаждённая -->
 						<li class="goods-list__item goods-list__item_catalog all forel">
 							<div class="goods-list__img-wrapper">
-								<img data-src="./images/dest/products/product_2.jpg" src="./images/dest/products/product_2-min.jpg" alt="" class="goods-list__img lazy">
+								<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
 								</p>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number">500 Р</span>
+									<span class="goods-list__price-number number">500 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -178,16 +180,17 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog  all ikra">
+						<!-- Форель малосольная -->
+						<li class="goods-list__item goods-list__item_catalog  all forel">
 							<div class="goods-list__img-wrapper">
-								<img data-src="./images/dest/products/product_3.jpg" src="./images/dest/products/product_3-min.jpg" alt="" class="goods-list__img lazy">
+								<img data-src="./images/dest/products/product_7.jpg" src="./images/dest/products/product_7-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
 								<p class="goods-list__title"></p>
 								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number">1000 Р</span>
+									<span class="goods-list__price-number number">1000 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -197,15 +200,16 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog all ikra">
+						<!-- Морс клюквенный -->
+						<li class="goods-list__item goods-list__item_catalog all yagodi">
 							<div class="goods-list__img-wrapper">
-								<img data-src="./images/dest/products/product_4.jpg" src="./images/dest/products/product_4-min.jpg" alt="" class="goods-list__img lazy">
+								<img data-src="./images/dest/products/product_8.jpg" src="./images/dest/products/product_8-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number">300 Р</span>
+									<span class="goods-list__price-number number">300 Р</span>
 									<span class="goods-list__price-measure">Л</span>
 								</p>
 								<div class="goods-list__footer">
@@ -215,15 +219,16 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog all suri">
+						<!-- Икра форели -->
+						<li class="goods-list__item goods-list__item_catalog all ikra">
 							<div class="goods-list__img-wrapper">
-								<img data-src="./images/dest/products/product_5.jpg" src="./images/dest/products/product_5-min.jpg" alt="" class="goods-list__img lazy">
+								<img data-src="./images/dest/products/product_9.jpg" src="./images/dest/products/product_9-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number">500 Р</span>
+									<span class="goods-list__price-number number">500 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -233,15 +238,248 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog all yagodi">
+						<!-- Сыр фермерский -->
+						<li class="goods-list__item goods-list__item_catalog all suri">
 							<div class="goods-list__img-wrapper">
-								<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="goods-list__img">
+								<img data-src="./images/dest/products/product_10.jpg" src="./images/dest/products/product_10-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number">600 Р</span>
+									<span class="goods-list__price-number number">600 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Стейки форели -->
+						<li class="goods-list__item goods-list__item_catalog all forel">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_1.jpg" src="./images/dest/products/product_1-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">3000 Р</span>
+									<span class="goods-list__price-measure"></span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Форель охлаждённая -->
+						<li class="goods-list__item goods-list__item_catalog all forel">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
+								</p>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Форель малосольная -->
+						<li class="goods-list__item goods-list__item_catalog  all forel">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_7.jpg" src="./images/dest/products/product_7-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title"></p>
+								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">1000 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Морс клюквенный -->
+						<li class="goods-list__item goods-list__item_catalog all yagodi">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_8.jpg" src="./images/dest/products/product_8-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">300 Р</span>
+									<span class="goods-list__price-measure">Л</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Икра форели -->
+						<li class="goods-list__item goods-list__item_catalog all ikra">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_9.jpg" src="./images/dest/products/product_9-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Сыр фермерский -->
+						<li class="goods-list__item goods-list__item_catalog all suri">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_10.jpg" src="./images/dest/products/product_10-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">600 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Стейки форели -->
+						<li class="goods-list__item goods-list__item_catalog all forel">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_1.jpg" src="./images/dest/products/product_1-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">3000 Р</span>
+									<span class="goods-list__price-measure"></span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Форель охлаждённая -->
+						<li class="goods-list__item goods-list__item_catalog all forel">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
+								</p>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Форель малосольная -->
+						<li class="goods-list__item goods-list__item_catalog  all forel">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_7.jpg" src="./images/dest/products/product_7-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title"></p>
+								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">1000 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Морс клюквенный -->
+						<li class="goods-list__item goods-list__item_catalog all yagodi">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_8.jpg" src="./images/dest/products/product_8-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">300 Р</span>
+									<span class="goods-list__price-measure">Л</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Икра форели -->
+						<li class="goods-list__item goods-list__item_catalog all ikra">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_9.jpg" src="./images/dest/products/product_9-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-measure">КГ</span>
+								</p>
+								<div class="goods-list__footer">
+									<a href="cart.php" class="site-btn site-btn_grey">Подробнее</a>
+									<button class="site-btn">В корзину</button>
+								</div>
+							</div>
+						</li>
+
+						<!-- Сыр фермерский -->
+						<li class="goods-list__item goods-list__item_catalog all suri">
+							<div class="goods-list__img-wrapper">
+								<img data-src="./images/dest/products/product_10.jpg" src="./images/dest/products/product_10-min.jpg" alt="" class="goods-list__img lazy">
+							</div>
+							<div class="goods-list__content">
+								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
+								<p class="goods-list__price">
+									<span class="goods-list__price-number number">600 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -255,19 +493,19 @@
 
 					<ul class="catalog__pagination pagination wrapper">
 						<li class="pagination__item">
-							<a class="pagination__link pagination__link_btn" href="#">Показать еще</a>
+							<a class="pagination__link pagination__link_btn" href="#!">Показать еще</a>
 						</li>
 						<li class="pagination__item">
-							<a class="pagination__link pagination__link_selected" href="#">1</a>
+							<a class="pagination__link pagination__link_selected" href="#!">1</a>
 						</li>
 						<li class="pagination__item">
-							<a class="pagination__link" href="#">2</a>
+							<a class="pagination__link" href="#!">2</a>
 						</li>
 						<li class="pagination__item">
-							<a class="pagination__link" href="#">3</a>
+							<a class="pagination__link" href="#!">3</a>
 						</li>
 						<li class="pagination__item">
-							<a class="pagination__link pagination__link_next  icon-right-open-mini" href="#">
+							<a class="pagination__link pagination__link_next  icon-right-open-mini" href="#!">
 							</a>
 						</li>
 					</ul>
@@ -287,7 +525,7 @@
 							обуславливает создание систем массового участия. Товарищи! укрепление и развитие структуры
 							требуют от нас анализа модели развития.
 						</p>
-						<a href="#" class="about__more site-more">Читать подробнее</a>
+						<a href="#!" class="about__more site-more">Читать подробнее</a>
 					</div>
 				</section>
 

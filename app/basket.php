@@ -261,7 +261,7 @@
                                         ул. Московская, 50, ТЦ “Московский”,
                                         2 этаж, служба доставки Boxberry
                                     </p>
-                                    <a href="#" class="contact-form__description-link">Выбрать пункт доставки</a>
+                                    <a href="#!" class="contact-form__description-link">Выбрать пункт доставки</a>
                                 </div>
                             </form>
 
@@ -313,7 +313,7 @@
                             </div>
                         </div>
                         <div class="payment__btn-with-check">
-                            <button class="payment__btn-submit site-btn">Перейти к оплате</button>
+                            <button data-bind="modal_success_button" class="payment__btn-submit site-btn">Перейти к оплате</button>
                             <input name="totalPaymentName" id="totalPayment" type="checkbox" class="payment__custom-input">
                             <label for="totalPayment" class="payment__custom-label">
                                 Я СОГЛАСЕН на обработку и хранение моих персональных данных
