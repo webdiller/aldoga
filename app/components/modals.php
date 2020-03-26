@@ -93,21 +93,21 @@
                 <div class="modal__review">
                     <div class="modal__images cart-images">
                         <div class="cart-images__thumbnails">
-                            <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
+                            <a data-fancybox="review" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
                                 <img src="./images/dest/products/product_5-min.jpg" alt="" class="cart-images__thumbnail">
                             </a>
-                            <a data-fancybox="cart" href="./images/dest/products/product_7.jpg" class="cart-images__thumbnail-wrapper">
+                            <a data-fancybox="review" href="./images/dest/products/product_7.jpg" class="cart-images__thumbnail-wrapper">
                                 <img src="./images/dest/products/product_7-min.jpg" alt="" class="cart-images__thumbnail">
                             </a>
-                            <a data-fancybox="cart" href="./images/dest/products/product_6.jpg" class="cart-images__thumbnail-wrapper">
+                            <a data-fancybox="review" href="./images/dest/products/product_6.jpg" class="cart-images__thumbnail-wrapper">
                                 <img src="./images/dest/products/product_6-min.jpg" alt="" class="cart-images__thumbnail">
                             </a>
-                            <a data-fancybox="cart" href="./images/dest/products/product_1.jpg" class="cart-images__thumbnail-wrapper">
+                            <a data-fancybox="review" href="./images/dest/products/product_1.jpg" class="cart-images__thumbnail-wrapper">
                                 <img src="./images/dest/products/product_1-min.jpg" alt="" class="cart-images__thumbnail">
                             </a>
                         </div>
 
-                        <a data-fancybox="cart" href="./images/dest/products/product_5.jpg" class="cart-images__main-img-wrapper">
+                        <a data-fancybox="review" href="./images/dest/products/product_5.jpg" class="cart-images__main-img-wrapper">
                             <img src="./images/dest/products/product_5.jpg" alt="" class="cart-images__main-img">
                         </a>
                     </div>

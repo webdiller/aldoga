@@ -39,6 +39,9 @@
                 opacity: 1
                 z-index: 100
         &_catalog
+            float: left
+            margin: 0 15px 30px 15px
+            width: calc(33.3% - 30px)
             &:hover
                 transform: scale(1.025)
                 z-index: 100
@@ -88,10 +91,22 @@
         &_news
             text-align: left
             margin-bottom: 15px
+        &_strict
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            height: 40px
     &__tags
         color: $grey
     &__tags-tag
         color: $grey
+        &_strict
+            display: -webkit-box
+            -webkit-line-clamp: 1
+            -webkit-box-orient: vertical
+            overflow: hidden
+            height: 30px
     &__description
         display: -webkit-box
         min-height: 100px
@@ -121,7 +136,7 @@
         top: calc(100% - 5px)
         left: 0
         right: 0
-        padding: 0 35px 30px 35px
+        padding: 0 20px 30px 20px
         display: flex
         justify-content: space-between
         background-color: $lightgrey
@@ -145,6 +160,7 @@
         max-width: 85%
         .popular-goods__list
             margin: 0 auto 
+
 @media only screen and (max-width: 992px) 
     .popular-goods
         text-align: center
@@ -154,8 +170,10 @@
     .goods-list__item
         width: 100%
         &_catalog
-            flex-basis: 46%
-            margin: 0 15px 30px 15px
+            margin: 0 7px 30px 7px
+            width: calc(33.3% - 14px)
+            .goods-list__content
+                padding-bottom: 15px
         &_news
             flex-basis: calc(33% - 14px)
             margin-left: 7px
@@ -221,8 +239,11 @@
         font-size: 13px
     .goods-list__item
         &_catalog
-            flex-basis: 46%
-            margin: 0 5px 10px 5px
+            vertical-align: middle
+            float: none
+            display: inline-block
+            margin: 0 10px 10px 10px
+            width: calc(50% - 23px) 
             .goods-list__content
                 padding: 15px 10px
             .goods-list__title
@@ -247,8 +268,23 @@
             
 
 @media only screen and (max-width: 576px) 
+    .goods-list__item
+        &_catalog
+            vertical-align: middle
+            float: none
+            display: inline-block
+            margin: 0 0 10px 0
+            width: 100%
     .popular-goods__wrapper_slider
         padding: 0 15px 0 15px
+    .goods-list__item_catalog .goods-list__title
+        font-size: 18px
+        height: 30px
+        margin-bottom: 0
+    .goods-list__tags-tag_strict
+        font-size: 16px
+    .goods-list__price-number
+        font-size: 16px
     .goods-list_slider
         margin-bottom: 0
         > div.owl-nav
@@ -273,10 +309,6 @@
 @media only screen and (max-width: 480px) 
     .goods-list__item
         &_catalog
-            flex-basis: 100%
-            max-width: 350px
-            &:not(:last-child)
-                margin: 0 0 20px 0
             .goods-list__title
             .goods-list__footer
                 flex-wrap: wrap

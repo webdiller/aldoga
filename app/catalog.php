@@ -118,50 +118,36 @@
 			</div> -->
 
 			<!-- Каталог -->
-			<!-- <div id="catalogWithFilter" class="catalog">
+			<div id="catalogWithFilter" class="catalog">
 				<div class="catalog__wrapper wrapper">
 					<p class="catalog__title site-title">Каталог</p>
 
-					<div class="catalog__header catalog-header">
-						<div class="catalog-header__wrapper">
-							<div class="catalog-header__categories">
-
-								<input class="catalog-header__categories-input" type="radio" checked name="catalogSorting" id="catalog1">
-								<label class="catalog-header__categories-label" for="catalog1">Форель</label>
-
-								<input class="catalog-header__categories-input" type="radio" name="catalogSorting" id="catalog2">
-								<label class="catalog-header__categories-label" for="catalog2">Икра форели</label>
-
-								<input class="catalog-header__categories-input" type="radio" name="catalogSorting" id="catalog3">
-								<label class="catalog-header__categories-label" for="catalog3">Сыры</label>
-
-								<input class="catalog-header__categories-input" type="radio" name="catalogSorting" id="catalog4">
-								<label class="catalog-header__categories-label" for="catalog4">Ягоды</label>
-							</div>
-							<div class="catalog-header__sorting">
-								<p class="catalog-header__sorting-title">Сортировать по:</p>
-								<div class="catalog-header__sorting-select">
-									<button id="catalogWithFilterPriceToggle" class="catalog-header__sorting-button">
-										Цене
-										<span class="catalog-header__sorting-icon icon-up-small active"></span>
-									</button>
-								</div>
+					<div class="catalog__header">
+						<div class="catalog__filter">
+							<button data-filter=".all" class="catalog__filter-btn catalog__filter-btn_trout">Все</button>
+							<button data-filter=".forel" class="catalog__filter-btn catalog__filter-btn_trout">Форель</button>
+							<button data-filter=".ikra" class="catalog__filter-btn catalog__filter-btn_caviar">Икра форели</button>
+							<button data-filter=".suri" class="catalog__filter-btn catalog__filter-btn_сheese">Сыры</button>
+							<button data-filter=".yagodi" class="catalog__filter-btn catalog__filter-btn_berry">Ягоды</button>
+						</div>
+						<div class="catalog__sorting">
+							<div class="catalog__sorting-item">
+								<p class="catalog__sorting-title">Сортировать по:</p>
+								<button class="catalog__sorting-btn">Цене</button>
 							</div>
 						</div>
 					</div>
 
-					<ul class="goods-list catalog__goods-list">
 
-						<li class="goods-list__item goods-list__item_catalog">
+					<ul class="catalog__list">
+
+						<li class="goods-list__item goods-list__item_catalog all forel">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_1.jpg" src="./images/dest/products/product_1-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
-								<p class="goods-list__title">Стейки форели</p>
-								<p class="goods-list__tags">
-									<span class="goods-list__tags-tag">свежие</span>
-									<span class="goods-list__tags-tag">охлаждённые</span>
-								</p>
+								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number">3000 Р</span>
 									<span class="goods-list__price-measure"></span>
@@ -173,15 +159,13 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog">
+						<li class="goods-list__item goods-list__item_catalog all forel">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_2.jpg" src="./images/dest/products/product_2-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
-								<p class="goods-list__title">Форель охлаждённая </p>
-								<p class="goods-list__tags">
-									<span class="goods-list__tags-tag">тушка потрошённая</span>
-									<span class="goods-list__tags-tag">без головы</span>
+								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
 								</p>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number">500 Р</span>
@@ -194,15 +178,14 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog">
+						<li class="goods-list__item goods-list__item_catalog  all ikra">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_3.jpg" src="./images/dest/products/product_3-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
-								<p class="goods-list__title">Форель малосольная</p>
-								<p class="goods-list__tags">
-									<span class="goods-list__tags-tag">филе форели слабого посола</span>
-								</p>
+								<p class="goods-list__title"></p>
+								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number">1000 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
@@ -214,15 +197,13 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog">
+						<li class="goods-list__item goods-list__item_catalog all ikra">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_4.jpg" src="./images/dest/products/product_4-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
-								<p class="goods-list__title">Морс клюквенный</p>
-								<p class="goods-list__tags">
-									<span class="goods-list__tags-tag">свежий</span>
-								</p>
+								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number">300 Р</span>
 									<span class="goods-list__price-measure">Л</span>
@@ -234,15 +215,13 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog">
+						<li class="goods-list__item goods-list__item_catalog all suri">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_5.jpg" src="./images/dest/products/product_5-min.jpg" alt="" class="goods-list__img lazy">
 							</div>
 							<div class="goods-list__content">
-								<p class="goods-list__title">Икра форели </p>
-								<p class="goods-list__tags">
-									<span class="goods-list__tags-tag">лососёвая отборная красная икра</span>
-								</p>
+								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number">500 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
@@ -254,16 +233,13 @@
 							</div>
 						</li>
 
-						<li class="goods-list__item goods-list__item_catalog">
+						<li class="goods-list__item goods-list__item_catalog all yagodi">
 							<div class="goods-list__img-wrapper">
 								<img data-src="./images/dest/products/product_6.jpg" src="./images/dest/products/product_6-min.jpg" alt="" class="goods-list__img">
 							</div>
 							<div class="goods-list__content">
-								<p class="goods-list__title">Сыр фермерский</p>
-								<p class="goods-list__tags">
-									<span class="goods-list__tags-tag">сладковатый, ореховый</span>
-									<span class="goods-list__tags-tag">ореховый</span>
-								</p>
+								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
+								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number">600 Р</span>
 									<span class="goods-list__price-measure">КГ</span>
@@ -274,6 +250,7 @@
 								</div>
 							</div>
 						</li>
+
 					</ul>
 
 					<ul class="catalog__pagination pagination wrapper">
@@ -295,57 +272,56 @@
 						</li>
 					</ul>
 				</div>
-			</div> -->
 
 
-			<!-- Текст -->
-			<!-- <section class="about">
-				<div class="about__wrapper wrapper wrapper_md">
-					<h2 class="site-title about__title">Текст</h2>
-					<p class="about__text site-text">
-						Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс
-						внедрения и модернизации модели развития. Задача организации, в особенности же консультация с
-						широким активом позволяет выполнять важные по разработке модели развития. С другой стороны новая
-						модель организационной деятельности представляет собой интересный эксперимент проверки. Не
-						следует, однако забывать, что реализация намеченных плановых заданий в значительной степени
-						обуславливает создание систем массового участия. Товарищи! укрепление и развитие структуры
-						требуют от нас анализа модели развития.
-					</p>
-					<a href="#" class="about__more site-more">Читать подробнее</a>
+				<!-- Текст -->
+				<section class="about">
+					<div class="about__wrapper wrapper wrapper_md">
+						<h2 class="site-title about__title">Текст</h2>
+						<p class="about__text site-text">
+							Задача организации, в особенности же сложившаяся структура организации влечет за собой процесс
+							внедрения и модернизации модели развития. Задача организации, в особенности же консультация с
+							широким активом позволяет выполнять важные по разработке модели развития. С другой стороны новая
+							модель организационной деятельности представляет собой интересный эксперимент проверки. Не
+							следует, однако забывать, что реализация намеченных плановых заданий в значительной степени
+							обуславливает создание систем массового участия. Товарищи! укрепление и развитие структуры
+							требуют от нас анализа модели развития.
+						</p>
+						<a href="#" class="about__more site-more">Читать подробнее</a>
+					</div>
+				</section>
+
+
+				<!-- Преимущества -->
+				<div class="features">
+					<div class="features__wrapper wrapper wrapper_md">
+						<div class="features__item">
+							<img src="./images/dest/static/feature-1.png" alt="" class="features__img">
+							<div class="features__content">
+								<p class="features__title">Доставка в СПБ</p>
+								<p class="features__descr">свежей рыбы в течении 24 часов</p>
+							</div>
+						</div>
+						<div class="features__item">
+							<img src="./images/dest/static/feature-2.png" alt="" class="features__img">
+							<div class="features__content">
+								<p class="features__title">Выгодные цены</p>
+								<p class="features__descr">С нами можно экономить!</p>
+							</div>
+						</div>
+						<div class="features__item">
+							<img src="./images/dest/static/feature-3.png" alt="" class="features__img">
+							<div class="features__content">
+								<p class="features__title">По настоящему качественный</p>
+								<p class="features__descr">и экологически чистый продукт</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</section> -->
 
+				<?php include 'components/promo.php'; ?>
 
-			<!-- Преимущества -->
-			<!-- <div class="features">
-				<div class="features__wrapper wrapper wrapper_md">
-					<div class="features__item">
-						<img src="./images/dest/static/feature-1.png" alt="" class="features__img">
-						<div class="features__content">
-							<p class="features__title">Доставка в СПБ</p>
-							<p class="features__descr">свежей рыбы в течении 24 часов</p>
-						</div>
-					</div>
-					<div class="features__item">
-						<img src="./images/dest/static/feature-2.png" alt="" class="features__img">
-						<div class="features__content">
-							<p class="features__title">Выгодные цены</p>
-							<p class="features__descr">С нами можно экономить!</p>
-						</div>
-					</div>
-					<div class="features__item">
-						<img src="./images/dest/static/feature-3.png" alt="" class="features__img">
-						<div class="features__content">
-							<p class="features__title">По настоящему качественный</p>
-							<p class="features__descr">и экологически чистый продукт</p>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
-			<?php include 'components/promo.php'; ?>
-
-		</div>
+			</div>
 	</main>
 
 	<?php include 'components/footer.php'; ?>

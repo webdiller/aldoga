@@ -586,17 +586,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const filterModule = (function () {
 
-		$('.ccontainer2').isotope({
-			itemSelector: '.card',
+		$('.catalog__list').isotope({
+			itemSelector: '.goods-list__item_catalog',
 			layoutMode: 'fitRows'
 		});
 
-		$('.menu li a').click(function () {
-			$('.menu li a').removeClass('active');
+		$('.catalog__filter button').click(function () {
+			$('.catalog__filter button').removeClass('active');
 			$(this).addClass('active');
 
 			let selector = $(this).attr('data-filter');
-			$('.ccontainer2').isotope({
+			$('.catalog__list').isotope({
 				filter: selector
 			});
 			return false;
