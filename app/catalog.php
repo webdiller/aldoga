@@ -124,8 +124,8 @@
 
 					<div class="catalog__header">
 						<div class="catalog__filter">
-							<button data-filter=".all" class="catalog__filter-btn catalog__filter-btn_trout">Все</button>
-							<button data-filter=".forel" class="catalog__filter-btn catalog__filter-btn_trout">Форель</button>
+							<button data-filter=".all" class="catalog__filter-btn catalog__filter-btn_all">Все</button>
+							<button data-filter=".forel" class="catalog__filter-btn catalog__filter-btn_meat">Форель</button>
 							<button data-filter=".ikra" class="catalog__filter-btn catalog__filter-btn_caviar">Икра форели</button>
 							<button data-filter=".suri" class="catalog__filter-btn catalog__filter-btn_сheese">Сыры</button>
 							<button data-filter=".yagodi" class="catalog__filter-btn catalog__filter-btn_berry">Ягоды</button>
@@ -133,7 +133,10 @@
 						<div class="catalog__sorting">
 							<div class="catalog__sorting-item">
 								<p class="catalog__sorting-title">Сортировать по:</p>
-								<button data-sort-value="number" class="catalog__sorting-btn">Цене</button>
+								<button data-sort-value="number" class="catalog__sorting-btn">
+									<span class="catalog__sorting-btn-text_sm">Цена</span>
+									<span class="catalog__sorting-btn-text_md">Цене</span>
+								</button>
 							</div>
 						</div>
 					</div>

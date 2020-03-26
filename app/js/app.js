@@ -589,6 +589,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		$('.catalog__sorting-btn').on('click', function () {
 			sortByAscending = !sortByAscending;
 			var sortValue = $(this).attr('data-sort-value');
+			
 			$('.catalog__sorting-btn').toggleClass('active');
 
 			if (sortByAscending === true) {
