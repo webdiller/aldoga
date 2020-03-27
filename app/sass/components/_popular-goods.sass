@@ -119,17 +119,30 @@
         display: block
         margin-right: auto
     &__price
+        display: flex
+        align-items: stretch
     &__price-number
         font-weight: 800
+    &__price-icon
+        &::before
+            margin: 0
+            color: #111
+        &_small
+            font-size: 20px
+            &::before
     &__price-measure
         position: relative
+        align-self: center
         padding-left: 10px
         font-size: 14px
+        margin-left: 5px
         &:empty
             display: none
         &::before
             content: "|"
             position: absolute
+            top: 44%
+            transform: translateY(-50%)
             left: 0
     &__footer
         position: absolute
@@ -240,6 +253,8 @@
         font-size: 14px
     .goods-list__tags-tag
         font-size: 11px
+    .goods-list__price-icon_small
+        font-size: 16px
     .goods-list__price-number,.goods-list__price-measure
         font-size: 13px
     .goods-list__item

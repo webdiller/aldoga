@@ -65,7 +65,7 @@
 							<p class="cart__content-tags">свежие, охлаждённые, в упаковке по 250 шт.</p>
 							<p class="cart__content-description">Товар в наличии!</p>
 							<div class="cart__content-price-counter">
-								<p class="cart__content-price">3000 р</p>
+								<p class="cart__content-price">3000 <span class="icon-rouble goods-list__price-icon goods-list__price-icon_small"></span></p>
 								<div class="site-counter cart__content-counter">
 									<button class="site-counter__control site-counter__control_minus icon-minus"></button>
 									<input type="number" value="1" class="site-counter__input">
@@ -153,7 +153,7 @@
 										<span class="goods-list__tags-tag">охлаждённые</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">3000 Р</span>
+										<span class="goods-list__price-number">3000 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure"></span>
 									</p>
 								</div>
@@ -172,7 +172,7 @@
 										<span class="goods-list__tags-tag">без головы</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">500 Р</span>
+										<span class="goods-list__price-number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -190,7 +190,7 @@
 										<span class="goods-list__tags-tag">филе форели слабого посола</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">1000 Р</span>
+										<span class="goods-list__price-number">1000 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -208,7 +208,7 @@
 										<span class="goods-list__tags-tag">свежий</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">300 Р</span>
+										<span class="goods-list__price-number">300 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">Л</span>
 									</p>
 								</div>
@@ -226,7 +226,7 @@
 										<span class="goods-list__tags-tag">лососёвая отборная красная икра</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">500 Р</span>
+										<span class="goods-list__price-number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -242,10 +242,9 @@
 									<p class="goods-list__title">Сыр фермерский</p>
 									<p class="goods-list__tags">
 										<span class="goods-list__tags-tag">сладковатый, ореховый</span>
-										<span class="goods-list__tags-tag">ореховый</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">600 Р</span>
+										<span class="goods-list__price-number">600 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>

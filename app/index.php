@@ -144,7 +144,7 @@
 										<span class="goods-list__tags-tag">охлаждённые</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">3000 Р</span>
+										<span class="goods-list__price-number">3000 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure"></span>
 									</p>
 								</div>
@@ -163,7 +163,7 @@
 										<span class="goods-list__tags-tag">без головы</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">500 Р</span>
+										<span class="goods-list__price-number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -181,7 +181,7 @@
 										<span class="goods-list__tags-tag">филе форели слабого посола</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">1000 Р</span>
+										<span class="goods-list__price-number">1000 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -199,7 +199,7 @@
 										<span class="goods-list__tags-tag">свежий</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">300 Р</span>
+										<span class="goods-list__price-number">300 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">Л</span>
 									</p>
 								</div>
@@ -217,7 +217,7 @@
 										<span class="goods-list__tags-tag">лососёвая отборная красная икра</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">500 Р</span>
+										<span class="goods-list__price-number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -236,7 +236,7 @@
 										<span class="goods-list__tags-tag">ореховый</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">600 Р</span>
+										<span class="goods-list__price-number">600 <span class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>

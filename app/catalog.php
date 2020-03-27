@@ -153,7 +153,7 @@
 								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">3000 Р</span>
+									<span class="goods-list__price-number number">3000 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure"></span>
 								</p>
 								<div class="goods-list__footer">
@@ -173,7 +173,7 @@
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
 								</p>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -193,7 +193,7 @@
 								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">1000 Р</span>
+									<span class="goods-list__price-number number">1000 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -212,7 +212,7 @@
 								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">300 Р</span>
+									<span class="goods-list__price-number number">300 Р <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">Л</span>
 								</p>
 								<div class="goods-list__footer">
@@ -231,7 +231,7 @@
 								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -250,7 +250,7 @@
 								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">600 Р</span>
+									<span class="goods-list__price-number number">600 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -269,7 +269,7 @@
 								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">3000 Р</span>
+									<span class="goods-list__price-number number">3000 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure"></span>
 								</p>
 								<div class="goods-list__footer">
@@ -289,7 +289,7 @@
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
 								</p>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -309,7 +309,7 @@
 								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">1000 Р</span>
+									<span class="goods-list__price-number number">1000 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -328,7 +328,7 @@
 								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">300 Р</span>
+									<span class="goods-list__price-number number">300 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">Л</span>
 								</p>
 								<div class="goods-list__footer">
@@ -347,7 +347,7 @@
 								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -366,7 +366,7 @@
 								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">600 Р</span>
+									<span class="goods-list__price-number number">600 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -385,7 +385,7 @@
 								<p class="goods-list__title goods-list__title_strict">Стейки форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежие охлаждённые</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">3000 Р</span>
+									<span class="goods-list__price-number number">3000 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure"></span>
 								</p>
 								<div class="goods-list__footer">
@@ -405,7 +405,7 @@
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
 								</p>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -425,7 +425,7 @@
 								<p class="goods-list__title goods-list__title_strict">Форель малосольная</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">филе форели слабого посола</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">1000 Р</span>
+									<span class="goods-list__price-number number">1000 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -444,7 +444,7 @@
 								<p class="goods-list__title goods-list__title_strict">Морс клюквенный</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">свежий</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">300 Р</span>
+									<span class="goods-list__price-number number">300 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">Л</span>
 								</p>
 								<div class="goods-list__footer">
@@ -463,7 +463,7 @@
 								<p class="goods-list__title goods-list__title_strict">Икра форели</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">лососёвая отборная красная икра</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">500 Р</span>
+									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
@@ -482,7 +482,7 @@
 								<p class="goods-list__title goods-list__title_strict">Сыр фермерский</p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">сладковатый, ореховый</span>
 								<p class="goods-list__price">
-									<span class="goods-list__price-number number">600 Р</span>
+									<span class="goods-list__price-number number">600 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
 								</p>
 								<div class="goods-list__footer">
