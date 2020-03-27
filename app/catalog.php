@@ -32,91 +32,6 @@
 				</ul>
 			</div>
 
-			<!-- <div class="wrapper">
-
-				<div class="isotop-example123">
-
-					<div class="vheader">
-						<div class="container">
-							<img src="./images/dest/logo.png" alt="" class="logo">
-							<div class="menu">
-								<ul>
-									<li><a data-filter=".all" href="#!">All</a></li>
-									<li><a data-filter=".finance" href="#!">Finance</a></li>
-									<li><a data-filter=".tehnology" href="#!">Tehnology</a></li>
-									<li><a data-filter=".ideas" href="#!">Ideas</a></li>
-									<li><a data-filter=".news" href="#!">News</a></li>
-									<li><a data-filter=".entertaiment" href="#!">Entertaiment</a></li>
-									<li><a data-filter=".leadership" href="#!">Leadership</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="contenct">
-						<div class="ccontainer2">
-
-							<figure class="card all finance">
-								<img src="./images/dest/products/product_1-min.jpg" alt="">
-								<figcaption>
-									<h3>finance</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore totam distinctio recusandae perspiciatis in! Nam ducimus architecto assumenda, aliquam officiis quo laudantium reiciendis impedit atque hic, quas, blanditiis perferendis.</p>
-
-								</figcaption>
-							</figure>
-
-							<figure class="card all tehnology">
-								<img src="./images/dest/products/product_1-min.jpg" alt="">
-								<figcaption>
-									<h3>Tehnology</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore totam distinctio recusandae perspiciatis in! Nam ducimus architecto assumenda, aliquam officiis quo laudantium reiciendis impedit atque hic, quas, blanditiis perferendis.</p>
-
-								</figcaption>
-							</figure>
-
-							<figure class="card all ideas">
-								<img src="./images/dest/products/product_1-min.jpg" alt="">
-								<figcaption>
-									<h3>Iideas</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore totam distinctio recusandae perspiciatis in! Nam ducimus architecto assumenda, aliquam officiis quo laudantium reiciendis impedit atque hic, quas, blanditiis perferendis.</p>
-
-								</figcaption>
-							</figure>
-
-							<figure class="card all news">
-								<img src="./images/dest/products/product_1-min.jpg" alt="">
-								<figcaption>
-									<h3>News</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore totam distinctio recusandae perspiciatis in! Nam ducimus architecto assumenda, aliquam officiis quo laudantium reiciendis impedit atque hic, quas, blanditiis perferendis.</p>
-
-								</figcaption>
-							</figure>
-
-							<figure class="card all entertaiment">
-								<img src="./images/dest/products/product_1-min.jpg" alt="">
-								<figcaption>
-									<h3>Entertaiment</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore totam distinctio recusandae perspiciatis in! Nam ducimus architecto assumenda, aliquam officiis quo laudantium reiciendis impedit atque hic, quas, blanditiis perferendis.</p>
-
-								</figcaption>
-							</figure>
-
-							<figure class="card all leadership">
-								<img src="./images/dest/products/product_1-min.jpg" alt="">
-								<figcaption>
-									<h3>Leadership</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias labore totam distinctio recusandae perspiciatis in! Nam ducimus architecto assumenda, aliquam officiis quo laudantium reiciendis impedit atque hic, quas, blanditiis perferendis.</p>
-
-								</figcaption>
-							</figure>
-
-						</div>
-					</div>
-
-				</div>
-
-			</div> -->
-
 			<!-- Каталог -->
 			<div id="catalogWithFilter" class="catalog">
 				<div class="catalog__wrapper wrapper">
@@ -182,7 +97,6 @@
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
-								</p>
 								<p class="goods-list__price">
 									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
@@ -298,7 +212,7 @@
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
-								</p>
+								
 								<p class="goods-list__price">
 									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
@@ -414,7 +328,7 @@
 							<div class="goods-list__content">
 								<p class="goods-list__title goods-list__title_strict">Форель охлаждённая </p>
 								<span class="goods-list__tags-tag goods-list__tags-tag_strict">тушка потрошённая без головы</span>
-								</p>
+								
 								<p class="goods-list__price">
 									<span class="goods-list__price-number number">500 <span class="icon-rouble goods-list__price-icon"></span></span>
 									<span class="goods-list__price-measure">КГ</span>
@@ -574,14 +488,14 @@
 				<?php include 'components/promo.php'; ?>
 
 			</div>
+
+		</div>
 	</main>
 
 	<?php include 'components/footer.php'; ?>
 	<?php include 'components/modals.php'; ?>
 
 	<script src="js/app.min.js"></script>
-	<style>
-	</style>
 
 </body>
 

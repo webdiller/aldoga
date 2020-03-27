@@ -41,8 +41,8 @@
                     <div class="about-reviews__list">
 
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Алиса Н.</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Алиса Н.</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Я люблю рыбу. Но проживаю в Средней Азии - а у нас, к сожалению, с естественными
                                 водоемами напряженка - есть единственно море (Аральское), и то в состоянии экологической
                                 катастрофы. А две реки на всю страну еле выповишь, чтобы нормально поесть. И вот я
@@ -67,8 +67,8 @@
                             </ul>
                         </div>
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Максим Л</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Максим Л</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы
                                 эти вкусняшки приносили еще и пользу.
                                 Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
@@ -89,8 +89,8 @@
                             </ul>
                         </div>
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Настя Т.</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Настя Т.</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Спасибо огромное! Сегодня купили две рыбы, и заказывала первый раз. В одной рыбе была
                                 икра. Спасибо за икорку, приятный бонус. Засолила икру на 5 минут, сразу же попробовала,
                                 вкусно получилось.
@@ -112,8 +112,8 @@
                         </div>
 
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Алиса Н.</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Алиса Н.</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Я люблю рыбу. Но проживаю в Средней Азии - а у нас, к сожалению, с естественными
                                 водоемами напряженка - есть единственно море (Аральское), и то в состоянии экологической
                                 катастрофы. А две реки на всю страну еле выповишь, чтобы нормально поесть. И вот я
@@ -137,8 +137,8 @@
                             </ul>
                         </div>
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Максим Л</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Максим Л</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы
                                 эти вкусняшки приносили еще и пользу.
                                 Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
@@ -159,8 +159,8 @@
                             </ul>
                         </div>
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Настя Т.</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Настя Т.</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Спасибо огромное! Сегодня купили две рыбы, и заказывала первый раз. В одной рыбе была
                                 икра. Спасибо за икорку, приятный бонус. Засолила икру на 5 минут, сразу же попробовала,
                                 вкусно получилось.
@@ -182,8 +182,8 @@
                         </div>
 
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Алиса Н.</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Алиса Н.</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Я люблю рыбу. Но проживаю в Средней Азии - а у нас, к сожалению, с естественными
                                 водоемами напряженка - есть единственно море (Аральское), и то в состоянии экологической
                                 катастрофы. А две реки на всю страну еле выповишь, чтобы нормально поесть. И вот я
@@ -207,8 +207,8 @@
                             </ul>
                         </div>
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Максим Л</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Максим Л</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы
                                 эти вкусняшки приносили еще и пользу.
                                 Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
@@ -229,8 +229,8 @@
                             </ul>
                         </div>
                         <div class="about-reviews__item about-reviews__item_flex">
-                            <p class="about-reviews__name">Настя Т.</p>
-                            <p class="site-text about-reviews__text">
+                            <p data-bind="author-name" class="about-reviews__name">Настя Т.</p>
+                            <p data-bind="author-text" class="site-text about-reviews__text">
                                 Спасибо огромное! Сегодня купили две рыбы, и заказывала первый раз. В одной рыбе была
                                 икра. Спасибо за икорку, приятный бонус. Засолила икру на 5 минут, сразу же попробовала,
                                 вкусно получилось.

@@ -92,9 +92,9 @@
             <div class="modal__center">
                 <div class="modal__review">
                     <div class="modal__images cart-images">
-                        <div class="cart-images__thumbnails">
-                            <a data-fancybox="review" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
-                                <img src="./images/dest/products/product_5-min.jpg" alt="" class="cart-images__thumbnail">
+                        <div data-bind="author-thumbnails" class="cart-images__thumbnails">
+                            <a data-bind="author-img-fancy" data-fancybox="review" href="./images/dest/products/product_5.jpg" class="cart-images__thumbnail-wrapper active">
+                                <img data-bind="author-img" src="./images/dest/products/product_5-min.jpg" alt="" class="cart-images__thumbnail">
                             </a>
                             <a data-fancybox="review" href="./images/dest/products/product_7.jpg" class="cart-images__thumbnail-wrapper">
                                 <img src="./images/dest/products/product_7-min.jpg" alt="" class="cart-images__thumbnail">
@@ -107,25 +107,14 @@
                             </a>
                         </div>
 
-                        <a data-fancybox="review" href="./images/dest/products/product_5.jpg" class="cart-images__main-img-wrapper">
-                            <img src="./images/dest/products/product_5.jpg" alt="" class="cart-images__main-img">
+                        <a data-bind="author-main-img-fancy" data-fancybox="review" href="./images/dest/products/product_5.jpg" class="cart-images__main-img-wrapper">
+                            <img data-bind="author-main-img" src="./images/dest/products/product_5.jpg" alt="" class="cart-images__main-img">
                         </a>
                     </div>
                     <div class="modal__review-content">
-                        <p class="modal__author-name">Максим Л.</p>
-                        <p class="modal__author-text">
+                        <p data-bind="author-name" class="modal__author-name">Максим Л.</p>
+                        <p data-bind="author-text" class="modal__author-text">
                             Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
-                            вкусняшки приносили еще и пользу.
-                        </p>
-                        <p class="modal__author-text">Как раз о таком десертике хочется Вам рассказать. Вкус у десерта
-                            натуральный: лимон за счет Я
-                            люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы эти
-                            вкусняшки приносили еще и пользу. Как раз о таком десертике хочется Вам рассказать. Вкус у
-                            десерта натуральный: лимон за счет
-                        </p>
-                        <p class="modal__author-text">Я люблю пить чай с разными вкусняшками. А в сезон вирусных
-                            заболеваний
-                            хочется, чтобы эти
                             вкусняшки приносили еще и пользу.
                         </p>
                         <div class="modal__links">
