@@ -123,6 +123,7 @@
 					<p class="catalog__title site-title">Каталог</p>
 
 					<div class="catalog__header">
+
 						<div class="catalog__filter">
 							<button data-filter=".all" class="catalog__filter-btn catalog__filter-btn_all">Все</button>
 							<button data-filter=".forel" class="catalog__filter-btn catalog__filter-btn_meat">Форель</button>
@@ -130,6 +131,7 @@
 							<button data-filter=".suri" class="catalog__filter-btn catalog__filter-btn_сheese">Сыры</button>
 							<button data-filter=".yagodi" class="catalog__filter-btn catalog__filter-btn_berry">Ягоды</button>
 						</div>
+
 						<div class="catalog__sorting">
 							<div class="catalog__sorting-item">
 								<p class="catalog__sorting-title">Сортировать по:</p>
@@ -139,10 +141,19 @@
 								</button>
 							</div>
 						</div>
+
+						<div id="catalogPreloader" class="catalog__preloader">
+							<svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+								<path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50" transform="rotate(185.007 50 50)">
+									<animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
+								</path>
+							</svg>
+						</div>
 					</div>
 
 
-					<ul class="catalog__list">
+
+					<ul id="catalogIsotope" class="catalog__list catalog__list_isotope">
 
 						<!-- Стейки форели -->
 						<li class="goods-list__item goods-list__item_catalog all forel">

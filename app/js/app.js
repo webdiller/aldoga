@@ -140,16 +140,16 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Таблица с заказами. Работает на страницах: orders.html.
 	// const ordersModule = (function () {
 
-		$('#ordersSelectOrder input').change(function () {
-			let $currentOrder = $(this).val();
-			
-			$('#ordersOptions .orders__options-order').removeClass('active');
-			$('#ordersOptions .orders__options-order[data-order-options="' + $currentOrder + '"]').addClass('active');
+	$('#ordersSelectOrder input').change(function () {
+		let $currentOrder = $(this).val();
 
-			$('#ordersTables .basket-orders__table').removeClass('active');
-			$('#ordersTables .basket-orders__table[data-order-goods="' + $currentOrder + '"]').addClass('active');
-			
-		});
+		$('#ordersOptions .orders__options-order').removeClass('active');
+		$('#ordersOptions .orders__options-order[data-order-options="' + $currentOrder + '"]').addClass('active');
+
+		$('#ordersTables .basket-orders__table').removeClass('active');
+		$('#ordersTables .basket-orders__table[data-order-goods="' + $currentOrder + '"]').addClass('active');
+
+	});
 
 	// Копирование промокода в футере
 	const promoBannermodule = (function () {
@@ -587,35 +587,59 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 
 		$('.catalog__sorting-btn').on('click', function () {
-			sortByAscending = !sortByAscending;
-			var sortValue = $(this).attr('data-sort-value');
-			
-			$('.catalog__sorting-btn').toggleClass('active');
 
-			if (sortByAscending === true) {
-				$grid.isotope({
-					sortBy: sortValue,
-					sortAscending: false
-				});
-			} else {
-				$grid.isotope({
-					sortBy: sortValue,
-					sortAscending: true
-				});
-			}
+			$('#catalogIsotope').addClass('active');
+			$('#catalogPreloader').addClass('active');
+
+			setTimeout(() => {
+				sortByAscending = !sortByAscending;
+				var sortValue = $(this).attr('data-sort-value');
+
+				$('.catalog__sorting-btn').toggleClass('active');
+
+				if (sortByAscending === true) {
+					$grid.isotope({
+						sortBy: sortValue,
+						sortAscending: false
+					});
+
+				} else {
+					$grid.isotope({
+						sortBy: sortValue,
+						sortAscending: true
+					});
+				}
+			}, 150);
+
+			setTimeout(() => {
+				$('#catalogPreloader').removeClass('active');
+				$('#catalogIsotope').removeClass('active');
+			}, 750);
 
 		});
 
 
 		// Фильтр
 		$('.catalog__filter button').click(function () {
-			$('.catalog__filter button').removeClass('active');
-			$(this).addClass('active');
 
-			let selector = $(this).attr('data-filter');
-			$('.catalog__list').isotope({
-				filter: selector
-			});
+			$('#catalogIsotope').addClass('active');
+			$('#catalogPreloader').addClass('active');
+
+			setTimeout(() => {
+				$('.catalog__filter button').removeClass('active');
+				$(this).addClass('active');
+
+				let selector = $(this).attr('data-filter');
+				$('.catalog__list').isotope({
+					filter: selector
+				});
+			}, 150);
+
+			setTimeout(() => {
+				$('#catalogPreloader').removeClass('active');
+				$('#catalogIsotope').removeClass('active');
+			}, 750);
+
 			return false;
 		});
 
