@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					items: 2,
 					margin: 30
 				},
-				768: {
+				992: {
 					items: 3
 				}
 			}

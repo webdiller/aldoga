@@ -5,6 +5,13 @@
     &__title
     &__slider
         margin-bottom: 45px
+        &.owl-carousel .owl-stage
+            display: flex !important
+        &.owl-theme .owl-stage
+            display: flex !important
+        &.owl-carousel .owl-item,
+        &.owl-theme .owl-item
+            display: flex
     &__list
         display: flex
         justify-content: space-between
@@ -86,6 +93,14 @@
 @media only screen and (max-width: 1300px) 
     // 
 @media only screen and (max-width: 1200px) 
+    .about-reviews__slider
+        max-width: 90%
+        margin-left: auto
+        margin-right: auto
+        &.owl-carousel .owl-nav button.owl-next, 
+        &.owl-carousel .owl-nav button.owl-prev, 
+        &.owl-carousel button.owl-dot
+            margin: 0
     .about-reviews__item
         padding: 20px 15px
         padding-bottom: 0
@@ -119,7 +134,26 @@
     .about-reviews__wrapper
         margin-bottom: 35px
     .about-reviews__slider
+        max-width: 100%
         margin-bottom: 10px
+        > div.owl-nav
+            height: 65px
+            position: relative
+            top: unset
+            transform: unset
+            width: 85px
+            margin: 0 auto
+            left: unset
+            right: unset
+            display: flex
+            justify-content: space-between
+            font-size: 30px
+        .owl-nav button.owl-next, .owl-nav button.owl-prev, button.owl-dot
+            margin: 0
+        .owl-nav [class*=owl-]:hover
+            color: #000 
+            background: transparent
+            outline: none
 
 @media only screen and (max-width: 480px) 
     .about-reviews__list
