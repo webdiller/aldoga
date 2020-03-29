@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-	// Данные для доставки (таблица с табами на страницах: index.php и basket.html)
+	// Данные для доставки (таблица с табами на страницах: index.html и basket.html)
 	const deliveryObj = [
 		{
 			"Moscow": {
@@ -584,7 +584,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}());
 	}
 
-	// Сортировка и фильтр на страницах: catalog.php
+	// Сортировка и фильтр на страницах: catalog.html
 	const filterModule = (function () {
 
 		var sortByAscending = true;
@@ -664,7 +664,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	}());
 
-	// Форма отправки feedback_form на страницах: contacts.php
+	// Форма отправки feedback_form на страницах: contacts.html
 	const feedbackFormModule = (function () {
 
 		let $form = $('#feedback_form');

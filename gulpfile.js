@@ -20,8 +20,8 @@ const del          = require('del');
 
 function browsersync() {
 	browserSync.init({
-		// server: { baseDir: 'app' },
-        proxy: "aldoga-dev",
+		server: { baseDir: 'app' },
+        // proxy: "aldoga-dev",
 		notify: false,
 		// online: false, // Work offline without internet connection
 	})
