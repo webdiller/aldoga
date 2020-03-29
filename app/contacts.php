@@ -79,33 +79,33 @@
                     <h2 class="feedback__title site-title">Обратная связь</h2>
 
 
-                    <form class="feedback__form contact-form">
+                    <form id="feedback_form" class="feedback__form contact-form">
                         <div class="contact-form__inputs">
 
                             <div class="contact-form__group">
-                                <input placeholder="Как вас зовут?" type="text" class="contact-form__input">
+                                <input data-input="name" placeholder="Как вас зовут?" type="text" class="contact-form__input">
                                 <span class="contact-form__icon icon-user"></span>
                             </div>
 
                             <div class="contact-form__group">
-                                <input placeholder="Ваш email адрес" type="email" class="contact-form__input">
+                                <input data-input="email" placeholder="Ваш email адрес" type="email" class="contact-form__input">
                                 <span class="contact-form__icon icon-envelope-open"></span>
                             </div>
 
                             <div class="contact-form__group">
-                                <input placeholder="Телефон для связи" type="number" class="contact-form__input">
+                                <input data-input="phone" placeholder="Телефон для связи" type="number" class="contact-form__input input-phone">
                                 <span class="contact-form__icon icon-phone"></span>
                             </div>
                         </div>
 
                         <div class="contact-form__group contact-form__group_textarea">
-                            <textarea class="contact-form__textarea" placeholder="Ваше сообщение"></textarea>
+                            <textarea data-input="message" class="contact-form__textarea" placeholder="Ваше сообщение"></textarea>
                         </div>
 
                         <div class="feedback__payment payment">
                             <div class="payment__btn-with-check">
-                                <button type="button" data-bind="modal_success_button" class="payment__btn-submit site-btn">Отправить</button>
-                                <input name="totalPaymentName" id="totalPayment" type="checkbox" class="payment__custom-input">
+                                <button data-input="success" type="button" data-bind="modal_success_button" class="payment__btn-submit site-btn">Отправить</button>
+                                <input data-input="checkbox" name="totalPaymentName" id="totalPayment" type="checkbox" class="payment__custom-input">
                                 <label for="totalPayment" class="payment__custom-label">
                                     Я СОГЛАСЕН на обработку и хранение моих персональных данных
                                 </label>

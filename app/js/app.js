@@ -482,20 +482,20 @@ document.addEventListener("DOMContentLoaded", function () {
 			let $parent_review = $(this).parent();
 			let author_name = $parent_review.find('[data-bind="author-name"]').text();
 			let author_text = $parent_review.find('[data-bind="author-text"]').text();
-			
+
 			let $parent_modal = $('[data-bind="modal_review"]');
 			let modal_name = $parent_modal.find('[data-bind="author-name"]');
 			let modal_text = $parent_modal.find('[data-bind="author-text"]');
 			modal_name.text(author_name);
 			modal_text.text(author_text);
 
-			author-thumbnails
-			author-img-fancy
-			author-img
+			author - thumbnails
+			author - img - fancy
+			author - img
 
-			author-main-img-fancy
-			author-main-img
-			
+			author - main - img - fancy
+			author - main - img
+
 		});
 
 		// переход на - оставить отзыв
@@ -661,6 +661,19 @@ document.addEventListener("DOMContentLoaded", function () {
 			return false;
 		});
 
+
+	}());
+
+	// Форма отправки feedback_form на страницах: contacts.php
+	const feedbackFormModule = (function () {
+
+		let $form = $('#feedback_form');
+		let $name = $form.find('[data-input="name"]');
+		let $email = $form.find('[data-input="email"]');
+		let $phone = $form.find('[data-input="phone"]');
+		let $message = $form.find('[data-input="message"]');
+		let $success = $form.find('[data-input="success"]');
+		let $checkbox = $form.find('[data-input="checkbox"]');
 
 	}());
 });

@@ -28,6 +28,7 @@
         font-size: 15px
         font-family: "Lato"
         color: rgb(102, 102, 102)
+        transition: all .3s ease
         &::placeholder
             font-family: "Lato"
         &_file
@@ -52,6 +53,8 @@
             &:focus + label 
             + label
                 cursor: pointer
+        &.invalid
+            color: #ed2121
     &__label-icon
         font-size: 20px
         color: $orange
