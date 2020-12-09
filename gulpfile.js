@@ -1,12 +1,10 @@
 let preprocessor = 'sass'; // Preprocessor (sass, scss, less, styl)
-let fileswatch   = 'html,htm,txt,json,md,woff2'; // List of files extensions for watching & hard reload (comma separated)
+let fileswatch   = 'php,html,htm,txt,json,md,woff2'; // List of files extensions for watching & hard reload (comma separated)
 let imageswatch  = 'jpg,jpeg,png,webp,svg'; // List of images extensions for watching & compression (comma separated)
 
 const { src, dest, parallel, series, watch, lastRun } = require('gulp');
 const sass         = require('gulp-sass');
 const scss         = require('gulp-sass');
-const less         = require('gulp-less');
-const styl         = require('gulp-stylus');
 const cleancss     = require('gulp-clean-css');
 const concat       = require('gulp-concat');
 const browserSync  = require('browser-sync').create();
@@ -21,6 +19,7 @@ const del          = require('del');
 function browsersync() {
 	browserSync.init({
 		server: { baseDir: 'app' },
+        // proxy: "aldoga-dev",
 		notify: false,
 		// online: false, // Work offline without internet connection
 	})
@@ -46,6 +45,8 @@ function scripts() {
 		'app/libs/jquery/jquery-3.4.1.min.js',
 		'app/libs/lazyload/lazyload.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
+		'app/libs/isotope-layout/dist/isotope.pkgd.min.js',
+		'app/libs/fancybox-master/dist/jquery.fancybox.min.js',
 		'app/js/app.js' // app.js. Always at the end
 		])
 	.pipe(concat('app.min.js'))

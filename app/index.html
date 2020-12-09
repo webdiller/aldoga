@@ -10,9 +10,7 @@
 	<meta name="viewport"
 		  content="width=device-width">
 	<link rel="icon"
-		  href="img/favicon.png">
-	<meta property="og:image"
-		  content="img/dest/preview.jpg">
+		  href="images/favicon.png">
 	<link rel="stylesheet"
 		  href="css/app.min.css">
 
@@ -35,26 +33,26 @@
 			<ul class="header__list header-list">
 				<li class="header-list__item">
 					<a href="catalog.html"
-					   class="header-list__link header-list__link_active">Наша продукция</a>
+					   class="header-list__link">Наша продукция</a>
 				</li>
 				<li class="header-list__item">
-					<a href="#"
+					<a href="#!"
 					   class="header-list__link">О Хозяйстве</a>
 				</li>
 				<li class="header-list__item">
-					<a href="#"
+					<a href="delivery-payment.html"
 					   class="header-list__link">Доставка и оплата</a>
 				</li>
 				<li class="header-list__item">
-					<a href="#"
+					<a href="news.html"
 					   class="header-list__link">Рецепты</a>
 				</li>
 				<li class="header-list__item">
-					<a href="#"
+					<a href="reviews.html"
 					   class="header-list__link">Отзывы</a>
 				</li>
 				<li class="header-list__item">
-					<a href="#"
+					<a href="contacts.html"
 					   class="header-list__link">Контакты</a>
 				</li>
 			</ul>
@@ -63,15 +61,15 @@
 				<div class="contact-bar__wrapper">
 					<a href="tel:89214504515"
 					   class="contact-bar__link">8 921 450 45 15</a>
-					<a href="#"
-					   class="contact-bar__interactive-link">Задать вопрос</a>
+					<button data-bind="modal_question_button"
+							class="contact-bar__interactive-link">Задать вопрос</button>
 				</div>
 			</div>
 
 			<div id="basket"
 				 class="header__basket basket">
 				<div class="basket__wrapper">
-					<a href="#"
+					<a href="#!"
 					   class="basket__icon icon-shop">
 						<span class="basket__count">10</span>
 					</a>
@@ -130,37 +128,37 @@
 				 id="hamburgerOverlay">
 				<ul class="hamburger-overlay__list">
 					<li class="hamburger-overlay__list-item">
-						<a href="#"
+						<a href="catalog.html"
 						   class="hamburger-overlay__list-link">
 							Наша продукция
 						</a>
 					</li>
 					<li class="hamburger-overlay__list-item">
-						<a href="#"
+						<a href="#!"
 						   class="hamburger-overlay__list-link">
 							О Хозяйстве
 						</a>
 					</li>
 					<li class="hamburger-overlay__list-item">
-						<a href="#"
+						<a href="delivery-payment.html"
 						   class="hamburger-overlay__list-link">
 							Доставка и оплата
 						</a>
 					</li>
 					<li class="hamburger-overlay__list-item">
-						<a href="#"
+						<a href="news.html"
 						   class="hamburger-overlay__list-link">
 							Рецепты
 						</a>
 					</li>
 					<li class="hamburger-overlay__list-item">
-						<a href="#"
+						<a href="reviews.html"
 						   class="hamburger-overlay__list-link">
 							Отзывы
 						</a>
 					</li>
 					<li class="hamburger-overlay__list-item">
-						<a href="#"
+						<a href="contacts.html"
 						   class="hamburger-overlay__list-link">
 							Контакты
 						</a>
@@ -170,8 +168,8 @@
 					<div class="contact-bar__wrapper">
 						<a href="tel:89214504515"
 						   class="contact-bar__link">8 921 450 45 15</a>
-						<a href="#"
-						   class="contact-bar__interactive-link">Задать вопрос</a>
+						<button data-bind="modal_question_button"
+								class="contact-bar__interactive-link">Задать вопрос</button>
 					</div>
 				</div>
 			</div>
@@ -181,7 +179,7 @@
 				<ul class="basket-overlay__list">
 					<li class="basket-overlay__item">
 						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
+						<a href="#!"
 						   class="basket-overlay__item-link">
 							<img data-src="./images/dest/products/product_1.jpg"
 								 src="./images/dest/products/product_1-min.jpg"
@@ -196,7 +194,7 @@
 					</li>
 					<li class="basket-overlay__item">
 						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
+						<a href="#!"
 						   class="basket-overlay__item-link">
 							<img data-src="./images/dest/products/product_2.jpg"
 								 src="./images/dest/products/product_2-min.jpg"
@@ -211,7 +209,7 @@
 					</li>
 					<li class="basket-overlay__item">
 						<button class="basket-overlay__item-btn icon-cancel"></button>
-						<a href="#"
+						<a href="#!"
 						   class="basket-overlay__item-link">
 							<img data-src="./images/dest/products/product_3.jpg"
 								 src="./images/dest/products/product_3-min.jpg"
@@ -230,7 +228,8 @@
 					<span class="basket-overlay__total-price-count">16 500 Р</span>
 				</div>
 				<div class="basket-overlay__btn-wrapper">
-					<button class="site-btn basket-overlay__btn">Оформить заказ</button>
+					<a href="basket.html"
+					   class="site-btn basket-overlay__btn">Оформить заказ</a>
 				</div>
 			</div>
 
@@ -297,7 +296,7 @@
 					<h2 class="our-production__title site-title">Наша продукция</h2>
 					<ul class="our-production__list production-list">
 						<li class="production-list__item">
-							<a href="#"
+							<a href="catalog.html"
 							   class="production-list__link">
 								<img data-src="./images/dest/products/product_5.jpg"
 									 src="./images/dest/products/product_5-min.jpg"
@@ -314,7 +313,7 @@
 							</a>
 						</li>
 						<li class="production-list__item">
-							<a href="#"
+							<a href="catalog.html"
 							   class="production-list__link">
 								<img data-src="./images/dest/products/product_6.jpg"
 									 src="./images/dest/products/product_6-min.jpg"
@@ -329,7 +328,7 @@
 							</a>
 						</li>
 						<li class="production-list__item">
-							<a href="#"
+							<a href="catalog.html"
 							   class="production-list__link">
 								<img data-src="./images/dest/products/product_7.jpg"
 									 src="./images/dest/products/product_7-min.jpg"
@@ -344,7 +343,7 @@
 							</a>
 						</li>
 						<li class="production-list__item">
-							<a href="#"
+							<a href="catalog.html"
 							   class="production-list__link">
 								<img data-src="./images/dest/products/product_8.jpg"
 									 src="./images/dest/products/product_8-min.jpg"
@@ -375,7 +374,7 @@
 						обуславливает создание систем массового участия. Товарищи! укрепление и развитие структуры
 						требуют от нас анализа модели развития.
 					</p>
-					<a href="#"
+					<a href="#!"
 					   class="about__more site-more">Читать подробнее</a>
 				</div>
 			</section>
@@ -388,7 +387,7 @@
 						class="popular-goods__list goods-list goods-list_slider owl-carousel owl-theme">
 						<!-- 1 -->
 						<li class="goods-list__item">
-							<a href="#"
+							<a href="cart.html"
 							   class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_5.jpg"
@@ -403,7 +402,8 @@
 										<span class="goods-list__tags-tag">охлаждённые</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">3000 Р</span>
+										<span class="goods-list__price-number">3000 <span
+												  class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure"></span>
 									</p>
 								</div>
@@ -411,7 +411,7 @@
 						</li>
 						<!-- 2 -->
 						<li class="goods-list__item">
-							<a href="#"
+							<a href="cart.html"
 							   class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_6.jpg"
@@ -426,7 +426,8 @@
 										<span class="goods-list__tags-tag">без головы</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">500 Р</span>
+										<span class="goods-list__price-number">500 <span
+												  class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -434,7 +435,7 @@
 						</li>
 						<!-- 3 -->
 						<li class="goods-list__item">
-							<a href="#"
+							<a href="cart.html"
 							   class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_7.jpg"
@@ -448,7 +449,8 @@
 										<span class="goods-list__tags-tag">филе форели слабого посола</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">1000 Р</span>
+										<span class="goods-list__price-number">1000 <span
+												  class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -456,7 +458,7 @@
 						</li>
 						<!-- 4 -->
 						<li class="goods-list__item">
-							<a href="#"
+							<a href="cart.html"
 							   class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_8.jpg"
@@ -470,7 +472,8 @@
 										<span class="goods-list__tags-tag">свежий</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">300 Р</span>
+										<span class="goods-list__price-number">300 <span
+												  class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">Л</span>
 									</p>
 								</div>
@@ -478,7 +481,7 @@
 						</li>
 						<!-- 5 -->
 						<li class="goods-list__item">
-							<a href="#"
+							<a href="cart.html"
 							   class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_9.jpg"
@@ -492,7 +495,8 @@
 										<span class="goods-list__tags-tag">лососёвая отборная красная икра</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">500 Р</span>
+										<span class="goods-list__price-number">500 <span
+												  class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
@@ -500,7 +504,7 @@
 						</li>
 						<!-- 6 -->
 						<li class="goods-list__item">
-							<a href="#"
+							<a href="cart.html"
 							   class="goods-list__link">
 								<div class="goods-list__img-wrapper">
 									<img data-src="./images/dest/products/product_10.jpg"
@@ -515,14 +519,15 @@
 										<span class="goods-list__tags-tag">ореховый</span>
 									</p>
 									<p class="goods-list__price">
-										<span class="goods-list__price-number">600 Р</span>
+										<span class="goods-list__price-number">600 <span
+												  class="icon-rouble goods-list__price-icon"></span></span>
 										<span class="goods-list__price-measure">КГ</span>
 									</p>
 								</div>
 							</a>
 						</li>
 					</ul>
-					<a href="#"
+					<a href="cart.html"
 					   class="site-btn popular-goods__btn">Перейти в каталог
 					</a>
 				</div>
@@ -675,31 +680,25 @@
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Самовывоз</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">0 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">0 Р</p>
 										</div>
 
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Курьером службы DPD до подъезда</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">750 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">750 Р</p>
 										</div>
 
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Курьером Яндекс.Еда до подъезда</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">800 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">800 Р</p>
 										</div>
 									</div>
 
@@ -732,31 +731,25 @@
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Самовывоз</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">0 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">0 Р</p>
 										</div>
 
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Курьером службы DPD до подъезда</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">750 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">750 Р</p>
 										</div>
 
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Курьером Яндекс.Еда до подъезда</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">800 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">800 Р</p>
 										</div>
 									</div>
 
@@ -789,31 +782,25 @@
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Самовывоз</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">0 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">0 Р</p>
 										</div>
 
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Курьером службы DPD до подъезда</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">750 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">750 Р</p>
 										</div>
 
 										<div class="delivery-form__body-item">
 											<p class="delivery-form__body-text delivery-form__body-text_service">
 												Курьером Яндекс.Еда до подъезда</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
+											<p class="delivery-form__body-text delivery-form__body-text_date">17.04.2020
 											</p>
-											<p
-											   class="delivery-form__body-text delivery-form__body-text_price">800 Р</p>
+											<p class="delivery-form__body-text delivery-form__body-text_price">800 Р</p>
 										</div>
 									</div>
 
@@ -840,8 +827,10 @@
 					<div id="aboutReviews"
 						 class="about-reviews__slider owl-carousel owl-theme">
 						<div class="about-reviews__item item">
-							<p class="about-reviews__name">Алиса Н.</p>
-							<p class="site-text about-reviews__text">
+							<p data-bind="author-name"
+							   class="about-reviews__name">Алиса Н.</p>
+							<p data-bind="author-text"
+							   class="site-text about-reviews__text">
 								Я люблю рыбу. Но проживаю в Средней Азии - а у нас, к сожалению, с естественными
 								водоемами напряженка - есть единственно море (Аральское), и то в состоянии экологической
 								катастрофы. А две реки на всю страну еле выповишь, чтобы нормально поесть. И вот я
@@ -850,10 +839,11 @@
 								что есть возможность заказать много рыбы
 								и угостить ею всю мою деревню. Спасибо!
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more"
+									data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -861,7 +851,7 @@
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -871,17 +861,20 @@
 							</ul>
 						</div>
 						<div class="about-reviews__item item">
-							<p class="about-reviews__name">Максим Л</p>
-							<p class="site-text about-reviews__text">
+							<p data-bind="author-name"
+							   class="about-reviews__name">Максим Л</p>
+							<p data-bind="author-text"
+							   class="site-text about-reviews__text">
 								Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы
 								эти вкусняшки приносили еще и пользу.
 								Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
 								счет
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more"
+									data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -889,7 +882,7 @@
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -899,17 +892,20 @@
 							</ul>
 						</div>
 						<div class="about-reviews__item item">
-							<p class="about-reviews__name">Настя Т.</p>
-							<p class="site-text about-reviews__text">
+							<p data-bind="author-name"
+							   class="about-reviews__name">Настя Т.</p>
+							<p data-bind="author-text"
+							   class="site-text about-reviews__text">
 								Спасибо огромное! Сегодня купили две рыбы, и заказывала первый раз. В одной рыбе была
 								икра. Спасибо за икорку, приятный бонус. Засолила икру на 5 минут, сразу же попробовала,
 								вкусно получилось.
 								Рыба очень свежая, на засол
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more"
+									data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -917,7 +913,7 @@
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -927,17 +923,20 @@
 							</ul>
 						</div>
 						<div class="about-reviews__item item">
-							<p class="about-reviews__name">Настя Т.</p>
-							<p class="site-text about-reviews__text">
+							<p data-bind="author-name"
+							   class="about-reviews__name">Настя Т.</p>
+							<p data-bind="author-text"
+							   class="site-text about-reviews__text">
 								Спасибо огромное! Сегодня купили две рыбы, и заказывала первый раз. В одной рыбе была
 								икра. Спасибо за икорку, приятный бонус. Засолила икру на 5 минут, сразу же попробовала,
 								вкусно получилось.
 								Рыба очень свежая, на засол
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more"
+									data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -945,7 +944,7 @@
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -955,17 +954,20 @@
 							</ul>
 						</div>
 						<div class="about-reviews__item item">
-							<p class="about-reviews__name">Максим Л</p>
-							<p class="site-text about-reviews__text">
+							<p data-bind="author-name"
+							   class="about-reviews__name">Максим Л</p>
+							<p data-bind="author-text"
+							   class="site-text about-reviews__text">
 								Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы
 								эти вкусняшки приносили еще и пользу.
 								Как раз о таком десертике хочется Вам рассказать. Вкус у десерта натуральный: лимон за
 								счет
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more"
+									data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -973,7 +975,7 @@
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -983,8 +985,10 @@
 							</ul>
 						</div>
 						<div class="about-reviews__item item">
-							<p class="about-reviews__name">Алиса Н.</p>
-							<p class="site-text about-reviews__text">
+							<p data-bind="author-name"
+							   class="about-reviews__name">Алиса Н.</p>
+							<p data-bind="author-text"
+							   class="site-text about-reviews__text">
 								Я люблю рыбу. Но проживаю в Средней Азии - а у нас, к сожалению, с естественными
 								водоемами напряженка - есть единственно море (Аральское), и то в состоянии экологической
 								катастрофы. А две реки на всю страну еле выповишь, чтобы нормально поесть. И вот я
@@ -993,10 +997,11 @@
 								что есть возможность заказать много рыбы
 								и угостить ею всю мою деревню. Спасибо!
 							</p>
-							<button class="site-more about-reviews__more">Отзыв полностью</button>
+							<button class="site-more about-reviews__more"
+									data-bind="modal_review_button">Отзыв полностью</button>
 							<ul class="about-reviews__images">
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -1004,7 +1009,7 @@
 									</a>
 								</li>
 								<li class="about-reviews__images-item">
-									<a href="#"
+									<a href="#!"
 									   class="about-reviews__images-link">
 										<img src="./images/dest/static/fishman.jpg"
 											 alt=""
@@ -1014,7 +1019,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="#"
+					<a href="reviews.html"
 					   class="site-btn site-btn_wide about-reviews__btn">Все отзывы
 					</a>
 				</div>
@@ -1022,58 +1027,41 @@
 
 			<!-- Баннеры в подвале -->
 			<div class="promo">
-				<div class="promo__wrapper wrapper wrapper_lg">
+    <div class="promo__wrapper wrapper wrapper_lg">
 
-					<div class="promo__item promo__item_sm">
-						<div class="promo__item-content">
-							<p class="promo__item-text">Получите скидку <strong
-										class="promo__item-text promo__item-text_strong">10%</strong>
-							</p>
-							<p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
-						</div>
+        <div class="promo__item promo__item_sm">
+            <div class="promo__item-content">
+                <p class="promo__item-text">Получите скидку <strong class="promo__item-text promo__item-text_strong">10%</strong>
+                </p>
+                <p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
+            </div>
 
-						<form id="promoBannerForm"
-							  class="promo__item-form-group">
-							<input readonly
-								   id="promoBannerFormPromocode"
-								   value="PROMO1ALDOGA"
-								   placeholder="PROMO1ALDOGA"
-								   type="text"
-								   class="promo__item-input">
-							<label for="promoBannerFormPromocode"
-								   class="promo__item-label">скопировать промокод
-							</label>
-						</form>
-					</div>
+            <form id="promoBannerForm" class="promo__item-form-group">
+                <input readonly id="promoBannerFormPromocode" value="PROMO1ALDOGA" placeholder="PROMO1ALDOGA" type="text" class="promo__item-input">
+                <label for="promoBannerFormPromocode" class="promo__item-label">скопировать промокод
+                </label>
+            </form>
+        </div>
 
-					<div class="promo__item promo__item_first">
-						<div class="promo__item-content">
-							<p class="promo__item-text">Получите скидку <strong
-										class="promo__item-text promo__item-text_strong">10%</strong></p>
-							<p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
-						</div>
-					</div>
+        <div class="promo__item promo__item_first">
+            <div class="promo__item-content">
+                <p class="promo__item-text">Получите скидку <strong class="promo__item-text promo__item-text_strong">10%</strong></p>
+                <p class="promo__item-text promo__item-text_small">на первый заказ по промокоду</p>
+            </div>
+        </div>
 
-					<div class="promo__item promo__item_second">
-						<form id="promoBannerFormSmall"
-							  class="promo__item-form-group">
-							<input readonly
-								   id="promoBannerFormPromocodeSmall"
-								   value="PROMO1ALDOGA"
-								   placeholder="PROMO1ALDOGA"
-								   type="text"
-								   class="promo__item-input">
-							<label for="promoBannerFormPromocode"
-								   class="promo__item-label">скопировать промокод
-							</label>
-						</form>
-					</div>
-				</div>
-			</div>
+        <div class="promo__item promo__item_second">
+            <form id="promoBannerFormSmall" class="promo__item-form-group">
+                <input readonly id="promoBannerFormPromocodeSmall" value="PROMO1ALDOGA" placeholder="PROMO1ALDOGA" type="text" class="promo__item-input">
+                <label for="promoBannerFormPromocodeSmall" class="promo__item-label">скопировать промокод
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
 		</div>
 	</main>
 
-	<!-- Подвал -->
 	<footer class="footer">
 		<div class="footer__wrapper wrapper wrapper_lg">
 			<div class="footer__content">
@@ -1087,14 +1075,14 @@
 						   class="contact-list__link contact-list__link_mail">fish@aldoga.pro</a>
 					</li>
 					<li class="contact-list__item">
-						<a href="#"
+						<a href="#!"
 						   class="contact-list__link contact-list__link_address">Карелия, Лахденпохский р-н,
 							пос. Тиурула</a>
 					</li>
 					<li class="contact-list__item contact-list__item_socials">
-						<a href="#"
+						<a href="#!"
 						   class="contact-list__link contact-list__link_socials contact-list__link_vk"></a>
-						<a href="#"
+						<a href="#!"
 						   class="contact-list__link contact-list__link_socials contact-list__link_insta"></a>
 					</li>
 				</ul>
@@ -1108,42 +1096,42 @@
 				</div>
 				<ul class="footer__navigation-list navigation-list">
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="catalog.html"
 						   class="navigation-list__link">Каталог
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="delivery-payment.html"
 						   class="navigation-list__link">Доставка и оплата
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="#!"
 						   class="navigation-list__link">Новости
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="#!"
 						   class="navigation-list__link">Купить оптом
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="news.html"
 						   class="navigation-list__link">Рецепты
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="reviews.html"
 						   class="navigation-list__link">Отзывы
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="#!"
 						   class="navigation-list__link">О компании
 						</a>
 					</li>
 					<li class="navigation-list__item">
-						<a href="#"
+						<a href="contacts.html"
 						   class="navigation-list__link">Контакты
 						</a>
 					</li>
@@ -1157,6 +1145,244 @@
 			</div>
 		</div>
 	</footer>
+	<div class="all-modals">
+
+		<!-- Задать вопрос из шапки -->
+		<div data-bind="modal_question"
+			 class="modal modal_question"
+			 data-type="modal">
+			<div class="modal__header">
+				<button data-bind="modal_close"
+						class="modal__close icon-cancel"></button>
+			</div>
+			<p class="modal__title">Задать вопрос</p>
+			<p class="modal__description">Заполните поля ниже и в ближайшее время наш сотрудник с вами свяжется!</p>
+			<div class="feedback">
+
+				<form class="feedback__form contact-form">
+					<div class="contact-form__inputs">
+
+						<div class="contact-form__group">
+							<input placeholder="Как вас зовут?"
+								   type="text"
+								   class="contact-form__input">
+							<span class="contact-form__icon icon-user"></span>
+						</div>
+
+						<div class="contact-form__group">
+							<input placeholder="Ваш email адрес"
+								   type="email"
+								   required
+								   class="contact-form__input">
+							<span class="contact-form__icon icon-envelope-open"></span>
+						</div>
+
+						<div class="contact-form__group">
+							<input placeholder="Телефон для связи"
+								   type="number"
+								   class="contact-form__input">
+							<span class="contact-form__icon icon-phone"></span>
+						</div>
+					</div>
+
+					<div class="contact-form__group contact-form__group_textarea">
+						<textarea class="contact-form__textarea"
+								  placeholder="Ваше сообщение"></textarea>
+					</div>
+
+					<div class="modal__btn-wrapper">
+						<button class="site-btn modal__btn">Свяжитесь со мной</button>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+
+		<!-- Успех - Заказ принят. Страницы: basket.html orders.html  -->
+		<div data-bind="modal_success_order"
+			 class="modal modal_success"
+			 data-type="modal">
+			<div class="modal__header">
+				<button data-bind="modal_close"
+						class="modal__close icon-cancel"></button>
+			</div>
+			<div class="modal__center">
+				<p class="modal__title">Спасибо, ваш заказ принят!</p>
+				<p class="modal__description">Спасибо! В ближайшее время наш сотрудник с вами свяжется!</p>
+				<div class="feedback">
+
+					<form class="feedback__form contact-form">
+
+						<div class="modal__btn-wrapper">
+							<a href="index.html"
+							   class="site-btn modal__btn">Вернуться на главную</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Успех - Отправка данных в форме. Страница contacts.html -->
+		<div data-bind="modal_success"
+			 class="modal modal_success"
+			 data-type="modal">
+			<div class="modal__header">
+				<button data-bind="modal_close"
+						class="modal__close icon-cancel"></button>
+			</div>
+			<div class="modal__center">
+				<p class="modal__title">Спасибо!</p>
+				<p class="modal__description">Спасибо! В ближайшее время наш сотрудник с вами свяжется!</p>
+				<div class="feedback">
+
+					<form class="feedback__form contact-form">
+
+						<div class="modal__btn-wrapper">
+							<a href="index.html"
+							   class="site-btn modal__btn">Вернуться на главную</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Смотреть отзыв. Страницы: reviews.html  -->
+		<div data-bind="modal_review"
+			 class="modal modal_review"
+			 data-type="modal">
+			<div class="modal__document">
+				<div class="modal__header">
+					<button data-bind="modal_close"
+							class="modal__close icon-cancel"></button>
+				</div>
+				<div class="modal__center">
+					<div class="modal__review">
+						<div class="modal__images cart-images">
+							<div data-bind="author-thumbnails"
+								 class="cart-images__thumbnails">
+								<a data-bind="author-img-fancy"
+								   data-fancybox="review"
+								   href="./images/dest/products/product_5.jpg"
+								   class="cart-images__thumbnail-wrapper active">
+									<img data-bind="author-img"
+										 src="./images/dest/products/product_5-min.jpg"
+										 alt=""
+										 class="cart-images__thumbnail">
+								</a>
+								<a data-fancybox="review"
+								   href="./images/dest/products/product_7.jpg"
+								   class="cart-images__thumbnail-wrapper">
+									<img src="./images/dest/products/product_7-min.jpg"
+										 alt=""
+										 class="cart-images__thumbnail">
+								</a>
+								<a data-fancybox="review"
+								   href="./images/dest/products/product_6.jpg"
+								   class="cart-images__thumbnail-wrapper">
+									<img src="./images/dest/products/product_6-min.jpg"
+										 alt=""
+										 class="cart-images__thumbnail">
+								</a>
+								<a data-fancybox="review"
+								   href="./images/dest/products/product_1.jpg"
+								   class="cart-images__thumbnail-wrapper">
+									<img src="./images/dest/products/product_1-min.jpg"
+										 alt=""
+										 class="cart-images__thumbnail">
+								</a>
+							</div>
+
+							<a data-bind="author-main-img-fancy"
+							   data-fancybox="review"
+							   href="./images/dest/products/product_5.jpg"
+							   class="cart-images__main-img-wrapper">
+								<img data-bind="author-main-img"
+									 src="./images/dest/products/product_5.jpg"
+									 alt=""
+									 class="cart-images__main-img">
+							</a>
+						</div>
+						<div class="modal__review-content">
+							<p data-bind="author-name"
+							   class="modal__author-name">Максим Л.</p>
+							<p data-bind="author-text"
+							   class="modal__author-text">
+								Я люблю пить чай с разными вкусняшками. А в сезон вирусных заболеваний хочется, чтобы
+								эти
+								вкусняшки приносили еще и пользу.
+							</p>
+							<div class="modal__links">
+								<p class="modal__links-title">Ссылка на отзыв:</p>
+								<a href="#!"
+								   class="modal__links-link modal__links-link_ok icon-odnoklassniki">
+								</a>
+								<a href="#!"
+								   class="modal__links-link modal__links-link_vk icon-vk"></a>
+								<a href="#!"
+								   class="modal__links-link modal__links-link_fb icon-facebook"></a>
+								<a href="#!"
+								   class="modal__links-link modal__links-link_insta icon-instagram"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Оставить отзыв. Страницы: reviews.html -->
+		<div data-bind="modal_leave_review"
+			 class="modal modal_leave-review"
+			 data-type="modal">
+			<div class="modal__header">
+				<button data-bind="modal_close"
+						class="modal__close icon-cancel"></button>
+			</div>
+			<p class="site-title">Оставить отзыв</p>
+			<div class="feedback">
+				<form class="feedback__form contact-form contact-form_leave-review">
+
+					<div class="contact-form__group">
+						<input placeholder="Ваше имя и фамилия"
+							   type="text"
+							   class="contact-form__input">
+					</div>
+
+					<div class="contact-form__group contact-form__group_textarea">
+						<textarea class="contact-form__textarea"
+								  placeholder="Текст отзыва"></textarea>
+					</div>
+
+					<div class="contact-form__group contact-form__group_file">
+						<input type="file"
+							   name="file"
+							   id="file"
+							   class="inputfile contact-form__input contact-form__input_file"
+							   data-multiple-caption="{count} files selected"
+							   multiple />
+						<label class="contact-form__file-label"
+							   for="file">
+							<span class="contact-form__label-help"
+								  data-bind="help">Прикрепить фото</span>
+							<span class="contact-form__label-icon icon-attach"></span>
+						</label>
+					</div>
+
+					<div class="modal__btn-wrapper">
+						<button class="site-btn modal__btn">Отправить</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<div data-bind="overlay"
+			 class="site-overlay">
+		</div>
+	</div>
 
 	<script src="js/app.min.js"></script>
 

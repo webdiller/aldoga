@@ -38,7 +38,17 @@
         &_insta
             &::before
                 content: "\f16d"
-
+    &_cart
+        .contact-list__link
+            font-size: 14px
+            color: #000
+            align-items: center
+        .contact-list__link::before
+            margin-right: 20px
+            font-size: 20px
+        .contact-list__item_text
+            margin-top: 20px
+            font-size: 14px
 
 .navigation-list
     +reset-ul
@@ -48,10 +58,12 @@
     &__item
         flex-basis: 50%
         margin-bottom: 25px
+        &:nth-child(even)
+            text-align: right
     &__link
         +reset-link
         position: relative
-        display: block
+        display: inline-block
         color: #fff
         transition: all .4s ease
         &:hover,
@@ -71,6 +83,7 @@
 
 .footer
     &__wrapper
+        margin-top: 30px
     &__content
         display: flex
         justify-content: space-between
@@ -126,6 +139,7 @@
         font-size: 12px
     .footer__navigation-list
         padding-left: 30px
+        max-width: 250px
     .footer__copyright-text
         font-size: 12px
     .footer__copyright
@@ -133,3 +147,53 @@
     .footer__copyright-img
         width: auto
         height: 23px
+
+@media only screen and (max-width: 768px) 
+    .footer__content
+        padding: 40px 20px
+        flex-wrap: wrap
+        justify-content: center
+    .footer__logo
+        order: 1 
+        flex-basis: 100%
+        text-align: center
+        margin-bottom: 40px
+    .footer__navigation-list
+        order: 2 
+        padding-left: 0
+        flex: 1
+        padding-right: 30px
+    .footer__contact-list
+        order: 3 
+        flex-basis: auto
+        margin-left: auto
+    .contact-list__link_address
+        max-width: 190px
+
+@media only screen and (max-width: 576px) 
+    .footer__wrapper
+        margin-top: 20px
+    .footer__content
+        padding-bottom: 20px
+    .footer__navigation-list
+        flex-basis: 100%
+        padding-right: 0
+        padding-bottom: 40px
+    .footer__contact-list
+        flex-basis: 100%
+    .contact-list__link_socials
+        font-size: 16px
+        margin-bottom: 0
+    .footer__copyright
+        padding-left: 0
+        padding-right: 0
+    .footer__copyright-text
+        font-size: 10px
+    .footer__copyright-img
+        height: 20px
+
+@media only screen and (max-width: 480px) 
+    .footer__copyright-text
+        font-size: 8px
+    .footer__copyright-img
+        height: 15px
