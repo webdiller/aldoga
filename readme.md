@@ -1,3 +1,5 @@
+node: 12.19.0   
+run project: gulp   
 
 Страницы:   
 http://localhost:3000/404.html       

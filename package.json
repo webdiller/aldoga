@@ -26,7 +26,10 @@
 	},
 	"dependencies": {
 		"cleave.js": "^1.5.8",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"i": "^0.3.6",
 		"isotope-layout": "^3.0.6",
+		"npm": "^6.14.9",
 		"shufflejs": "^5.2.3",
 		"sweetalert2": "^9.10.4"
 	}
